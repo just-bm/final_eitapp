@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en"> 
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Intelligent Technologies - No-Code/Low-Code Platform</title>
+    <link rel="stylesheet" href="common.css">
+   </head>
+    <body>
+    <!-- TopBar content -->
+      <div class="top-bar">
+        <img src="images/EIT Logo 01 4.png" alt="Logo" class="logo">
+        <div class="button-contact">
+            <div class="nav-buttons">
+                <a class="nav-button">Home</a>
+                <a class="nav-button">Services</a>
+                <a class="nav-button">Who Are We</a>
+                <a class="nav-button">Contact Us</a>
+                <a class="nav-button">Blogs</a>
+            </div>
+            
+            <div class="contact-flex">
+                <img src="images/mail.png" alt="Contact" class="contact-image">
+                <div class="contact-text">
+                    <div>Get in touch with us </div>
+                    <div>sales@ethicalintelligent.com</div>
+                </div>
+            </div>
+        </div>
+     </div>
+ <div class="image-container">
+    <img src="images\triangles\t1.png" alt="Image 1" class="image-left" style="top: 80px;">
+    <img src="images\triangles\t2.png" alt="Image 2" class="image-right" style="top: 300px;">
+    <img src="images\triangles\t3.png" alt="Image 3" class="image-left" style="top: 420px;">
+</div>
+    <!-- Part1 content -->
+    
+
+      <div class="horizontal-flex">
+        <div class="flex-box">
+            <div style="font-weight: 700; color: rgb(47,49,125); font-size: 18px; align-items: center;">
+                AI-Powered
+            </div>
+            <p style="font-size: 28px; font-weight: 750;  letter-spacing: 0px; margin: 0;">
+                <span style="color: rgb(20,23,108);">Full Stack </span>
+                <span style="color: rgb(19,58,165);">No Code<br>Low Code </span>
+                <span style="color: rgb(20,23,108);">Framework</span>
+            </p>   
+
+            <div class="bullet-point">
+                <img src="images/bullet.png" alt="bullet" class="bullet-image">
+                <div class="bullet-text">Robust enterprise systems delivered in weeks</div>
+            </div>
+            <div class="bullet-point">
+                <img src="images/bullet.png" alt="bullet" class="bullet-image">
+                <div class="bullet-text">Streamlined development & automated workflows</div>
+            </div>
+            <div class="bullet-point">
+                <img src="images/bullet.png" alt="bullet" class="bullet-image">
+                <div class="bullet-text">Great quality with unbeatable performance</div>
+            </div>
+            <div class="bullet-point">
+                <img src="images/bullet.png" alt="bullet" class="bullet-image">
+                <div class="bullet-text">Highest cybersecurity standards</div>
+            </div>
+            <div class="bullet-point">
+                <img src="images/bullet.png" alt="bullet" class="bullet-image">
+                <div class="bullet-text">Efficient and transparent development process</div>
+            </div>
+
+            <button class="connect-btn">
+                Connect with us | <img src="images/Connect_with_us.png" alt="icon" style="height:16px;object-fit:cover;">
+            </button>
+        </div>
+        
+        <div class="flex-box video-box">
+            <video autoplay loop muted playsinline>
+                <source src="FullStackNoCodeLowCode.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+     </div>
+
+      
+
+
+
+     <div class="vertical-flex-container">
+        <div class="flex-box text-boxes">
+            <div style="font-size: 24px; font-weight: 700; letter-spacing: 0px;line-height: 0.8; margin: 0; color: rgb(20,23,108)">
+                Revolutionize Enterprise Solutions with No-Code/Low-Code
+            </div>
+            
+            <div style="font-size: 10px; letter-spacing: 0px; margin-top: 35px; color: rgb(20,23,108); text-align: center;">
+                In today's fast-paced business environment, deftness is key. 
+                At Ethical Intelligent Technologies, we enable<br>enterprises to quicken their digital 
+                transformation through No-Code/Low-Code platforms. Our solutions permit your<br> teams to 
+                construct, customize, and scale enterprise-grade software-without the complexity of traditional coding.
+            </div>
+       
+            <div style="font-size: 24px; font-weight: 750;  letter-spacing: 0.3px; margin: 0; color: rgb(20,23,108); margin-top: 37px;text-align: center;">
+                Below is a showcase of our applications, built<br>utilizing No-Code/Low-Code framework
+            </div>
+        </div>
+     </div>
+
+    <!-- Part2 content -->
+     <div class="main-container">
+        <div class="image-column">
+            <img src="images\ShowCase\image1.png" alt="Image 1" class="gallery-image" 
+                 onclick="showImage('images\\ShowCase\\image1.png', 'Rental Application')">
+            <img src="images\ShowCase\image2.png" alt="Image 2" class="gallery-image" 
+                 onclick="showImage('images\\ShowCase\\image2.png', 'Fleet Tracking Application')">
+            <img src="images\ShowCase\image3.png" alt="Image 3" class="gallery-image" 
+                 onclick="showImage('images\\ShowCase\\image3.png', 'Diesel Generator Monitoring')">
+            <img src="images\ShowCase\image4.png" alt="Image 4" class="gallery-image" 
+                 onclick="showImage('images\\ShowCase\\image4.png', 'Telecom Power Monitoring')">
+            <img src="images\ShowCase\image5.png" alt="Image 5" class="gallery-image" 
+                 onclick="showImage('images\\ShowCase\\image5.png', 'Street Lights Monitoring')">
+        </div>
+        
+        <div class="display-screen" id="displayScreen" 
+             onmouseenter="pauseSlideshow()" 
+             onmouseleave="resumeSlideshow()">
+            <div class="image-title" id="display-title">Rental Application</div>
+            <img src="images\ShowCase\image1.png" alt="Display Image" class="display-image" id="display-img">
+        </div>
+        
+        <div class="image-column">
+            <img src="images\ShowCase\image6.png" alt="Image 6" class="gallery-image" 
+                 onclick="showImage('images\\ShowCase\\image6.png', 'GE Fleet Mobile Tracking')">
+            <img src="images\ShowCase\image7.png" alt="Image 7" class="gallery-image" 
+                 onclick="showImage('images\\ShowCase\\image7.png', 'Data Center Environment')">
+            <img src="images\ShowCase\image8.png" alt="Image 8" class="gallery-image" 
+                 onclick="showImage('images\\ShowCase\\image8.png', 'Diesel Generator Monitoring')">
+            <img src="images\ShowCase\image9.png" alt="Image 9" class="gallery-image" 
+                 onclick="showImage('images\\ShowCase\\image9.png', 'Property Management')">
+            <img src="images\ShowCase\image10.png" alt="Image 10" class="gallery-image" 
+                 onclick="showImage('images\\ShowCase\\image10.png', 'Airport Compliance System')">
+        </div>
+     </div>
+
+     <!-- Part3 content -->
+      <div class="parent">
+        <div class="left">
+            <div style="font-size: 24px; 
+                color: rgb(11,75,183);text-align: left;font-weight: 700;">Design. Validate.<br>Deploy.</div> 
+            <div style="font-size: 24px; 
+                color: rgb(20,23,108);text-align: left;font-weight: 700;">All Without<br>Writing Code.</div>
+        </div>
+        
+        <div class="right">
+            <div class="row first-row">
+                <div class="box">
+                    <div class="box-number">1</div> 
+                    <b>Intuitive Drag-and-<br>Drop Interface</b>
+                    <div class="spacer"></div>
+                    Build application screens visually,
+                    <br>thereby removing the intricacies<br>
+                    associated with manual layouts.
+                </div>
+                <div class="box">
+                    <div class="box-number">2</div> 
+                    <b>Customized UI<br>Options</b>
+                    <div class="spacer"></div>
+                    Utilize adaptable, mobile-<br>
+                    responsive UI elements designed<br>
+                    for distinctive applications.
+                </div>
+            </div>
+            <div class="row second-row">
+                <div class="box">
+                    <div class="box-number">3</div> 
+                    <b>Immediate<br>Validation</b>
+                    <div class="spacer"></div>Instantly test your application on<br>
+                    real devices for quick feedback<br>and seamless iteration.
+                </div>
+                <div class="box">
+                    <div class="box-number">4</div> 
+                    <b>Efficient<br>Deployment</b>
+                    <div class="spacer"></div>Enhance the deployment process<br>with automated generation of APK<br>files.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Part4 content -->
+    <div class="parent-flex">
+        <div class="child-1">
+            <span class="heading-part" style="color: rgb(11,75,183);">AI-Powered</span>
+            <span class="heading-part" style="color: rgb(20,23,108);"> Prompt-to-UI Generation</span>
+        </div>
+
+        <div class="child-row-2">
+            <div class="child-2">
+                Generate fully functional UI components—such as tables, dashboards, or forms—just by describing them in natural language. Instantly get:
+                <div class="spacer"></div> 
+
+                <ul style="list-style-type: square;padding-left: 20px; margin-left: 0;">
+                    <li style="padding-left: 1px;">Beautiful layouts with mock data</li>
+                    <li style="padding-left: 1px;">Editable fields for manual adjustments</li>
+                    <li style="padding-left: 1px;">Exportable JSON or code-ready components</li>
+                </ul>
+                <div class="spacer"></div>AI-enhanced feature radically speeds up prototyping, reduces UI/UX bottlenecks, and empowers teams with minimal design skills to produce production-grade interfaces.
+            </div>
+
+            <div class="child-3">
+                <div class="sub-flex sub-flex-1">
+                    <img src="images\PromptToUI\BackgroundPattern.png" alt="Top Right">
+                </div>
+                <div class="sub-flex sub-flex-2">
+                    <img src="images\PromptToUI\BackgroundPattern.png" alt="Bottom Left">
+                </div>
+                <div class="sub-flex sub-flex-3">
+                    <img src="images\PromptToUI\DemoMain.png" alt="Center">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Part5 content -->
+    <div class="video-container">
+        <h1 style="line-height: 0.8;"><span style="color:rgb(20,23,108);font-size: 24px;">Watch How AI Turns Your Words into</span><br>
+            <span style="color:rgb(11,75,183);font-size: 24px;">Functional UI Components</span></h1>
+        <div class="video-wrapper">
+            <video autoplay loop muted playsinline>
+                <source src="WordsToComponent.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+
+    <!-- Part6 content -->
+    <h1 class="main-heading">How This Works</h1>
+    <div class="image-container">
+    <img src="images\triangles\t3.png" alt="Image 1" class="image-left" style="top: 350px;">
+    <img src="images\triangles\t2.png" alt="Image 2" class="image-right" style="top: 100px;">
+    <img src="images\triangles\t4.png" alt="Image 3" class="image-left" style="top: 700px;">
+    <img src="images\triangles\t5.png" alt="Image 2" class="image-right" style="top: 1000px;">
+
+</div>
+    
+    <div class="flex-container">
+        <img class="connector connector-1" src="images\HowThisWorks\RightArrow.png" alt="Connector 1">
+        <img class="connector connector-2" src="images\HowThisWorks\LeftArrow.png" alt="Connector 2">
+        <img class="connector connector-3" src="images\HowThisWorks\RightArrow.png" alt="Connector 3">
+        <img class="connector connector-4" src="images\HowThisWorks\LeftArrow.png" alt="Connector 4">
+        
+        <div class="flex-row">
+            <div class="flex-item">
+                <div class="image-box">
+                    <img src="images\HowThisWorks\image1.png" alt="Service 1">
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="text-box">
+                    <h3>AI-Powered Visual Composition</h3>
+                    <p>Design smarter with AI-driven prompts and intuitive drag-and-drop tools.
+                         Quickly create pages, dashboards, and widgets—visually or by describing them.
+                         AI handles layout, mock data, and code, giving you speed, accuracy, and full control.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex-row">
+            <div class="flex-item">
+                <div class="text-box">
+                    <h3>Data Integration</h3>
+                    <p>Connect to multiple data sources,
+                         including databases, APIs, and third-party services,
+                          using visual connectors. The platform handles data mapping and
+                           transformation, allowing seamless data exchange between systems.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="image-box">
+                    <img src="images\HowThisWorks\image2.png" alt="Service 2">
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex-row">
+            <div class="flex-item">
+                <div class="image-box">
+                    <img src="images\HowThisWorks\image3.png" alt="Service 3">
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="text-box">
+                    <h3>Logic Definition</h3>
+                    <p>Use a visual workflow
+                         editor to define application logic and business rules.
+                          Model automated processes, decision trees, and event-driven actions without coding.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex-row">
+            <div class="flex-item">
+                <div class="text-box">
+                    <h3>Deployment and Scaling</h3>
+                    <p>Deploy your applications to the cloud or on-premises
+                         environments with one-click deployment. It will
+                          automatically scale, secure, and maintain those
+                           environments with high availability and performance.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="image-box">
+                    <img src="images\HowThisWorks\image4.png" alt="Service 4">
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex-row">
+            <div class="flex-item">
+                <div class="image-box">
+                    <img src="images\HowThisWorks\image5.png" alt="Service 5">
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="text-box">
+                    <h3>Customization & Extension (Low-Code)</h3>
+                    <p>For more complex use cases,
+                         developers can extend the functionalities of the
+                          platform by adding custom code using standard programming
+                           languages, such as Java, Python, or JavaScript. This opens the
+                            way for you to develop complex features and integrations beyond
+                             those already built into the platform.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Combined JavaScript from all files
+        let currentImageIndex = 0;
+        let slideshowInterval;
+        let isPaused = false;
+        const imageFiles = [
+            { src: 'images/ShowCase/image1.png', title: 'Rental Application' },
+            { src: 'images/ShowCase/image2.png', title: 'Fleet Tracking Application' },
+            { src: 'images\\ShowCase\\image3.png', title: 'Diesel Generator Monitoring' },
+            { src: 'images\\ShowCase\\image4.png', title: 'Telecom Power Monitoring' },
+            { src: 'images\\ShowCase\\image5.png', title: 'Street Lights Monitoring' },
+            { src: 'images\\ShowCase\\image6.png', title: 'GE Fleet Mobile Tracking' },
+            { src: 'images\\ShowCase\\image7.png', title: 'Data Center Environment' },
+            { src: 'images\\ShowCase\\image8.png', title: 'Diesel Generator Monitoring' },
+            { src: 'images\\ShowCase\\image9.png', title: 'Property Management' },
+            { src: 'images\\ShowCase\\image10.png', title: 'Airport Compliance System' }
+        ];
+        
+        function showImage(src, title) {
+            clearInterval(slideshowInterval);
+            document.getElementById('display-img').src = src;
+            document.getElementById('display-title').textContent = title;
+            
+            currentImageIndex = imageFiles.findIndex(img => img.src === src);
+            
+            if (!isPaused) {
+                setTimeout(startSlideshow, 5000);
+            }
+        }
+        
+        function nextImage() {
+            if (!isPaused) {
+                currentImageIndex = (currentImageIndex + 1) % imageFiles.length;
+                const image = imageFiles[currentImageIndex];
+                document.getElementById('display-img').src = image.src;
+                document.getElementById('display-title').textContent = image.title;
+            }
+        }
+        
+        function startSlideshow() {
+            clearInterval(slideshowInterval);
+            slideshowInterval = setInterval(nextImage, 5000);
+        }
+        
+        function pauseSlideshow() {
+            isPaused = true;
+            clearInterval(slideshowInterval);
+        }
+        
+        function resumeSlideshow() {
+            isPaused = false;
+            startSlideshow();
+        }
+        
+        window.onload = function() {
+            document.getElementById('display-img').src = imageFiles[0].src;
+            document.getElementById('display-title').textContent = imageFiles[0].title;
+            startSlideshow();
+        };
+    </script>
+</body>
+</html>

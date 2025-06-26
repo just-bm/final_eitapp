@@ -1,0 +1,2223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIT - AI-Powered Office Automation</title>
+     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/styles_Y.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/newstyle.css" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Cairo:wght@200..1000&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="canonical" href="https://ethicalintelligent.com/about-us" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Reem+Kufi:wght@400..700&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1270px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #374151;
+            font-weight: 500;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        .chevron-down {
+            width: 16px;
+            height: 16px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: #374151;
+            cursor: pointer;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-top: 1px solid #e5e7eb;
+            background: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 2rem 1rem;
+            overflow: hidden;
+            background: white;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, rgb(239 246 255), rgb(219 234 254));
+        }
+
+        .hero-bg-elements {
+            position: absolute;
+            inset: 0;
+        }
+
+        .hero-bg-element-1 {
+            position: absolute;
+            top: 5rem;
+            left: 2.5rem;
+            width: 18rem;
+            height: 18rem;
+            background: rgba(59, 130, 246, 0.15);
+            border-radius: 50%;
+            filter: blur(60px);
+        }
+
+        .hero-bg-element-2 {
+            position: absolute;
+            bottom: 5rem;
+            right: 2.5rem;
+            width: 24rem;
+            height: 24rem;
+            background: rgba(147, 197, 253, 0.15);
+            border-radius: 50%;
+            filter: blur(60px);
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-text {
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            background: #dbeafe;
+            color: #1d4ed8;
+            border: 1px solid #93c5fd;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-badge .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 0.5rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #2563eb, #1e40af);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #4b5563;
+            margin-bottom: 3rem;
+            max-width: 48rem;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 1rem 2.5rem;
+            border-radius: 0.5rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, #2563eb, #1d4ed8);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(to right, #1d4ed8, #1e40af);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #1d4ed8;
+            border: 1px solid #2563eb;
+        }
+
+        .btn-outline:hover {
+            background: #eff6ff;
+        }
+
+        .btn .icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .btn .icon-left {
+            margin-right: 0.5rem;
+        }
+
+        .btn .icon-right {
+            margin-left: 0.5rem;
+        }
+
+        .icononly {
+            width: 40px;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 64rem;
+            margin: 0 auto;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-1 {
+            color: #2563eb;
+        }
+
+        .stat-2 {
+            color: #1d4ed8;
+        }
+
+        .stat-3 {
+            color: #1e40af;
+        }
+
+        .stat-label {
+            color: #4b5563;
+        }
+
+        .hero-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            border-radius: 1rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            width: 100%;
+            max-width: 32rem;
+            background: #111827;
+            padding: 1rem;
+        }
+
+        /* Workflow Section */
+        .workflow {
+            padding: 5rem 1rem;
+            background: #f9fafb;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: #4b5563;
+            max-width: 48rem;
+            margin: 0 auto;
+        }
+
+        .workflow-image {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 3rem;
+            justify-content: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .workflow-image img {
+            border-radius: 1rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            max-width: 64rem;
+            width: 30%;
+            height: 16rem;
+            object-fit: cover;
+            justify-content: center;
+        }
+
+        .workflow-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .workflow-step {
+            background: #1e293b80;
+            border: 1px solid rgba(71, 85, 105, 0.5);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            text-align: center;
+            width: 100%;
+            max-width: 12rem;
+            transition: all 0.3s;
+        }
+
+        .workflow-step:hover {
+            border-color: rgba(59, 130, 246, 0.5);
+        }
+
+        .step-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+
+        .step-icon svg {
+            width: 2rem;
+            height: 2rem;
+            color: white;
+        }
+
+        .step-icon.green {
+            background: #22c55e;
+        }
+
+        .step-icon.blue {
+            background: #3b82f6;
+        }
+
+        .step-icon.purple {
+            background: #a855f7;
+        }
+
+        .step-icon.cyan {
+            background: #06b6d4;
+        }
+
+        .step-icon.orange {
+            background: #f97316;
+        }
+
+        .step-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-desc {
+            font-size: 0.875rem;
+            color: #93c5fd;
+        }
+
+        .arrow {
+            color: #60a5fa;
+            font-size: 2rem;
+            display: none;
+        }
+
+        .tech-stack {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .tech-stack p {
+            color: #93c5fd;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .tech-tag {
+            background: rgba(30, 41, 59, 0.5);
+            color: #93c5fd;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+
+        /* Departments Section */
+        .departments {
+            padding: 5rem 1rem;
+            background: white;
+        }
+
+        .departments-badge {
+            display: inline-flex;
+            align-items: center;
+            background: #dbeafe;
+            color: #1d4ed8;
+            border: 1px solid #93c5fd;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            margin-bottom: 1rem;
+        }
+
+        .departments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .department-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .department-card:hover {
+            border-color: #93c5fd;
+            box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.1);
+            transform: scale(1.02);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .card-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .card-icon svg {
+            width: 2rem;
+            height: 2rem;
+            color: white;
+        }
+
+        .card-icon.blue-1 {
+            background: linear-gradient(to bottom right, #3b82f6, #2563eb);
+        }
+
+        .card-icon.blue-2 {
+            background: linear-gradient(to bottom right, #2563eb, #1d4ed8);
+        }
+
+        .card-icon.blue-3 {
+            background: linear-gradient(to bottom right, #3b82f6, #1d4ed8);
+        }
+
+        .card-icon.blue-4 {
+            background: linear-gradient(to bottom right, #2563eb, #1e40af);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #111827;
+            flex: 1;
+        }
+
+        .card-description {
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            color: #374151;
+        }
+
+        .feature-dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            background: #3b82f6;
+            border-radius: 50%;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .feature-text {
+            font-size: 0.875rem;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 5rem 1rem;
+            background: #f9fafb;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            border-color: #93c5fd;
+            box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.1);
+        }
+
+        .feature-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+
+        .feature-icon svg {
+            width: 2rem;
+            height: 2rem;
+            color: white;
+        }
+
+        .feature-icon.feature-1 {
+            background: linear-gradient(to right, #3b82f6, #2563eb);
+        }
+
+        .feature-icon.feature-2 {
+            background: linear-gradient(to right, #2563eb, #1d4ed8);
+        }
+
+        .feature-icon.feature-3 {
+            background: linear-gradient(to right, #3b82f6, #1d4ed8);
+        }
+
+        .feature-icon.feature-4 {
+            background: linear-gradient(to right, #2563eb, #1e40af);
+        }
+
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+
+        .feature-description {
+            color: #4b5563;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 5rem 1rem;
+            background: linear-gradient(to right, #2563eb, #1d4ed8);
+        }
+
+        .cta-container {
+            max-width: 64rem;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .cta-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(16px);
+            padding: 2rem;
+            border-radius: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .cta h2 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta p {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            max-width: 41rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-white {
+            width: 334px;
+            height: 75px;
+            background: white;
+            color: #1d4ed8;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .btn-white:hover {
+            background: #f3f4f6;
+            transform: translateY(-2px);
+            background: #f3f4f6;
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .btn-outline-white:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(90deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+
+
+
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: white;
+            padding: 4rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-main {
+            space-y: 2rem;
+        }
+
+        .footer-main h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .footer-main p {
+            font-size: 1.125rem;
+            color: #d1d5db;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #60a5fa;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #60a5fa;
+        }
+
+        .footer-contact {
+            background: #374151;
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid #4b5563;
+        }
+
+        .footer-contact h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .footer-contact p {
+            color: #d1d5db;
+            font-size: 0.875rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            background: #4b5563;
+            border: 1px solid #6b7280;
+            color: white;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #9ca3af;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        .contact-form textarea {
+            min-height: 5rem;
+            resize: none;
+        }
+
+        .contact-form button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #1d4ed8;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom p {
+            color: #9ca3af;
+            font-size: 0.875rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            color: #9ca3af;
+            transition: color 0.3s;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #60a5fa;
+            background: #374151;
+        }
+
+        .social-links svg {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+
+        .cta-btn {
+            background: linear-gradient(90deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (min-width: 640px) {
+            .hero-buttons {
+                flex-direction: row;
+            }
+
+            .cta-buttons {
+                flex-direction: row;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero-text {
+                text-align: left;
+            }
+
+            .hero h1 {
+                font-size: 4rem;
+            }
+
+            .hero-stats {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .stat {
+                text-align: left;
+            }
+
+            .workflow-steps {
+                flex-direction: row;
+            }
+
+            .arrow {
+                display: block;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .mobile-menu.active {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .hero-stats {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .departments-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                display: block;
+                grid-template-columns: 2fr 1fr;
+                gap: 3rem;
+                margin-bottom: 2rem;
+            }
+
+            .footer-links {
+                display: block;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="images/new/EIT New Logo.webp" alt="EIT - Transforming Businesses Through IT">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services
+                        <svg class="chevron-down" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#white-label">White Label</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#careers">Careers</a>
+            <a href="#white-label">White Label</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-bg-elements">
+            <div class="hero-bg-element-1"></div>
+            <div class="hero-bg-element-2"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16" style="word-spacing: 1rem;">
+                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+                    </svg> 
+                        AI-Powered Automation Platform
+                </div>
+
+                <h1>
+                    🌐 AI-Powered Office
+                    <span class="gradient-text"> Automation</span>
+                </h1>
+
+                <p>
+                    Unlock Efficiency Across Every Department. Transform your day-to-day operations with intelligent,
+                    connected workflows tailored to each department in your organization.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">
+                        <svg class="icon icon-left" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        Start Automating
+                        <svg class="icon icon-right" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5-5 5M6 12h12"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="btn btn-outline">
+                        <svg class="icon icon-left" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                        View Workflows
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number stat-1">100+</div>
+                        <div class="stat-label">App Integrations</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number stat-2">70%</div>
+                        <div class="stat-label">Time Saved</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number stat-3">24/7*365</div>
+                        <div class="stat-label">Automated Operations</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="./images/lovable-uploads/2428c53b-caab-471e-a986-95d6fe09ca3f.png"
+                    alt="AI Workflow Automation Diagram">
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section class="workflow">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Powered by Advanced Workflow Automation
+                </h2>
+                <p class="section-subtitle">
+                    Our platform creates AI-powered intelligent workflows that connect your favorite tools and automate
+                    complex business processes.
+                </p>
+            </div>
+
+            <div class="workflow-image">
+                <img src="./images/lovable-uploads/68716a05-3b1f-4c37-aa27-75960f95cd30.png"
+                    alt="Workflow Automation Dashboard">
+            </div>
+
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <div class="step-icon" style="background: #10b981;">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="step-title">Data Input</div>
+                    <div class="step-desc">Multiple sources</div>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="workflow-step">
+                    <div class="step-icon" style="background: #3b82f6;">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="step-title">AI Processing</div>
+                    <div class="step-desc">Smart automation</div>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="workflow-step">
+                    <div class="step-icon cyan">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <div class="step-title">Workflow Engine</div>
+                    <div class="step-desc">Advanced automation</div>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="workflow-step">
+                    <div class="step-icon cyan">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="step-title">Integration</div>
+                    <div class="step-desc">100+ apps</div>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="workflow-step">
+                    <div class="step-icon orange">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="step-title">Results</div>
+                    <div class="step-desc">Real-time insights</div>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <p>Powered by industry-leading automation technology:</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Advanced Workflows</span>
+                    <span class="tech-tag">AI Decision Trees</span>
+                    <span class="tech-tag">Real-time Processing</span>
+                    <span class="tech-tag">Cloud Integration</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section class="departments" id="departments">
+        <div class="container">
+            <div class="section-header">
+                <div class="departments-badge">
+                    🔄 Departments We Automate
+                </div>
+                <h2 class="section-title">
+                    Efficiency Across Every Department
+                </h2>
+                <p class="section-subtitle">
+                    Our automation services are designed to be adaptable across industries and scalable for businesses
+                    of all sizes.
+                    Explore how we empower each department with intelligent efficiency.
+                </p>
+            </div>
+
+            <div class="departments-grid">
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-icon blue-1">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Digital Marketing</h3>
+                    </div>
+                    <p class="card-description">
+                        Make your marketing effortless with automation that saves time and boosts results.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Social Media Scheduler</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Content Distribution</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">SEO Report Automation</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Email Campaign Trigger</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Lead Magnet Delivery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-icon blue-2">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Sales & CRM</h3>
+                    </div>
+                    <p class="card-description">
+                        Streamline your entire sales process—from capturing leads to closing deals—with smart
+                        automation.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Lead Capture & Qualification</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Follow-up Emails and Reminders</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Proposal and Invoice Generation</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Sales Notifications</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Performance Reporting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-icon blue-3">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Human Resources</h3>
+                    </div>
+                    <p class="card-description">
+                        Make your HR operations faster, smarter, and stress-free with automation.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Employee Onboarding</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Interview Scheduling</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Leave Management</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Payroll Preparation</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Resume Parsing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-icon blue-4">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16l-3-9m3 9l3-9">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Finance & Accounts</h3>
+                    </div>
+                    <p class="card-description">
+                        Simplify financial operations and ensure accuracy with smart automation workflows.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Invoice Reminders</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Expense Tracking</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Payroll Report Generator</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Profit & Loss Summary</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Tax filing Reminders</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-icon blue-1">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Developers</h3>
+                    </div>
+                    <p class="card-description">
+                        Streamline your development workflows with smart automation that keeps everyone in sync.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">GitHub to Jira Sync</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Deployment Alerts</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Bug Tracking Alerts</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Documentation Reminders</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Log Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-icon blue-4">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Cloud Computing & DevOps</h3>
+                    </div>
+                    <p class="card-description">
+                        Automate key DevOps tasks for better uptime, cost control, and faster deployments.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Server Monitoring</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Automated Backups</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Cloud Cost Tracking</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">CI/CD Alerts</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Auto-Scaling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-icon blue-2">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">QA & Testing</h3>
+                    </div>
+                    <p class="card-description">
+                        Streamline bug tracking, test reports, failure alerts, and regression logs.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Auto Bug Logging</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Test Result Alerts</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Automated Test Runs</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Regression Reminders</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Issue Tracking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-icon blue-3">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Customer Support</h3>
+                    </div>
+                    <p class="card-description">
+                        Make your support team faster and more efficient by automating everyday tasks.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Request Automation</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Service Management</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Feedback Collection</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Knowledge Sync</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-icon blue-4">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">UI/UX & Design</h3>
+                    </div>
+                    <p class="card-description">
+                        Simplify your design process — automate asset management, approvals, feedback, and publishing in
+                        one seamless flow.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Asset Backup & Version Control</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Design Approval Workflow</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Creative Request Automation</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Prototype Sharing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="department-card">
+                    <div class="card-header">
+                        <div class="card-icon blue-1">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6m8 0H8m0 0H6a2 2 0 00-2 2v6a2 2 0 002 2h2m0 0h8a2 2 0 002-2v-6a2 2 0 00-2-2h-2m0 0V6a2 2 0 012-2h4a2 2 0 012 2v2m0 0v6a2 2 0 01-2 2h-2m0 0H10m4 0h2a2 2 0 002-2v-2a2 2 0 00-2-2h-2v4z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Project Management</h3>
+                    </div>
+                    <p class="card-description">
+                        Auto-create tasks in tools like Asana, Trello, or ClickUp when a new project starts.
+                    </p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Smart Task Assignment</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Progress Updates</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Time Tracking Sync</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Gantt Chart Creation</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span class="feature-text">Client Reporting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    💡 Why Choose Our Platform?
+                </h2>
+                <p class="section-subtitle">
+                    Built with cutting-edge technology and designed for the modern workplace
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon feature-1">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">AI-Enhanced Workflows</h3>
+                    <p class="feature-description">
+                        Smart logic, conditional triggers, and real-time decisions that adapt to your business needs.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-2">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Tool Integration</h3>
+                    <p class="feature-description">
+                        Connect 100+ apps across cloud, CRM, ERP, and more with seamless data flow.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-3">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16l-3-9m3 9l3-9">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Customizable Architecture</h3>
+                    <p class="feature-description">
+                        Tailored workflows that scale with your business needs and grow with your team.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-4">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Global Reach</h3>
+                    <p class="feature-description">
+                        We serve clients worldwide, across industries and time zones with 24/7 support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-container">
+            <div class="cta-card">
+                <h2>📩 Ready to Automate Your Office?</h2>
+                <p>
+                    Talk to our experts today to build a solution that saves time, reduces manual effort,
+                    and elevates your operational productivity.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-white">
+                        Start Free Consultation
+                        <svg class="icon icon-right icononly" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5-5 5M6 12h12"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="btn-outline-white">
+                        View Pricing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="footer" >
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <title>footer</title>
+                <style>
+                    .footer-section{
+                        width: 98vw;
+                        max-width: 1400px;
+                    }
+                    .list-items a{
+                        text-decoration: none !important;
+                        color: #5c5b5b !important;
+                        font-weight: 400;
+                    }
+                    .list-items a:hover{
+                        text-decoration: none !important;
+                        color: black !important;
+                        font-weight: 400;
+                    }
+                    .contact-btn a{
+                        text-decoration: none;
+                        font-size: 10rem !important;
+                        font-weight: 600;
+                        color: white !important;
+                    }
+                    .contact-btn:hover{
+                        background-color: #0e4bdb;
+                    }
+                    .footer-parent-container{
+                        position: relative;
+                        height: 5vh;
+                        width: 100vh;
+                        padding-bottom: none;
+                        margin-bottom: none;
+                    }
+                    .footer-purple-container{
+                        z-index:2;
+                        font-family: "Plus Jakarta Sans", sans-serif;
+                        height: 42.5vh;
+                        width: 60.5vw;
+                        background-color: #14166C;
+                        border-radius: 2rem;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        margin-left: 37.5%;
+                        margin-top: 0vh;
+                        gap: 2vw;
+                    }
+                    .footer-tagline-1{
+                        margin-top: 3.5vh;
+                        font-size: 2.15rem;
+                        font-weight: 550;
+                        color: #0B4CB8;
+                    }
+                    .footer-tagline-2{
+                        color: white;
+                        font-size: 2.15rem;
+                        font-weight: 500;
+                        margin-top: -5vh;
+                    }
+                    .footer-subtitle{
+                        margin-top: 3.5vh;
+                        color: white;
+                        font-size: 1.35rem;
+                        font-weight: 200;
+                    }
+                    .footer-text-section h5{
+                        color: white;
+                        font-size: 1.25rem;
+                        margin-top: 1vw;
+                    }
+                    .contact-btn{
+                        margin-top: -25vh;
+                        font-family: "Plus Jakarta Sans", sans-serif;
+                        border: none;
+                        border-radius: 3rem;
+                        width: 8vw;
+                        height: 8vh;
+                        background-color: #658DE9;
+                    }
+                    .footer-white-container{
+                        box-shadow: 4px 6px 20px rgba(0,0,0,0.3);
+                        z-index: 1;
+                        font-family: "Plus Jakarta Sans", sans-serif !important;
+                        width: 92.5vw;
+                        font-size: 1.5rem;
+                        margin-top: 7.5%;
+                        margin-left: 3vw;
+                        height: 66vh;
+                        background-color: white;
+                        display: flex;
+                        flex-direction: column;
+                        flex: 1;
+                        border-radius: 2rem;
+                        margin-bottom: none;
+                    }
+                    .footer-row-1{
+                        height: 90vh;
+                        padding-bottom: 0.5vh;
+                        margin-top: 26vh;
+                        display: flex;
+                        flex-direction: row;
+                        flex: 1;
+                        width: 100%;
+                        justify-content: space-around;
+                        border-bottom: 1px solid rgb(184, 182, 182);
+                    }
+                    .footer-side-2{
+                        display: flex;
+                        flex-direction: row;
+                        flex: 1;
+                        margin-left: 3vw;
+                        gap: 2.5vw;
+                    }
+                    .footer-col-2-1{
+                        color: #5c5b5b;
+                        margin-left: 1vw;
+                    }
+                    ul{
+                        list-style-type: none;
+                    }
+                    li{
+                        color: #5c5b5b !important;
+                    }
+                    .footer-list-title{
+                        color: #000552 !important;
+                        font-weight: 600;
+                    }
+                    .footer-row-2{
+                        color: #5c5b5b !important;
+                        margin-top: 3vh;
+                        margin-left: -4.5vw;
+                        width: 92.5vw;
+                        height: 10vh;
+                        display: flex;
+                        flex-direction: row;
+                        flex: 1;
+                        justify-content: space-around;
+                        gap: 5vw;
+                    }
+                    .footer-side-1{
+                        margin-left: 5%;
+                    }
+                    .footer-icon-image{
+                        height: 35vh;
+                        width: 21.5vw;
+                        margin-top: 5vh;
+                        margin-left: -2.5vw;
+                        padding: 1rem;
+
+                    }
+                    .footer-col-2-2{
+                        text-decoration: none !important;
+                        color: #5c5b5b !important;
+                        font-weight: 400;
+                    }
+                    .footer-col-2-3{
+                        text-decoration: none !important;
+                        color: #5c5b5b !important;
+                        font-weight: 400;
+                    }
+                    .footer-col-2-4{
+                        display: inline-block;
+                    }
+                    .footer-detail-1{
+                        margin-top: -12.5%;
+                        margin-left: 15%;
+                    }
+                    .footer-detail-2{
+                        margin-top: -12.5%;
+                        margin-left: 15%;
+                    }
+                    .footer-social-media-links{
+                        display: flex;
+                        gap: 1.5vw;
+                    }
+                    @media (max-width: 1150px) and (min-width: 768px){
+                        .footer-parent-container{
+                            position: relative;
+                            height: 5vh;
+                            width: 97.5vw;
+                        }
+                        .footer-white-container{
+                            font-size: 1.3rem;
+                            width: 94vw;
+                            height: 97.5vh;
+                        }
+                        .footer-purple-container{
+                            margin-left: 15vw;
+                            height: 45vh;
+                            width: 67.5vw;
+                            gap: 17.5vw;
+                        }
+                        .footer-icon-section{
+                            height: 40vh;
+                            width: 25vw;
+                            margin-top: 0vh;
+                            margin-left: 7.5vw;
+                        }
+                        .footer-icon-image{
+                            padding: 1rem;
+                            margin-left: -2.5vw;
+                            margin-top: 6.5vh;
+                            height: 33vh;
+                        }
+                        .footer-text-section{
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            margin-left: -18.5vw;
+                            margin-top: 1vh;
+                            padding: 0.5rem;
+                        }
+                        .contact-btn{
+                            margin-top: -3vh;
+                            width: 11vw;
+                            height: 8.5vh;
+                        }
+                        .footer-row-1{
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            justify-content: space-around;
+                            align-items: center;
+                            margin-top: 32.5vh;
+                        }
+                        .footer-row-2{
+                            margin-top: 0.5vh;
+                            margin-left: -3.5vw;
+                            gap: 7.5vw;
+                        }
+                        .footer-tagline-1{
+                            font-size: 1.8rem;
+                            margin-top: 1vh;
+                        }
+                        .footer-tagline-2{
+                            font-size: 1.8rem;
+                            margin-top: -5vh;
+                        }
+                        .contact-btn a{
+                            font-size: 0.7rem;
+                        }
+                        .footer-subtitle{
+                            font-size: 1.2rem;
+                            margin-top: -1.5vh;
+                        }
+                        .footer-side-2{
+                            display: flex;
+                            flex-direction: row;
+                            flex: 1;
+                            justify-content: space-between;
+                            gap: 12.5rem;
+                            margin-left: -2vw;
+                            margin-top: 5vh;
+                        }
+                        .footer-side-1{
+                            display: flex;
+                            flex-direction: column ;
+                            justify-content: center;
+                            margin-top: -2.5vh;
+                            margin-left: -1.5vw;
+                            padding: 1rem;
+                        }
+                        .footer-col-2-1{
+                            text-align: center;
+                        }
+                        .footer-social-media-links{
+                            display: flex;
+                            gap: 1.5vw;
+                            justify-content: center;
+                            margin-left: -4vw;
+                            margin-top: -2.5vh;
+                        }
+
+                    }
+                    @media (max-width:768px) and (min-width:320px){
+                        .footer-parent-container{
+                            position: relative;
+                            height: 15vh;
+                            width: 100vw;
+                        }
+                        .footer-white-container{
+                            font-size: 1.15rem;
+                            width: 92.5vw;
+                            height: 100vh;
+                        }
+                        .footer-purple-container{
+                            margin-left: 17.5vw;
+                            height: 55vh;
+                            width: 65vw;
+                            gap: 17.5vw;
+                        }
+                        .footer-icon-section{
+                            height: 25vh;
+                            width: 20vw;
+                            margin-top: 0vh;
+                            margin-left: 7.5vw;
+                        }
+                        .footer-icon-image{
+                            padding: 1rem;
+                            margin-left: -5vw;
+                            margin-top: 6.5vh;
+                            height: 25vh;
+                        }
+                        .footer-text-section{
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            margin-left: -20vw;
+                            margin-top: 2.5vh;
+                            padding: 0.35rem;
+                        }
+                        .contact-btn{
+                            margin-top: -2vh;
+                            width: 15vw;
+                            height: 6.5vh;
+                        }
+                        .footer-row-1{
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            justify-content: space-around;
+                            align-items: center;
+                            margin-top: 40vh;
+                        }
+                        .footer-row-2{
+                            margin-top: 3vh;
+                            margin-left: -2.5vw;
+                        }
+                        .footer-tagline-1{
+                            font-size: 1.6rem;
+                            margin-top: 3.5vh;
+                        }
+                        .footer-tagline-2{
+                            font-size: 1.6rem;
+                            margin-top: -5vh;
+                        }
+                        .contact-btn a{
+                            font-size: 0.50rem;
+                        }
+                        .footer-subtitle{
+                            font-size: 1.2rem;
+                            margin-top: 1vh;
+                        }
+                        .footer-side-2{
+                            display: flex;
+                            flex-direction: row;
+                            flex: 1;
+                            justify-content: space-between;
+                            gap: 3rem;
+                            margin-left: -2vw;
+                            margin-top: 3.5vh;
+                        }
+                        .footer-side-1{
+                            display: flex;
+                            flex-direction: column ;
+                            justify-content: center;
+                            margin-top: -2.5vh;
+                            margin-left: -1.5vw;
+                            padding: 0.75rem;
+                        }
+                        .footer-col-2-1{
+                            text-align: center;
+                        }
+                        .footer-social-media-links{
+                            display: flex;
+                            gap: 1.5vw;
+                            justify-content: center;
+                            margin-left: -4vw;
+                        }
+                    }
+                </style>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+            </head>
+
+            <body class="footer-section">
+                <div class="footer-parent-container">
+                    <div class="footer-purple-container">
+                        <div class="footer-icon-section">
+                            <img class="footer-icon-image" src="./colorful-logo.png" alt="colorful icon" />
+                        </div>
+                        <div class="footer-text-section">
+                            <p class="footer-tagline-1">Let’s Work Together !</p>
+                            <br />
+                            <p class="footer-tagline-2">Have a project in mind? Let’s build<br />something great together.</p>
+                            <br />
+                            <button type="button" class="contact-btn"><span><a href="./contact-us.html"><h5>Contact Us</h5></a></span></button>
+                            <br />
+                            <p class="footer-subtitle">Start a conversation with our experts and discover how<br />our AI-powered solutions can transform your business.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="footer-white-container">
+                            <div class="footer-row-1">
+                                <div class="footer-side-1">
+                                    <div class="footer-col-2-1">
+                                        <img src="./Eit Logo.png" alt="logo of company" />
+                                        <br />
+                                        <p>Empowering businesses through Ethical and Intelligent IT,<br />IOT, and AI-driven digital solutions.</p>
+                                        <br />
+                                        <div class="footer-social-media-links">
+                                            <span><a href="https://www.facebook.com/ethicalintelligent"><img src="./Frame 1.png" alt="Facebook logo" /></a></span>
+                                            <span><a href="https://www.instagram.com/ethicalintelligent_/"><img src="./Frame 2.png" alt="Instagram logo" /></a></span>
+                                            <span><a href="https://www.linkedin.com/company/ethicalintelligent/?viewAsMember=true"><img src="./Frame 3-new.png" alt="Linkedin logo" /></a></span>
+                                            <span><a href="https://x.com/EITechnologies_"><img src="./Frame 4.png" alt="Twitter logo" /></a></span>
+                                            <span><a href="https://in.pinterest.com/ethicalintelligenttechnologies/_created/"><img src="./Frame 5.png" alt="Pinterest logo" /></a></span>
+                                            <span><a href="https://www.youtube.com/@eitworks"><img src="./Frame 6.png" alt="YouTube logo" /></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-side-2">
+                                    <div class="footer-col-2-2">
+                                        <ul>
+                                            <li><p class="footer-list-title">Company</p></li>
+                                            <li class="list-items"><span><a href="./about-us.html"><p>About Us</p></a></span></li>
+                                            <li class="list-items"><span><a href="./clients.html"><p>Clients</p></a></span></li>
+                                            <li class="list-items"><span><a href="./career"><p>Careers</p></a></span></li>
+                                            <li class="list-items"><span><a href="https://ethicalintelligent.com/blogs"><p>Blogs</p></a></span></li>
+                                        <ul>
+                                    </div>
+                                    <div class="footer-col-2-3">
+                                        <ul>
+                                            <li><p class="footer-list-title">Solutions</p></li>
+                                            <li class="list-items"><span><a href="./it-services.html"><p>IT Services</p></a></span></li>
+                                            <li class="list-items"><span><a href="./iot-services.html"><p>IOT</p></a></span></li>
+                                            <li class="list-items"><span><a href="./AI-office-automation" ><p>AI Office Automation</p></a></span></li>
+                                            <li class="list-items"><span><a href="./AI-Business-analytics" ><p>AI Business Analytics</p></a></span></li>
+                                            <li class="list-items"><span><a href="./AI no-code/low-code" ><p>AI no-code/low-code</p></a></span></li>
+                                        <ul>
+                                    </div>
+                                    <div class="footer-col-2-4">
+                                        <ul>
+                                            <li><p class="footer-list-title">Contact</p></li>
+                                            <li><img class="symbol-img" src="./clock.png" alt="icon of a clock" /><p class="footer-detail-1">Monday to Friday<br />9 AM - 8 PM IST</p></li>
+                                            <br />
+                                            <li><img class="symbol-img" src="./symbol.png" alt="icon of symbol" /><p class="footer-detail-2">sales@ethicalintelligent.com</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-row-2">
+                                <p class="footer-copyright">@2025AllRightsReserved<p>
+                                <p class="footer-policy-tag">Privacy Policy</p>
+                            </div>
+                    </div>
+                </div>
+            </body>
+        </html>
+
+            </section>
+
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+    </script>
+    <script>
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+        }
+
+        function handleContactForm(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                description: formData.get('description')
+            };
+
+            console.log('Contact form submitted:', data);
+            alert('Thank you for your interest! We will contact you soon.');
+            event.target.reset();
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileNav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+/* Critical CSS for above-the-fold content */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+#main_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#site_header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#navigation_bar {
+    background: transparent;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.content {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#logo {
+    float: left;
+    margin-right: 45px;
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    height: 80px;
+}
+
+#logo img {
+    height: 100%;
+    width: auto;
+}
+
+.section1nnn {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+} 

@@ -1,0 +1,22 @@
+RewriteEngine On
+
+# Ensure the domain is correct (avoid exposing the document root)
+RewriteCond %{REQUEST_URI} ^/var/www/eitworks.com/ [NC]
+RewriteRule ^(.*)$ / [R=301,L]
+
+# Redirect requests with .html to clean URLs
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Allow access to existing directories
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Internally rewrite clean URLs to their .html files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Prevent direct access to .html files (optional)
+RewriteCond %{THE_REQUEST} \.html [NC]
+RewriteRule ^ - [F]

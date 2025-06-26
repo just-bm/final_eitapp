@@ -1,0 +1,270 @@
+:root {
+  --logo-E-color: #0B4BB7;
+  --logo-I-color: #C43235;
+  --logo-T-color: #14176C;   
+}
+.goldenColorText {
+  background: -webkit-linear-gradient(var(--logo-E-color), var(--logo-T-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600; /** mark1 */
+  }
+  .goldenBgColor {
+    background: var(--goldenGradient) !important;
+  }
+  .globalBgColor {
+    background: var(--globalBgColor) !important;
+  }
+  
+  .paddingTop30 {
+    padding-top: 30px;
+  }
+  
+    /** first page */
+    .page1 {
+      background-image: url(../images/dashboardImg/homepageBg.png);
+      background-size: cover; position: relative; z-index: 0; height: 600px; display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+    }
+  
+    .page2 {
+      position: absolute;
+       width: 100%; 
+       height: 100%;
+        background: #ffffffa8;
+         z-index: -1;
+    }
+  
+  
+  .section1 {
+    text-align: center;
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+  
+  .imageSection {
+    display: flex; justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .imageSection div {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .imageSection div img {
+    height: 150px;
+  }
+  
+  .imageSection div h2 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .imgAnimation {  /** page1 Image effects */
+    animation: scaleImg 8s linear 2 alternate;
+  }
+  @keyframes scaleImg {
+    from{transform: scale(1)}
+    to{transform: scale(1.5)}
+  }
+  
+  /** first page end */
+  
+  
+  
+  /** Our Team  */
+  .hm-crdMain {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  .hm-topImgCstm {
+    vertical-align: middle;z-index: 1; transform: scale(1.8); position: relative; top: -40px;
+  }
+  .hm-cardCustm {
+    /* background: rgb(39, 39, 39) !important; */
+    background: linear-gradient(90deg, black, #0f5398) !important;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px 0px var(--golden2); 
+  }
+  .hm-cardMidle {
+    margin: 0 10px;
+  }
+  
+  /** Client Images section */ 
+  .secImgCont { /**mark2*/
+    display: flex; justify-content: space-evenly; align-items: center
+  }
+  
+  .secImgContMain {
+    height: 450px;
+    width: 400px;
+    margin-left: 50px;
+    overflow: hidden;
+    position: relative;
+  }
+  .secImgContContent {
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    animation: imgScroll 20s linear infinite;
+    display: grid;
+    gap: 15px;
+  }
+  
+  .secImgContSec {
+    height: 100px;
+    width: 150px;
+    text-align: center;
+    img {
+      height: 100%;
+    }
+  }
+  .secImgContContentRev {
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    animation: imgScrollRev 20s linear reverse infinite;
+    left: 200px;
+    display: grid;
+    gap: 15px;
+  }
+  
+  
+  .secImgContSecRev {
+    height: 80px;
+    width: 200px;
+    text-align: center;
+    img {
+      height: 100%;
+    }
+  }
+  @keyframes imgScroll {
+    0% {top: 0}
+    5% {top: 0}
+    95% {top: -460px} /** Add 65 when u add a new image */
+    100% {top: -460px} /** Add 65 when u add a new image */
+  }
+  @keyframes imgScrollRev {
+    0% {top: 0}
+    5% {top: 0}
+    95% {top: -460px} /** Add 65 when u add a new image */
+    100% {top: -460px} /** Add 65 when u add a new image */
+  }
+  
+  .secImgContText {
+    color: black;
+    height: 100%;
+    width: 300px;
+    h3 {
+      color: black;
+      margin-top: 0;
+      font-size: 30px;
+    }
+    span {
+      font-size: 16px;
+    }
+  }
+  
+  
+  /**Our unique strength*/
+  .ourUniqueStrengthCard {
+    padding-top: 10px;
+    .icon {
+      margin-top: 15px;
+    }
+  }
+  .ourUniqueStrengthCard:hover {
+    border-radius: 5px;
+    /* box-shadow: var(--golden2) 0px 1px 2px 0px, var(--golden2) 0px 1px 3px 1px; */
+    /* box-shadow: var(--golden2) 0px 7px 29px 0px; */
+    h3, span, p {
+      color: #ffffff !important;
+      transition: all .5s !important;
+    }
+  }
+  
+  .hoverEffect:hover {
+    img {
+      filter: drop-shadow(0px 0px 6px var(--golden2));
+    }
+    h3, span, p {
+      color: var(--golden2) !important;
+      transition: all .5s !important;
+    }
+  }
+  .hoverEffectSpan:hover {
+    .imgSpan {
+      filter: drop-shadow(0px 0px 6px var(--golden2));
+    }
+  }
+  
+  .ourProductImgCstm {
+    border-radius: 50%; z-index: 1; position: relative; top: -3px;
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 600px) {
+    .page1 {
+      height: auto;
+      h1 {
+        font-size: 15px;
+        height: 42px;
+      }
+      h3 {
+        font-size: 13px;
+        margin-top: 0;
+        height: 50px;
+        font-weight: 500;
+        padding: 0 20px;
+      }
+      .imageSection 
+      {
+        display: block;
+        div {
+          height: 300px;
+        }
+        h2 {
+          font-size: 15px; margin: 0;
+        } 
+      }
+    }
+    .hm-crdMain {
+      display: block;
+    }
+    .hm-cardCustm {
+      margin: 0 30px;
+      .hm-pricing-header {
+        background-color: var(--greyDark);
+        font-size: 17px;
+        h2 {
+          position: relative;
+          top: -15px;
+        }
+      }
+    }
+    .hm-cardCustm.hm-cardMidle {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .secImgCont {
+      display: grid;
+    }
+    .secImgContText {
+      width: 60%;
+      margin: auto;
+      padding: 10px 0;
+  }
+  }
