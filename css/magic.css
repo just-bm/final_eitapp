@@ -1,0 +1,37 @@
+  :root {
+      --ring-size: 400px;
+      --img-size: 100px;
+    }
+
+   
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* background: #111; */
+    }
+
+    .carousel {
+      position: relative;
+      width: var(--ring-size);
+      height: var(--ring-size);
+    }
+
+    .carousel img {
+      position: absolute;
+      width: 35%;
+      height: 30%;
+      /* border-radius: 70%; */
+      /* object-fit: cover; */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .carousel img.active {
+      transform: scale(1.7);
+      z-index: 2;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+    }
+  
