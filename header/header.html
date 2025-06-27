@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation with Working Mobile Toggle</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <header id="site_header">
+        <div id="navigation_bar">
+            <div class="content">
+                <div id="logo">
+                    <a href="/">
+                        <img src="../images/header/EIT New Logo.webp" alt="">
+                    </a>
+                </div>
+                <nav id="main_nav">
+                    <div id="nav_menu">
+                        <ul id="navy" class="clearfix">
+                            <li class="normal_menu mobile_menu_toggle">
+                                <a href="/"><span>Home</span></a>
+                            </li>
+
+                            <li class="has_mega_menu mobile_menu_toggle current_page_item">
+                                <a href="#">
+                                    <span class="activeNavBoxSpan">
+                                        <p class="activeNavBox">Services</p>
+                                    </span>
+                                </a>
+                                <button class="dropdown-toggle">+</button>
+                                <ul class="mega_menu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="it-services.html"><span>IT Services</span></a></li>
+                                            <li><a href="iot-services.html"><span>IOT</span></a></li>
+                                            <li class="has_sub_sub_menu">
+                                                <a href="./ai_development_services/ai_development_service.html">
+                                                    <span>AI</span>
+                                                </a>
+                                                <button class="dropdown-toggle">+</button>
+                                                <ul>
+                                                    <li><a href="#"><span>AI Powered No Code Low Code</span></a></li>
+                                                    <li><a href="./business analytics/ai-business-analytics.html"><span>AI Powered Business Analytics</span></a></li>
+                                                    <li><a href="./business automation/index.html"><span>AI Powered Office Automation</span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has_mega_menu mobile_menu_toggle">
+                                <a href="#"><span>Who We Are</span></a>
+                                <button class="dropdown-toggle">+</button>
+                                <ul class="mega_menu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="about-us.html"><span>About Us</span></a></li>
+                                            <li><a href="clients.html"><span>Clients</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="normal_menu mobile_menu_toggle">
+                                <a href="contact-us.html"><span>Contact Us</span></a>
+                            </li>
+                            <li class="normal_menu mobile_menu_toggle">
+                                <a href="blogs.html"><span>Blogs</span></a>
+                            </li>
+
+                            <li class="normal_menu mobile_menu_toggle align_mobile_lets_disc">
+                                <div class="navdiv">
+                                    <div style="background: #CCCCCC; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                        <span style="font-size: 18px;">✉️</span>
+                                    </div>
+                                    <div>
+                                        <h6>Get in touch with us</h6>
+                                        <p>sales@ethicalintelligent.com</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="clear"></div>
+            </div>
+            <span class="mobile_menu_trigger">
+                <a href="#" class="nav_trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </span>
+        </div>
+    </header>
+
+
+    <script src="header.js"></script>
+</body>
+</html>
