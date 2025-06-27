@@ -280,11 +280,173 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-  // script.js
 
-// Animate fadeInUp when elements scroll into view
+  document.addEventListener('DOMContentLoaded', function() {
+            // Hamburger menu toggle
+            const hamburger = document.querySelector('.nav_trigger');
+            const mobileMenu = document.getElementById('navy');
+            
+            if (hamburger) {
+                hamburger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    this.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                });
+            }
+            
+            // Mobile submenu toggle
+            const toggleButtons = document.querySelectorAll('.dropdown-toggle');
+            
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    
+                    // Toggle icon text
+                    this.textContent = this.textContent === '+' ? '−' : '+';
+                    
+                    // Handle Services and Who We Are menus
+                    if (this.closest('.has_mega_menu')) {
+                        const megaMenu = this.nextElementSibling;
+                        if (megaMenu && megaMenu.classList.contains('mega_menu')) {
+                            megaMenu.classList.toggle('expanded');
+                        }
+                    }
+                    
+                    // Handle AI submenu
+                    if (this.closest('.has_sub_sub_menu')) {
+                        const submenu = this.nextElementSibling;
+                        if (submenu && submenu.tagName === 'UL') {
+                            submenu.classList.toggle('expanded');
+                        }
+                    }
+                });
+            });
+            
+            // Close mobile menu when clicking a link
+            const navLinks = document.querySelectorAll('#navy a');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    // Close the mobile menu
+                    if (mobileMenu.classList.contains('active')) {
+                        mobileMenu.classList.remove('active');
+                        hamburger.classList.remove('active');
+                    }
+                });
+            });
+            
+            // Close submenus when clicking outside on mobile
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth <= 991) {
+                    // Reset all toggle buttons
+                    toggleButtons.forEach(button => {
+                        if (!button.contains(e.target)) {
+                            button.textContent = '+';
+                        }
+                    });
+                    
+                    // Close mega menus
+                    const megaMenus = document.querySelectorAll('.mega_menu');
+                    megaMenus.forEach(menu => {
+                        if (!menu.contains(e.target) && 
+                            !menu.previousElementSibling.contains(e.target)) {
+                            menu.classList.remove('expanded');
+                        }
+                    });
+                    
+                    // Close AI submenus
+                    const aiSubmenus = document.querySelectorAll('.has_sub_sub_menu > ul');
+                    aiSubmenus.forEach(menu => {
+                        if (!menu.contains(e.target) && 
+                            !menu.previousElementSibling.contains(e.target)) {
+                            menu.classList.remove('expanded');
+                        }
+                    });
+                }
+            });
+        });
 
 
 
 
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const chatTrigger = document.getElementById('chatTrigger');
+  const contactForm = document.getElementById('contactForm');
+  
+  // Toggle form visibility when chat icon is clicked
+  chatTrigger.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (contactForm.style.display === 'block') {
+      contactForm.style.display = 'none';
+    } else {
+      contactForm.style.display = 'block';
+    }
+  });
+  
+  // Form submission
+  const form = document.querySelector('.form-container form');
+  form.addEventListener('submit', function(e) {
+    // You can add submission handling here if needed
+  });
+  
+  // File input display
+  const fileInput = document.querySelector('input[type="file"]');
+  const attachButton = document.querySelector('.attach-button span');
+  
+  fileInput.addEventListener('change', function() {
+    if (this.files && this.files.length > 0) {
+      attachButton.textContent = this.files[0].name;
+    } else {
+      attachButton.textContent = 'Attach File';
+    }
+  });
+});
+
+
+//login box//
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileCtaButton = document.querySelector('.mobile-cta-button');
+  const loginBox = document.querySelector('.login-box');
+  
+  // Create mobile popup container
+  const mobilePopup = document.createElement('div');
+  mobilePopup.className = 'mobile-login-popup';
+  
+  // Create mobile login container
+  const mobileLoginContainer = document.createElement('div');
+  mobileLoginContainer.className = 'mobile-login-container';
+  
+  // Clone the login box content
+  const loginContent = loginBox.cloneNode(true);
+  mobileLoginContainer.appendChild(loginContent);
+  
+  // Add close button
+  const closeButton = document.createElement('button');
+  closeButton.className = 'mobile-login-close';
+  closeButton.innerHTML = '&times;';
+  mobileLoginContainer.appendChild(closeButton);
+  
+  mobilePopup.appendChild(mobileLoginContainer);
+  document.body.appendChild(mobilePopup);
+  
+  // Toggle popup visibility
+  mobileCtaButton.addEventListener('click', function() {
+    mobilePopup.style.display = 'flex';
+  });
+  
+  closeButton.addEventListener('click', function() {
+    mobilePopup.style.display = 'none';
+  });
+  
+  // Close when clicking outside
+  mobilePopup.addEventListener('click', function(e) {
+    if (e.target === mobilePopup) {
+      mobilePopup.style.display = 'none';
+    }
+  });
+});
 
