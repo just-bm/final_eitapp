@@ -8,60 +8,100 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../header/header.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-left">
-            <img src="../images/business-analytics/logo.jpg" alt="Company Logo" class="logo" />
-            <div class="logo-text">
-            </div>
-        </div>
-        <nav class="nav-links">
-            <ul class="main-nav">
-                <li><a href="/" class="nav-link active home">Home</a></li>
-                <li class="has-submenu">
-                    <a href="#" class="nav-link service">Services</a>
-                    <ul class="submenu">
-                        <li><a href="../it-services.html">IT SERVICES</a></li>
-                        <li><a href="../iot-services.html">IOT SERVICES</a></li>
-                        <li class="has-submenu">
-                            <a href="../ai_development_services/ai_development_service.html">AI</a>
-                            <ul class="submenu submenu-level2">
-                                <li><a href=""><span>AI Powered No Code Low Code</span></a></li>
-                                <li><a href="../business analytics/ai-business-analytics.html"><span>AI Powered Business Analytics</span></a></li>
-                                <li><a href="../business automation/index.html"><span>AI Powered Office Automation</span></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="has-submenu">
-                    <a href="#" class="nav-link">Who We Are</a>
-                    <ul class="submenu">
-                        <li><a href="../about-us.html">ABOUT US</a></li>
-                        <li><a href="../clients.html">CLIENTS</a></li>
-                    </ul>
-                </li>
-                <li><a href="../contact-us.html" class="nav-link">Contact Us</a></li>
-                <li><a href="../blogs.html" class="nav-link">Blogs</a></li>
-            </ul>
-        </nav>
-        <img style="width: 30px; height: 30px; margin-right: 20px; background-color: white; color: black;"
-            src="https://ethicalintelligent.com/images/new2/MAIL%20navbar.webp" alt="message">
+    <header id="site_header">
+        <div id="navigation_bar">
+            <div class="content">
+                <div id="logo">
+                    <a href="/">
+                        <img src="../images/header/EIT New Logo.webp" alt="">
+                    </a>
+                </div>
+                <nav id="main_nav">
+                    <div id="nav_menu">
+                        <ul id="navy" class="clearfix">
+                            <li class="normal_menu mobile_menu_toggle">
+                                <a href="/"><span>Home</span></a>
+                            </li>
 
-        <div class="header-right">
-            <div class="contact-info">
-                <span class="contact-text">
-                    <span class="get-in-touch">Get in touch with us</span>
-                    <br>
-                    <strong class="email">sales@ethicalintelligent.com</strong>
-                </span>
+                            <li class="has_mega_menu mobile_menu_toggle current_page_item">
+                                <a href="#">
+                                    <span class="activeNavBoxSpan">
+                                        <p class="activeNavBox">Services</p>
+                                    </span>
+                                </a>
+                                <button class="dropdown-toggle">+</button>
+                                <ul class="mega_menu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="it-services.html"><span>IT Services</span></a></li>
+                                            <li><a href="iot-services.html"><span>IOT</span></a></li>
+                                            <li class="has_sub_sub_menu">
+                                                <a href="./ai_development_services/ai_development_service.html">
+                                                    <span>AI</span>
+                                                </a>
+                                                <button class="dropdown-toggle">+</button>
+                                                <ul>
+                                                    <li><a href="#"><span>AI Powered No Code Low Code</span></a></li>
+                                                    <li><a href="./business analytics/ai-business-analytics.html"><span>AI Powered Business Analytics</span></a></li>
+                                                    <li><a href="./business automation/index.html"><span>AI Powered Office Automation</span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has_mega_menu mobile_menu_toggle">
+                                <a href="#"><span>Who We Are</span></a>
+                                <button class="dropdown-toggle">+</button>
+                                <ul class="mega_menu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="about-us.html"><span>About Us</span></a></li>
+                                            <li><a href="clients.html"><span>Clients</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="normal_menu mobile_menu_toggle">
+                                <a href="contact-us.html"><span>Contact Us</span></a>
+                            </li>
+                            <li class="normal_menu mobile_menu_toggle">
+                                <a href="blogs.html"><span>Blogs</span></a>
+                            </li>
+
+                            <li class="normal_menu mobile_menu_toggle align_mobile_lets_disc">
+                                <div class="navdiv">
+                                    <div style=" width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                        <img style="width: 30px; height: 30px; margin-right: 20px; background-color: white; color: black;" src="https://ethicalintelligent.com/images/new2/MAIL%20navbar.webp" alt="message">
+                                    </div>
+                                    <div>
+                                        <a href="mailto:sales@ethicalintelligent.com">
+                                        <h6>Get in touch with us</h6>
+                                        <p>sales@ethicalintelligent.com</p></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="clear"></div>
             </div>
+            <span class="mobile_menu_trigger">
+                <a href="#" class="nav_trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </span>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section style="padding-top: 50px;" class="eit-gradient text-white relative overflow-hidden px-48 py-80">
+    <section style="padding-top: 150px;" class="eit-gradient text-white relative overflow-hidden px-48 py-80">
         <div class="max-w-7xl mx-auto" id="hero">
             <div class="grid lg-grid-2 gap-16 items-center min-h-600">
                 <!-- Left Content -->
@@ -991,5 +1031,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="../header/header.js"></script>
 </body>
 </html>
