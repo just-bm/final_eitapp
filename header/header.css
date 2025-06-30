@@ -158,9 +158,9 @@
     transition: all 0.3s;
 }
 
-#site_header .navdiv:hover {
+/* #site_header .navdiv:hover {
     background: #e8f0fe;
-}
+} */
 
 #site_header .navdiv img {
     height: 24px;
