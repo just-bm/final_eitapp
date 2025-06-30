@@ -974,7 +974,6 @@ body {
      .original-chat-icon{
         z-index: 0;
     }
-}
 
 @media (min-width: 640px) {
     .hero-buttons {
