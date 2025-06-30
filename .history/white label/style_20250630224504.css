@@ -1577,12 +1577,7 @@ body {
     height: auto;
     width: 100vw;
   }
-  .security{
-    height: 450px;
-  }
-  .services-section{
-    margin-bottom: 50px;
-  }
+  .s
 }
 
 @media (max-width: 768px) {

@@ -1574,14 +1574,8 @@ body {
     z-index: 0;
   }
   .hero{
-    height: auto;
+    height: 1000px;
     width: 100vw;
-  }
-  .security{
-    height: 450px;
-  }
-  .services-section{
-    margin-bottom: 50px;
   }
 }
 

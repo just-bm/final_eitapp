@@ -1366,7 +1366,7 @@ body {
 }
 
 .original-chat-icon img {
-  width: 60px;
+  width: 70px;
   height: auto;
 }
 
@@ -1543,52 +1543,10 @@ body {
 }
 
 /* Responsive adjustments */
-@media (max-width: 1024px) {
- 
-  .original-chat-icon {
-    top: 100px;
-    right: 15px;
-  }
-  .original-chat-icon img {
-    width: 60px;
-  }
-  .contact-form {
-    top: 80px;
-    right: 15px;
-    left: 15px;
-    width: auto;
-  }
-  .form-container {
-    width: auto;
-    max-width: 100%;
-    padding: 25px;
-  }
-  .form-header h2 {
-    font-size: 1.5rem;
-  }
-  .form-actions {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .original-chat-icon{
-    z-index: 0;
-  }
-  .hero{
-    height: auto;
-    width: 100vw;
-  }
-  .security{
-    height: 450px;
-  }
-  .services-section{
-    margin-bottom: 50px;
-  }
-}
-
 @media (max-width: 768px) {
  
   .original-chat-icon {
-    top: 100px;
+    top: 80px;
     right: 15px;
   }
   .original-chat-icon img {
@@ -1611,79 +1569,10 @@ body {
   .form-actions {
     flex-direction: column;
     gap: 10px;
-  }
-  .original-chat-icon{
-    z-index: 0;
-  }
-  .hero{
-    height: auto;
-    width: 100vw;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-   .original-chat-icon {
-    top: 100px;
-    right: 15px;
-  }
-  .original-chat-icon img {
-    width: 60px;
-  }
-  .contact-form {
-    top: 80px;
-    right: 15px;
-    left: 15px;
-    width: auto;
-  }
-  .form-container {
-    width: auto;
-    max-width: 100%;
-    padding: 25px;
-  }
-  .form-header h2 {
-    font-size: 1.5rem;
-  }
-  .form-actions {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .original-chat-icon{
-    z-index: 0;
-  }
-  .hero{
-    height: auto;
-    width: 100vw;
-  }
-  .security-container{
-    height: 500px;
-  }
-  .section-title{
-    margin-top: 150px;
   }
 }
 
 /* Footer Styles */
 a{
   text-decoration: none;
-}
-.cancel-button {
-    position: absolute;
-    top: 10px; /* Adjust as needed for spacing from top */
-    right: 13px; /* Adjust as needed for spacing from right */
-    background: none; /* Remove default button background */
-    border: none; /* Remove default button border */
-    padding: 0; /* Remove default button padding */
-    cursor: pointer;
-    z-index: 10;
-    line-height: 1; /* Helps with vertical alignment of the image */
-    display: flex; /* Use flexbox to center the image if needed */
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 4px;
-}
-
-.cancel-button:hover {
-    /* You might add a subtle shadow or filter on hover if desired */
-    filter: brightness(1.2); /* Example: make the logo slightly brighter on hover */
-      transform: scale(1.1);
 }

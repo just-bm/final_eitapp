@@ -1366,7 +1366,7 @@ body {
 }
 
 .original-chat-icon img {
-  width: 60px;
+  width: 70px;
   height: auto;
 }
 
@@ -1543,52 +1543,10 @@ body {
 }
 
 /* Responsive adjustments */
-@media (max-width: 1024px) {
- 
-  .original-chat-icon {
-    top: 100px;
-    right: 15px;
-  }
-  .original-chat-icon img {
-    width: 60px;
-  }
-  .contact-form {
-    top: 80px;
-    right: 15px;
-    left: 15px;
-    width: auto;
-  }
-  .form-container {
-    width: auto;
-    max-width: 100%;
-    padding: 25px;
-  }
-  .form-header h2 {
-    font-size: 1.5rem;
-  }
-  .form-actions {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .original-chat-icon{
-    z-index: 0;
-  }
-  .hero{
-    height: auto;
-    width: 100vw;
-  }
-  .security{
-    height: 450px;
-  }
-  .services-section{
-    margin-bottom: 50px;
-  }
-}
-
 @media (max-width: 768px) {
  
   .original-chat-icon {
-    top: 100px;
+    top: 80px;
     right: 15px;
   }
   .original-chat-icon img {
@@ -1611,54 +1569,6 @@ body {
   .form-actions {
     flex-direction: column;
     gap: 10px;
-  }
-  .original-chat-icon{
-    z-index: 0;
-  }
-  .hero{
-    height: auto;
-    width: 100vw;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-   .original-chat-icon {
-    top: 100px;
-    right: 15px;
-  }
-  .original-chat-icon img {
-    width: 60px;
-  }
-  .contact-form {
-    top: 80px;
-    right: 15px;
-    left: 15px;
-    width: auto;
-  }
-  .form-container {
-    width: auto;
-    max-width: 100%;
-    padding: 25px;
-  }
-  .form-header h2 {
-    font-size: 1.5rem;
-  }
-  .form-actions {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .original-chat-icon{
-    z-index: 0;
-  }
-  .hero{
-    height: auto;
-    width: 100vw;
-  }
-  .security-container{
-    height: 500px;
-  }
-  .section-title{
-    margin-top: 150px;
   }
 }
 
@@ -1679,7 +1589,7 @@ a{
     display: flex; /* Use flexbox to center the image if needed */
     align-items: center;
     justify-content: center;
-    padding-bottom: 4px;
+    padding-bottom: 9px;
 }
 
 .cancel-button:hover {
