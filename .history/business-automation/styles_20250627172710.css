@@ -1015,7 +1015,7 @@ body {
 .cancel-button {
     position: absolute;
     top: 10px; /* Adjust as needed for spacing from top */
-    right: 13px; /* Adjust as needed for spacing from right */
+    right: 15px; /* Adjust as needed for spacing from right */
     background: none; /* Remove default button background */
     border: none; /* Remove default button border */
     padding: 0; /* Remove default button padding */
