@@ -970,12 +970,6 @@ body {
 }
 
 /* Responsive Styles */
-@media (min-width: 300px) and (max-width: 768px) {
-     .original-chat-icon{
-        z-index: 0;
-    }
-}
-
 @media (min-width: 640px) {
     .hero-buttons {
         flex-direction: row;
@@ -984,9 +978,7 @@ body {
     .cta-buttons {
         flex-direction: row;
     }
-    .original-chat-icon{
-        z-index: 0;
-    }
+    .
 }
 
 @media (min-width: 1024px) {
@@ -1018,10 +1010,6 @@ body {
     .arrow {
         display: block;
     }
-    .original-chat-icon{
-        z-index: 0;
-    }
-
 }
 
 /* NEW: Cancel Button Styles (Adjusted for image) */
