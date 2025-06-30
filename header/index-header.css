@@ -154,14 +154,14 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
-    background: #f8f8f8;
+    /* background: #f8f8f8; */
     border-radius: 8px;
     transition: all 0.3s;
 }
 
-#site_headero .navdivo:hover {
+/* #site_headero .navdivo:hover {
     background: #e8f0fe;
-}
+} */
 
 #site_headero .navdivo img {
     height: 24px;
