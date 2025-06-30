@@ -1038,12 +1038,21 @@ body {
     display: flex; /* Use flexbox to center the image if needed */
     align-items: center;
     justify-content: center;
-    padding-bottom: 9px;
+    padding-bottom: 20px;
 }
 
 .cancel-button:hover {
     /* You might add a subtle shadow or filter on hover if desired */
     filter: brightness(1.2); /* Example: make the logo slightly brighter on hover */
-      transform: scale(1.1);
 }
 
+.cancel-button img {
+    width: 24px; /* Adjust size of your logo as needed */
+    height: 24px; /* Keep aspect ratio */
+    display: block; /* Remove extra space below image */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect for the image */
+}
+
+.cancel-button:hover img {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+}
