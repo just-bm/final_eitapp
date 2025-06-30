@@ -1010,35 +1010,3 @@ body {
         display: block;
     }
 }
-
-/* NEW: Cancel Button Styles (Adjusted for image) */
-.cancel-button {
-    position: absolute;
-    top: 10px; /* Adjust as needed for spacing from top */
-    right: 13px; /* Adjust as needed for spacing from right */
-    background: none; /* Remove default button background */
-    border: none; /* Remove default button border */
-    padding: 0; /* Remove default button padding */
-    cursor: pointer;
-    z-index: 10;
-    line-height: 1; /* Helps with vertical alignment of the image */
-    display: flex; /* Use flexbox to center the image if needed */
-    align-items: center;
-    justify-content: center;
-}
-
-.cancel-button:hover {
-    /* You might add a subtle shadow or filter on hover if desired */
-    filter: brightness(1.2); /* Example: make the logo slightly brighter on hover */
-}
-
-.cancel-button img {
-    width: 24px; /* Adjust size of your logo as needed */
-    height: 24px; /* Keep aspect ratio */
-    display: block; /* Remove extra space below image */
-    transition: transform 0.2s ease-in-out; /* Smooth hover effect for the image */
-}
-
-.cancel-button:hover img {
-    transform: scale(1.1); /* Slightly enlarge image on hover */
-}

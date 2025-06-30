@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const chatTrigger = document.getElementById('chatTrigger');
     const contactForm = document.getElementById('contactForm');
     const formContainer = document.querySelector('.form-container'); // The inner container for the form itself
-    const closeFormButton = document.getElementById('closeFormButton'); // NEW: Get the cancel button
+    const closeFormButton = document.getElementById('.closeFormButton'); // NEW: Get the cancel button
 
     // Function to show the form
     function showForm() {

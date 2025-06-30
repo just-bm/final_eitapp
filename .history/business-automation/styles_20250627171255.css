@@ -803,7 +803,7 @@ body {
     top: 100px;
     right: 100px;
     z-index: 10000;
-    display: none;
+    display: none; /* Hidden by default */
 }
 
 /* Form container with blue glow effect */
@@ -812,14 +812,32 @@ body {
     border-radius: 16px;
     padding: 30px;
     width: 450px;
-    box-shadow: 
+    box-shadow:
         0 0 0 1px rgba(0, 46, 138, 0.1), /* subtle inner border */
         0 5px 15px rgba(0, 46, 138, 0.1), /* close shadow */
         0 15px 35px rgba(0, 46, 138, 0.2); /* far shadow */
     border: 1px solid rgba(0, 46, 138, 0.15);
     transition: all 0.3s ease;
-    position: relative;
+    position: relative; /* IMPORTANT for positioning the cancel button */
 }
+
+/* NEW: Cancel Button Styles */
+.cancel-button {
+    position: absolute;
+    top: 15px; /* Adjust as needed for spacing from top */
+    right: 15px; /* Adjust as needed for spacing from right */
+    font-size: 1.5rem; /* Larger 'X' */
+    font-weight: bold;
+    color: #666; /* A softer color for the 'X' */
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    line-height: 1; /* Ensures 'X' is centered vertically */
+}
+
+.cancel-button:hover {
+    color: #002E8A; /* Darker blue on hover */
+}
+
 
 /* Blue glow effect */
 .form-container::before {
@@ -969,76 +987,31 @@ body {
     100% { filter: drop-shadow(0 0 0 rgba(0, 46, 138, 0.1)); }
 }
 
-/* Responsive Styles */
-@media (min-width: 640px) {
-    .hero-buttons {
-        flex-direction: row;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .original-chat-icon {
+        top: 80px;
+        right: 15px;
     }
-
-    .cta-buttons {
-        flex-direction: row;
+    .original-chat-icon img {
+        width: 60px;
     }
-}
-
-@media (min-width: 1024px) {
-    .hero-content {
-        grid-template-columns: 1fr 1fr;
+    .contact-form {
+        top: 80px;
+        right: 15px;
+        left: 15px;
+        width: auto;
     }
-
-    .hero-text {
-        text-align: left;
+    .form-container {
+        width: auto;
+        max-width: 100%;
+        padding: 25px;
     }
-
-    .hero h1 {
-        font-size: 4rem;
+    .form-header h2 {
+        font-size: 1.5rem;
     }
-
-    .hero-stats {
-        margin-left: 0;
-        margin-right: 0;
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
     }
-
-    .stat {
-        text-align: left;
-    }
-
-    .workflow-steps {
-        flex-direction: row;
-    }
-
-    .arrow {
-        display: block;
-    }
-}
-
-/* NEW: Cancel Button Styles (Adjusted for image) */
-.cancel-button {
-    position: absolute;
-    top: 10px; /* Adjust as needed for spacing from top */
-    right: 13px; /* Adjust as needed for spacing from right */
-    background: none; /* Remove default button background */
-    border: none; /* Remove default button border */
-    padding: 0; /* Remove default button padding */
-    cursor: pointer;
-    z-index: 10;
-    line-height: 1; /* Helps with vertical alignment of the image */
-    display: flex; /* Use flexbox to center the image if needed */
-    align-items: center;
-    justify-content: center;
-}
-
-.cancel-button:hover {
-    /* You might add a subtle shadow or filter on hover if desired */
-    filter: brightness(1.2); /* Example: make the logo slightly brighter on hover */
-}
-
-.cancel-button img {
-    width: 24px; /* Adjust size of your logo as needed */
-    height: 24px; /* Keep aspect ratio */
-    display: block; /* Remove extra space below image */
-    transition: transform 0.2s ease-in-out; /* Smooth hover effect for the image */
-}
-
-.cancel-button:hover img {
-    transform: scale(1.1); /* Slightly enlarge image on hover */
 }
