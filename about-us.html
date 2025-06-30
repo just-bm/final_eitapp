@@ -62,6 +62,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Reem+Kufi:wght@400..700&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./footer/footer.css">
+    <link rel="stylesheet" href="./header/index-header.css">
 
 
     <!-- Google Tag Manager -->
@@ -100,106 +102,101 @@
       }
     }
     </script>
+    <style>
+        main .section1ab{
+    padding-top: 70px; /* Default mobile padding */
+}
+
+/* Tablet and larger */
+@media only screen and (min-width: 768px) {
+    main .section1ab{
+        padding-top: 75px; /* Reset or adjust for desktop */
+    }
+}
+    </style>
 </head>
 
 <body class="preloader3 dark_sup_menu dark">
 
     <div id="main_wrapper">
-        <header id="site_header">
-            <div id="navigation_bar" style="background: transparent;border-bottom: 1px solid #D9D9D9;">
-                <div class="content">
-                    <div id="logo">
-                        <a href="/">
-                            <img src="images/new/EIT New Logo.webp" alt="Eit Logo">
-                        </a>
-                    </div>
-                    <nav id="main_nav">
-                        <div id="nav_menu">
-                            <span class="mobile_menu_trigger">
-                                <a href="#" class="nav_trigger"><span></span></a>
-                            </span>
-                            <ul id="navy" class="clearfix">
-                                <li class="normal_menu mobile_menu_toggle ">
-                                    <a href="/"><span style="color: #002E8A;">Home</span></a>
-                                </li>
-
-                                <li class="has_mega_menu mobile_menu_toggle">
-                                    <a href="#"><span style="color: #002E8A;">Services
-                                        </span></a>
-                                    <ul class="mega_menu" style="height: 30vh; max-width: fit-content;left: 43%;box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.2),
-                4px 0 8px rgba(0, 0, 0, 0.2);     ">
-                                        <li style="width: fit-content;">
-                                            <ul>
-                                                <li style="height:10vh"><a href="it-services.html"><span>IT
-                                                            Services</span></a></li>
-                                                <li style="height:10vh"><a href="iot-services.html"><span>IOT
-                                                        </span></a></li>
-                                                <li style="height:10vh"><a
-                                                        href="./ai_development_services/ai_development_service.html"><span>
-                                                            <p> AI</p>
-                                                        </span></a>
-                                                    <ul>
-                                                        <li style="height:7vh"><a href=""><span>AI Powered No Code Low
-                                                                    Code</span></a></li>
-                                                        <li style="height:7vh"><a
-                                                                href="./business analytics/ai-business-analytics.html"><span>AI
-                                                                    Powered Business Analytics</span></a></li>
-                                                        <li style="height:7vh"><a
-                                                                href="./business automation/index.html"><span>AI Powered
-                                                                    Office Automation</span></a></li>
-
-                                                    </ul>
-                                                </li>
-
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="has_mega_menu mobile_menu_toggle current_page_item">
-                                    <a href="#"><span class="activeNavBoxSpan">
-                                            <p class="activeNavBox">Who We Are</p>
-                                        </span></a>
-                                    <ul class="mega_menu" style="max-width: fit-content;left: 55%;box-shadow: -4px -4px 8px rgba(0, 0, 0, 0.2),
-                4px 0 8px rgba(0, 0, 0, 0.2);">
-                                        <li style="width: fit-content;">
-                                            <ul>
-                                                <li><a href="about-us.html"><span>About Us</span></a></li>
-                                                <li><a href="clients.html"><span>Clients</span></a></li>
-                                                <!-- <li><a href="case-studies.html"><span>Case Studies</span></a></li> -->
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <!-- enddd -->
-                                <li class="normal_menu mobile_menu_toggle">
-                                    <a href="contact-us.html"><span style="color: #002E8A;">Contact Us</span></a>
-                                </li>
-                                <li class="normal_menu mobile_menu_toggle">
-                                    <a href="blogs.html"><span style="color: #002E8A;">Blogs</span></a>
-                                </li>
-
-                                <li class="normal_menu mobile_menu_toggle align_mobile_lets_disc"
-                                    style=" width: fit-content; padding: 15px 5px;">
-
-                                    <div class="navdiv">
-                                        <img src="images/new2/MAIL navbar.webp" alt="">
-                                        <div>
-                                            <h6>Get in touch with us</h6>
-                                            <p>sales@ethicalintelligent.com</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                        </div>
-                    </nav>
-                    <!-- End Nav -->
-
-                    <div class="clear"></div>
-                </div>
+         <div id="site_headero">
+    <div id="navigation_baro">
+        <div class="contento">
+            <div id="logoo">
+                <a href="/"><img src="./images/header/EIT New Logo.webp" alt="EIT Logo"></a>
             </div>
-        </header>
+            <nav id="main_navo">
+                <div id="nav_menuo">
+                    <ul id="navyo" class="clearfixo">
+                        <li class="normal_menuo mobile_menu_toggleo">
+                            <a href="/"><span class="activeNavBoxSpano"><p>Home</p></span></a>
+                        </li>
+                        <li class="has_mega_menuo mobile_menu_toggleo current_page_itemo">
+                            <a href="#"><span>Services</span></a>
+                            <button class="dropdown-toggleo">+</button>
+                            <ul class="mega_menuo">
+                                <li>
+                                    <ul>
+                                        <li><a href="it-services.html"><span>IT Services</span></a></li>
+                                        <li><a href="iot-services.html"><span>IOT</span></a></li>
+                                        <li class="has_sub_sub_menuo">
+                                            <a href="./ai_development_services/ai_development_service.html"><span>AI</span></a>
+                                            <button class="dropdown-toggleo">+</button>
+                                            <ul>
+                                                <li><a href="#"><span>AI Powered No Code Low Code</span></a></li>
+                                                <li><a href="./business-analytics/ai-business-analytics.html"><span>AI Powered Business Analytics</span></a></li>
+                                                <li><a href="./business-automation/business-automation.html"><span>AI Powered Office Automation</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has_mega_menuo mobile_menu_toggleo">
+                            <a href="#"><span class="activeNavBoxo">Who We Are</span></a>
+                            <button class="dropdown-toggleo">+</button>
+                            <ul class="mega_menuo">
+                                <li>
+                                    <ul>
+                                        <li><a href="about-us.html"><span>About Us</span></a></li>
+                                        <li><a href="clients.html"><span>Clients</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="normal_menuo mobile_menu_toggleo">
+                            <a href="./contact/contact-us.html"><span>Contact Us</span></a>
+                        </li>
+                        <li class="normal_menuo mobile_menu_toggleo">
+                            <a href="blogs.html"><span>Blogs</span></a>
+                        </li>
+                        <li class="normal_menuo mobile_menu_toggleo align_mobile_lets_disco">
+                            <div class="navdivo">
+                                <div style="width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <img style="width: 30px; height: 30px; margin-right: 20px; color: black;" src="https://ethicalintelligent.com/images/new2/MAIL%20navbar.webp" alt="message">
+                                </div>
+                                <div>
+                                    <a href="mailto:sales@ethicalintelligent.com">
+                                        <h6>Get in touch with us</h6>
+                                        <p>sales@ethicalintelligent.com</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="clearo"></div>
+        </div>
+        <span class="mobile_menu_triggero">
+            <a href="#" class="nav_triggero">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </span>
+    </div>
+</div>
         <main>
             <section class="section1ab">
                 <img src="images/contact-us/shape-31 3.webp" alt="dot-shape"
@@ -482,436 +479,7 @@
                 <head>
                     <meta charset="UTF-8">
                     <title>footer</title>
-                    <style>
-                        .footer-section {
-                            width: 98vw;
-                            max-width: 1400px;
-                        }
-
-                        .list-items a {
-                            text-decoration: none !important;
-                            color: #5c5b5b !important;
-                            font-weight: 400;
-                        }
-
-                        .list-items a:hover {
-                            text-decoration: none !important;
-                            color: black !important;
-                            font-weight: 400;
-                        }
-
-                        .contact-btn a {
-                            text-decoration: none;
-                            font-size: 10rem !important;
-                            font-weight: 600;
-                            color: white !important;
-                        }
-
-                        .contact-btn:hover {
-                            background-color: #0e4bdb;
-                        }
-
-                        .footer-parent-container {
-                            position: relative;
-                            height: 5vh;
-                            width: 100vh;
-                            padding-bottom: none;
-                            margin-bottom: none;
-                        }
-
-                        .footer-purple-container {
-                            z-index: 2;
-                            font-family: "Plus Jakarta Sans", sans-serif;
-                            height: 42.5vh;
-                            width: 60.5vw;
-                            background-color: #14166C;
-                            border-radius: 2rem;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
-                            margin-left: 37.5%;
-                            margin-top: 0vh;
-                            gap: 2vw;
-                        }
-
-                        .footer-tagline-1 {
-                            margin-top: 3.5vh;
-                            font-size: 2.15rem;
-                            font-weight: 550;
-                            color: #0B4CB8;
-                        }
-
-                        .footer-tagline-2 {
-                            color: white;
-                            font-size: 2.15rem;
-                            font-weight: 500;
-                            margin-top: -5vh;
-                        }
-
-                        .footer-subtitle {
-                            margin-top: 3.5vh;
-                            color: white;
-                            font-size: 1.35rem;
-                            font-weight: 200;
-                        }
-
-                        .footer-text-section h5 {
-                            color: white;
-                            font-size: 1.25rem;
-                            margin-top: 1vw;
-                        }
-
-                        .contact-btn {
-                            margin-top: -25vh;
-                            font-family: "Plus Jakarta Sans", sans-serif;
-                            border: none;
-                            border-radius: 3rem;
-                            width: 8vw;
-                            height: 8vh;
-                            background-color: #658DE9;
-                        }
-
-                        .footer-white-container {
-                            box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.3);
-                            z-index: 1;
-                            font-family: "Plus Jakarta Sans", sans-serif !important;
-                            width: 92.5vw;
-                            font-size: 1.5rem;
-                            margin-top: 7.5%;
-                            margin-left: 3vw;
-                            height: 66vh;
-                            background-color: white;
-                            display: flex;
-                            flex-direction: column;
-                            flex: 1;
-                            border-radius: 2rem;
-                            margin-bottom: none;
-                        }
-
-                        .footer-row-1 {
-                            height: 90vh;
-                            padding-bottom: 0.5vh;
-                            margin-top: 26vh;
-                            display: flex;
-                            flex-direction: row;
-                            flex: 1;
-                            width: 100%;
-                            justify-content: space-around;
-                            border-bottom: 1px solid rgb(184, 182, 182);
-                        }
-
-                        .footer-side-2 {
-                            display: flex;
-                            flex-direction: row;
-                            flex: 1;
-                            margin-left: 3vw;
-                            gap: 2.5vw;
-                        }
-
-                        .footer-col-2-1 {
-                            color: #5c5b5b;
-                            margin-left: 1vw;
-                        }
-
-                        ul {
-                            list-style-type: none;
-                        }
-
-                        li {
-                            color: #5c5b5b !important;
-                        }
-
-                        .footer-list-title {
-                            color: #000552 !important;
-                            font-weight: 600;
-                        }
-
-                        .footer-row-2 {
-                            color: #5c5b5b !important;
-                            margin-top: 3vh;
-                            margin-left: -4.5vw;
-                            width: 92.5vw;
-                            height: 10vh;
-                            display: flex;
-                            flex-direction: row;
-                            flex: 1;
-                            justify-content: space-around;
-                            gap: 5vw;
-                        }
-
-                        .footer-side-1 {
-                            margin-left: 5%;
-                        }
-
-                        .footer-icon-image {
-                            height: 35vh;
-                            width: 21.5vw;
-                            margin-top: 5vh;
-                            margin-left: -2.5vw;
-                            padding: 1rem;
-
-                        }
-
-                        .footer-col-2-2 {
-                            text-decoration: none !important;
-                            color: #5c5b5b !important;
-                            font-weight: 400;
-                        }
-
-                        .footer-col-2-3 {
-                            text-decoration: none !important;
-                            color: #5c5b5b !important;
-                            font-weight: 400;
-                        }
-
-                        .footer-col-2-4 {
-                            display: inline-block;
-                        }
-
-                        .footer-detail-1 {
-                            margin-top: -12.5%;
-                            margin-left: 15%;
-                        }
-
-                        .footer-detail-2 {
-                            margin-top: -12.5%;
-                            margin-left: 15%;
-                        }
-
-                        .footer-social-media-links {
-                            display: flex;
-                            gap: 1.5vw;
-                        }
-
-                        @media (max-width: 1150px) and (min-width: 768px) {
-                            .footer-parent-container {
-                                position: relative;
-                                height: 5vh;
-                                width: 97.5vw;
-                            }
-
-                            .footer-white-container {
-                                font-size: 1.3rem;
-                                width: 94vw;
-                                height: 97.5vh;
-                            }
-
-                            .footer-purple-container {
-                                margin-left: 15vw;
-                                height: 45vh;
-                                width: 67.5vw;
-                                gap: 17.5vw;
-                            }
-
-                            .footer-icon-section {
-                                height: 40vh;
-                                width: 25vw;
-                                margin-top: 0vh;
-                                margin-left: 7.5vw;
-                            }
-
-                            .footer-icon-image {
-                                padding: 1rem;
-                                margin-left: -2.5vw;
-                                margin-top: 6.5vh;
-                                height: 33vh;
-                            }
-
-                            .footer-text-section {
-                                display: flex;
-                                flex-direction: column;
-                                flex: 1;
-                                margin-left: -18.5vw;
-                                margin-top: 1vh;
-                                padding: 0.5rem;
-                            }
-
-                            .contact-btn {
-                                margin-top: -3vh;
-                                width: 11vw;
-                                height: 8.5vh;
-                            }
-
-                            .footer-row-1 {
-                                display: flex;
-                                flex-direction: column;
-                                flex: 1;
-                                justify-content: space-around;
-                                align-items: center;
-                                margin-top: 32.5vh;
-                            }
-
-                            .footer-row-2 {
-                                margin-top: 0.5vh;
-                                margin-left: -3.5vw;
-                                gap: 7.5vw;
-                            }
-
-                            .footer-tagline-1 {
-                                font-size: 1.8rem;
-                                margin-top: 1vh;
-                            }
-
-                            .footer-tagline-2 {
-                                font-size: 1.8rem;
-                                margin-top: -5vh;
-                            }
-
-                            .contact-btn a {
-                                font-size: 0.7rem;
-                            }
-
-                            .footer-subtitle {
-                                font-size: 1.2rem;
-                                margin-top: -1.5vh;
-                            }
-
-                            .footer-side-2 {
-                                display: flex;
-                                flex-direction: row;
-                                flex: 1;
-                                justify-content: space-between;
-                                gap: 12.5rem;
-                                margin-left: -2vw;
-                                margin-top: 5vh;
-                            }
-
-                            .footer-side-1 {
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                margin-top: -2.5vh;
-                                margin-left: -1.5vw;
-                                padding: 1rem;
-                            }
-
-                            .footer-col-2-1 {
-                                text-align: center;
-                            }
-
-                            .footer-social-media-links {
-                                display: flex;
-                                gap: 1.5vw;
-                                justify-content: center;
-                                margin-left: -4vw;
-                                margin-top: -2.5vh;
-                            }
-
-                        }
-
-                        @media (max-width:768px) and (min-width:320px) {
-                            .footer-parent-container {
-                                position: relative;
-                                height: 15vh;
-                                width: 100vw;
-                            }
-
-                            .footer-white-container {
-                                font-size: 1.15rem;
-                                width: 92.5vw;
-                                height: 100vh;
-                            }
-
-                            .footer-purple-container {
-                                margin-left: 17.5vw;
-                                height: 55vh;
-                                width: 65vw;
-                                gap: 17.5vw;
-                            }
-
-                            .footer-icon-section {
-                                height: 25vh;
-                                width: 20vw;
-                                margin-top: 0vh;
-                                margin-left: 7.5vw;
-                            }
-
-                            .footer-icon-image {
-                                padding: 1rem;
-                                margin-left: -5vw;
-                                margin-top: 6.5vh;
-                                height: 25vh;
-                            }
-
-                            .footer-text-section {
-                                display: flex;
-                                flex-direction: column;
-                                flex: 1;
-                                margin-left: -20vw;
-                                margin-top: 2.5vh;
-                                padding: 0.35rem;
-                            }
-
-                            .contact-btn {
-                                margin-top: -2vh;
-                                width: 15vw;
-                                height: 6.5vh;
-                            }
-
-                            .footer-row-1 {
-                                display: flex;
-                                flex-direction: column;
-                                flex: 1;
-                                justify-content: space-around;
-                                align-items: center;
-                                margin-top: 40vh;
-                            }
-
-                            .footer-row-2 {
-                                margin-top: 3vh;
-                                margin-left: -2.5vw;
-                            }
-
-                            .footer-tagline-1 {
-                                font-size: 1.6rem;
-                                margin-top: 3.5vh;
-                            }
-
-                            .footer-tagline-2 {
-                                font-size: 1.6rem;
-                                margin-top: -5vh;
-                            }
-
-                            .contact-btn a {
-                                font-size: 0.50rem;
-                            }
-
-                            .footer-subtitle {
-                                font-size: 1.2rem;
-                                margin-top: 1vh;
-                            }
-
-                            .footer-side-2 {
-                                display: flex;
-                                flex-direction: row;
-                                flex: 1;
-                                justify-content: space-between;
-                                gap: 3rem;
-                                margin-left: -2vw;
-                                margin-top: 3.5vh;
-                            }
-
-                            .footer-side-1 {
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                margin-top: -2.5vh;
-                                margin-left: -1.5vw;
-                                padding: 0.75rem;
-                            }
-
-                            .footer-col-2-1 {
-                                text-align: center;
-                            }
-
-                            .footer-social-media-links {
-                                display: flex;
-                                gap: 1.5vw;
-                                justify-content: center;
-                                margin-left: -4vw;
-                            }
-                        }
-                    </style>
+                    
                     <link rel="preconnect" href="https://fonts.googleapis.com">
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                     <link
@@ -919,119 +487,75 @@
                         rel="stylesheet">
                 </head>
 
-                <body class="footer-section">
-                    <div class="footer-parent-container">
-                        <div class="footer-purple-container">
-                            <div class="footer-icon-section">
-                                <img class="footer-icon-image" src="./colorful-logo.png" alt="colorful icon" />
-                            </div>
-                            <div class="footer-text-section">
-                                <p class="footer-tagline-1">Let’s Work Together !</p>
-                                <br />
-                                <p class="footer-tagline-2">Have a project in mind? Let’s build<br />something great
-                                    together.</p>
-                                <br />
-                                <button type="button" class="contact-btn"><span><a href="./contact-us.html">
-                                            <h5>Contact Us</h5>
-                                        </a></span></button>
-                                <br />
-                                <p class="footer-subtitle">Start a conversation with our experts and discover
-                                    how<br />our AI-powered solutions can transform your business.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-white-container">
-                        <div class="footer-row-1">
-                            <div class="footer-side-1">
-                                <div class="footer-col-2-1">
-                                    <img src="./Eit Logo.png" alt="logo of company" />
-                                    <br />
-                                    <p>Empowering businesses through Ethical and Intelligent IT,<br />IOT, and AI-driven
-                                        digital solutions.</p>
-                                    <br />
-                                    <div class="footer-social-media-links">
-                                        <span><a href="https://www.facebook.com/ethicalintelligent"><img
-                                                    src="./Frame 1.png" alt="Facebook logo" /></a></span>
-                                        <span><a href="https://www.instagram.com/ethicalintelligent_/"><img
-                                                    src="./Frame 2.png" alt="Instagram logo" /></a></span>
-                                        <span><a
-                                                href="https://www.linkedin.com/company/ethicalintelligent/?viewAsMember=true"><img
-                                                    src="./Frame 3-new.png" alt="Linkedin logo" /></a></span>
-                                        <span><a href="https://x.com/EITechnologies_"><img src="./Frame 4.png"
-                                                    alt="Twitter logo" /></a></span>
-                                        <span><a
-                                                href="https://in.pinterest.com/ethicalintelligenttechnologies/_created/"><img
-                                                    src="./Frame 5.png" alt="Pinterest logo" /></a></span>
-                                        <span><a href="https://www.youtube.com/@eitworks"><img src="./Frame 6.png"
-                                                    alt="YouTube logo" /></a></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="footer-side-2">
-                                <div class="footer-col-2-2">
-                                    <ul>
-                                        <li>
-                                            <p class="footer-list-title">Company</p>
-                                        </li>
-                                        <li class="list-items"><span><a href="./about-us.html">
-                                                    <p>About Us</p>
-                                                </a></span></li>
-                                        <li class="list-items"><span><a href="./clients.html">
-                                                    <p>Clients</p>
-                                                </a></span></li>
-                                        <li class="list-items"><span><a href="./career">
-                                                    <p>Careers</p>
-                                                </a></span></li>
-                                        <li class="list-items"><span><a href="https://ethicalintelligent.com/blogs">
-                                                    <p>Blogs</p>
-                                                </a></span></li>
-                                        <ul>
-                                </div>
-                                <div class="footer-col-2-3">
-                                    <ul>
-                                        <li>
-                                            <p class="footer-list-title">Solutions</p>
-                                        </li>
-                                        <li class="list-items"><span><a href="./it-services.html">
-                                                    <p>IT Services</p>
-                                                </a></span></li>
-                                        <li class="list-items"><span><a href="./iot-services.html">
-                                                    <p>IOT</p>
-                                                </a></span></li>
-                                        <li class="list-items"><span><a href="./AI-office-automation">
-                                                    <p>AI Office Automation</p>
-                                                </a></span></li>
-                                        <li class="list-items"><span><a href="./AI-Business-analytics">
-                                                    <p>AI Business Analytics</p>
-                                                </a></span></li>
-                                        <li class="list-items"><span><a href="./AI no-code/low-code">
-                                                    <p>AI no-code/low-code</p>
-                                                </a></span></li>
-                                        <ul>
-                                </div>
-                                <div class="footer-col-2-4">
-                                    <ul>
-                                        <li>
-                                            <p class="footer-list-title">Contact</p>
-                                        </li>
-                                        <li><img class="symbol-img" src="./clock.png" alt="icon of a clock" />
-                                            <p class="footer-detail-1">Monday to Friday<br />9 AM - 8 PM IST</p>
-                                        </li>
-                                        <br />
-                                        <li><img class="symbol-img" src="./symbol.png" alt="icon of symbol" />
-                                            <p class="footer-detail-2">sales@ethicalintelligent.com</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer-row-2">
-                            <p class="footer-copyright">@2025AllRightsReserved
-                            <p>
-                            <p class="footer-policy-tag">Privacy Policy</p>
-                        </div>
-                    </div>
-    </div>
+               <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <img src="../images/white-label/colorful-logo.png" alt="Company Logo" class="footer-logo">
+              <div class="footer-cta">
+                <h3>Let's Work Together!</h3>
+                <p>Have a project in mind? Let's build something great together.</p>
+                <a href="../contact-us.html" class="footer-button">Contact Us</a>
+                <p class="footer-cta-subtext">Start a conversation with our experts and discover how our AI-powered solutions can transform your business.</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-grid">
+              <div class="footer-about">
+                <img src="../images/white-label/Eit Logo.png" alt="Company Logo" class="company-logo">
+                <p>Empowering businesses through Ethical and Intelligent IT, IOT, and AI-driven digital solutions.</p>
+                <div class="social-links">
+                  <a href="https://www.facebook.com/ethicalintelligent" aria-label="Facebook"><img src="../images/white-label/Frame 1.png" alt="Facebook"></a>
+                  <a href="https://www.instagram.com/ethicalintelligent_/" aria-label="Instagram"><img src="../images/white-label/Frame 2.png" alt="Instagram"></a>
+                  <a href="https://www.linkedin.com/company/ethicalintelligent/?viewAsMember=true" aria-label="LinkedIn"><img src="../images/white-label/Frame 3-new.png" alt="LinkedIn"></a>
+                  <a href="https://x.com/EITechnologies_" aria-label="Twitter"><img src="../images/white-label/Frame 4.png" alt="Twitter"></a>
+                  <a href="https://in.pinterest.com/ethicalintelligenttechnologies/_created/" aria-label="Pinterest"><img src="../images/white-label/Frame 5.png" alt="Pinterest"></a>
+                  <a href="https://www.youtube.com/@eitworks" aria-label="YouTube"><img src="../images/white-label/Frame 6.png" alt="YouTube"></a>
+                </div>
+              </div>
+    
+              <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="../about-us.html">About Us</a></li>
+                  <li><a href="../clients.html">Clients</a></li>
+                  <li><a href="../career">Careers</a></li>
+                  <li><a href="https://ethicalintelligent.com/blogs">Blogs</a></li>
+                </ul>
+              </div>
+    
+              <div class="footer-links">
+                <h4>Solutions</h4>
+                <ul>
+                  <li><a href="../it-services.html">IT Services</a></li>
+                  <li><a href="../iot-services.html">IOT</a></li>
+                  <li><a href="../AI-office-automation">AI Office Automation</a></li>
+                  <li><a href="../AI-Business-analytics">AI Business Analytics</a></li>
+                  <li><a href="../AI no-code/low-code">AI no-code/low-code</a></li>
+                </ul>
+              </div>
+    
+              <div class="footer-contact">
+                <h4>Contact</h4>
+                <div class="contact-item">
+                  <img src="../images/white-label/clock.png" alt="Working Hours">
+                  <p>Monday to Friday<br>9 AM - 8 PM IST</p>
+                </div>
+                <div class="contact-item">
+                  <img src="../images/white-label/symbol.png" alt="Email">
+                  <a href="mailto:sales@ethicalintelligent.com">sales@ethicalintelligent.com</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="footer-legal">
+              <p>&copy; 2025 All Rights Reserved</p>
+              <a href="../privacy-policy.html">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </footer>
 </body>
 
 </html>
@@ -1406,8 +930,104 @@
             }
         });
     });
+
+
+
+
+
+
+       /* header script codes*/
+
+        document.addEventListener('DOMContentLoaded', function() {
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.nav_triggero');
+    const mobileMenu = document.getElementById('navyo');
+    
+    if (hamburger) {
+        hamburger.addEventListener('click', function(e) {
+            e.preventDefault();
+            this.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    }
+    
+    // Mobile submenu toggle
+    const toggleButtons = document.querySelectorAll('.dropdown-toggleo');
+    
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.stopPropagation();
+            
+            // Toggle icon text
+            this.textContent = this.textContent === '+' ? '−' : '+';
+            
+            // Handle Services and Who We Are menus
+            if (this.closest('.has_mega_menuo')) {
+                const megaMenu = this.nextElementSibling;
+                if (megaMenu && megaMenu.classList.contains('mega_menuo')) {
+                    megaMenu.classList.toggle('expanded');
+                }
+            }
+            
+            // Handle AI submenu
+            if (this.closest('.has_sub_sub_menuo')) {
+                const submenu = this.nextElementSibling;
+                if (submenu && submenu.tagName === 'UL') {
+                    submenu.classList.toggle('expanded');
+                }
+            }
+        });
+    });
+    
+    // Close mobile menu when clicking a link
+    const navLinks = document.querySelectorAll('#navyo a');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Close the mobile menu
+            if (mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    });
+    
+    // Close submenus when clicking outside on mobile
+    document.addEventListener('click', function(e) {
+        if (window.innerWidth <= 991) {
+            // Reset all toggle buttons
+            toggleButtons.forEach(button => {
+                if (!button.contains(e.target)) {
+                    button.textContent = '+';
+                }
+            });
+            
+            // Close mega menus
+            const megaMenus = document.querySelectorAll('.mega_menuo');
+            megaMenus.forEach(menu => {
+                if (!menu.contains(e.target) && 
+                    !menu.previousElementSibling.contains(e.target)) {
+                    menu.classList.remove('expanded');
+                }
+            });
+            
+            // Close AI submenus
+            const aiSubmenus = document.querySelectorAll('.has_sub_sub_menuo > ul');
+            aiSubmenus.forEach(menu => {
+                if (!menu.contains(e.target) && 
+                    !menu.previousElementSibling.contains(e.target)) {
+                    menu.classList.remove('expanded');
+                }
+            });
+        }
+    });
+});
+
+    </script>
+    
 </script>
 <!-- lets talk icon start end -->
+
 </body>
 
 </html>
