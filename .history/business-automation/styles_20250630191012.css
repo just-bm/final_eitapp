@@ -1047,3 +1047,13 @@ body {
       transform: scale(1.1);
 }
 
+.cancel-button img {
+    width: 24px; /* Adjust size of your logo as needed */
+    height: 24px; /* Keep aspect ratio */
+    display: block; /* Remove extra space below image */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect for the image */
+}
+
+.cancel-button:hover img {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+}
