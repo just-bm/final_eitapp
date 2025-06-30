@@ -2076,7 +2076,7 @@ header.header {
     display: flex; /* Use flexbox to center the image if needed */
     align-items: center;
     justify-content: center;
-    padding-bottom: 3px;
+    padding-bottom: px;
 }
 
 .cancel-button:hover {
