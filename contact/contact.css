@@ -1,12 +1,12 @@
 /* Reset and base styles */
-#site_headero * {
+#contact-site_header * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#site_headero body {
+#contact-site_header body {
     background: #f5f7fa;
     color: #333;
     line-height: 1.6;
@@ -14,7 +14,7 @@
 }
 
 /* Header styling */
-#site_headero {
+#contact-site_header {
     background: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -24,12 +24,12 @@
     z-index: 1000;
 }
 
-#site_headero #navigation_baro {
+#contact-site_header #contact-navigation_bar {
     padding: 15px 0;
     border-bottom: 1px solid #e0e0e0;
 }
 
-#site_headero .contento {
+#contact-site_header .contact-content {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
@@ -38,37 +38,37 @@
     align-items: center;
 }
 
-#site_headero #logoo img {
+#contact-site_header #contact-logo img {
     height: 50px;
     width: auto;
 }
 
 /* Navigation styling */
-#site_headero #nav_menuo {
+#contact-site_header #contact-nav_menu {
     position: absolute;
     right: 0;
     top: 10px;
 }
 
-#site_headero #navyo {
+#contact-site_header #contact-navy {
     list-style: none;
     display: flex;
     align-items: center;
 }
 
-/* Nested ul inside #navyo */
-#site_headero #navyo ul {
+/* Nested ul inside #contact-navy */
+#contact-site_header #contact-navy ul {
     list-style: none;
 }
 
 /* Top-level menu items */
-#site_headero #navyo > li {
+#contact-site_header #contact-navy > li {
     position: relative;
     padding: 0 15px;
     list-style: none;
 }
 
-#site_headero #navyo > li > a {
+#contact-site_header #contact-navy > li > a {
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
@@ -78,7 +78,7 @@
 }
 
 /* Active nav item */
-#site_headero .activeNavBoxo {
+#contact-site_header .contact-activeNavBox {
     background: #002E8A;
     color: white;
     padding: 5px 10px;
@@ -87,7 +87,7 @@
 }
 
 /* Dropdown menus */
-#site_headero .mega_menuo {
+#contact-site_header .contact-mega_menu {
     position: absolute;
     top: 100%;
     left: 0;
@@ -102,16 +102,16 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-#site_headero .has_mega_menuo:hover .mega_menuo {
+#contact-site_header .contact-has_mega_menu:hover .contact-mega_menu {
     opacity: 1;
     visibility: visible;
 }
 
-#site_headero .mega_menuo ul {
+#contact-site_header .contact-mega_menu ul {
     list-style: none;
 }
 
-#site_headero .mega_menuo li a {
+#contact-site_header .contact-mega_menu li a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
@@ -120,15 +120,15 @@
     font-size: 14px;
 }
 
-#site_headero .mega_menuo li a:hover,
-#site_headero .mega_menuo li a:focus {
+#contact-site_header .contact-mega_menu li a:hover,
+#contact-site_header .contact-mega_menu li a:focus {
     background: #f5f5f5;
     color: #002E8A;
     outline: none;
 }
 
 /* Nested submenus */
-#site_headero .mega_menuo ul ul {
+#contact-site_header .contact-mega_menu ul ul {
     position: absolute;
     left: 100%;
     top: 0;
@@ -141,14 +141,14 @@
     border-radius: 0 4px 4px 4px;
 }
 
-#site_headero .mega_menuo li:hover > ul,
-#site_headero .mega_menuo li:focus-within > ul {
+#contact-site_header .contact-mega_menu li:hover > ul,
+#contact-site_header .contact-mega_menu li:focus-within > ul {
     opacity: 1;
     visibility: visible;
 }
 
 /* Contact info */
-#site_headero .navdivo {
+#contact-site_header .contact-navdiv {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -158,27 +158,27 @@
     transition: all 0.3s;
 }
 
-#site_headero .navdivo:hover {
+#contact-site_header .contact-navdiv:hover {
     background: #e8f0fe;
 }
 
-#site_headero .navdivo img {
+#contact-site_header .contact-navdiv img {
     height: 24px;
 }
 
-#site_headero .navdivo div h6 {
+#contact-site_header .contact-navdiv div h6 {
     font-size: 12px;
     color: #666;
 }
 
-#site_headero .navdivo div p {
+#contact-site_header .contact-navdiv div p {
     font-size: 14px;
     font-weight: 600;
     color: #002E8A;
 }
 
 /* Mobile menu toggle button */
-#site_headero .mobile_menu_triggero {
+#contact-site_header .contact-mobile_menu_trigger {
     display: none;
     cursor: pointer;
     position: absolute;
@@ -187,14 +187,14 @@
     z-index: 1002;
 }
 
-#site_headero .nav_triggero {
+#contact-site_header .contact-nav_trigger {
     display: block;
     width: 30px;
     height: 20px;
     position: relative;
 }
 
-#site_headero .nav_triggero span {
+#contact-site_header .contact-nav_trigger span {
     position: absolute;
     height: 3px;
     width: 100%;
@@ -203,21 +203,21 @@
     transition: all 0.3s;
 }
 
-#site_headero .nav_triggero span:first-child {
+#contact-site_header .contact-nav_trigger span:first-child {
     top: 0;
 }
 
-#site_headero .nav_triggero span:nth-child(2) {
+#contact-site_header .contact-nav_trigger span:nth-child(2) {
     top: 50%;
     transform: translateY(-50%);
 }
 
-#site_headero .nav_triggero span:last-child {
+#contact-site_header .contact-nav_trigger span:last-child {
     bottom: 0;
 }
 
 /* Mobile submenu toggle button */
-#site_headero .dropdown-toggleo {
+#contact-site_header .contact-dropdown-toggle {
     display: none;
     position: absolute;
     right: 10px;
@@ -235,33 +235,33 @@
 }
 
 /* Mobile menu active state for hamburger */
-#site_headero .nav_triggero.active span:first-child {
+#contact-site_header .contact-nav_trigger.active span:first-child {
     transform: rotate(45deg);
     top: 50%;
 }
 
-#site_headero .nav_triggero.active span:nth-child(2) {
+#contact-site_header .contact-nav_trigger.active span:nth-child(2) {
     opacity: 0;
 }
 
-#site_headero .nav_triggero.active span:last-child {
+#contact-site_header .contact-nav_trigger.active span:last-child {
     transform: rotate(-45deg);
     bottom: 50%;
 }
 
 /* Nested submenu container */
-#site_headero .has_sub_sub_menuo {
+#contact-site_header .contact-has_sub_sub_menu {
     position: relative;
     top: 8px;
 }
 
 /* Responsive styles */
 @media (max-width: 991px) {
-    #site_headero .mobile_menu_triggero {
+    #contact-site_header .contact-mobile_menu_trigger {
         display: block;
     }
 
-    #site_headero #navyo {
+    #contact-site_header #contact-navy {
         position: fixed;
         top: 0;
         right: -100%;
@@ -276,24 +276,24 @@
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     }
 
-    #site_headero #navyo.active {
+    #contact-site_header #contact-navy.active {
         right: 0;
     }
 
-    #site_headero #navyo > li {
+    #contact-site_header #contact-navy > li {
         width: 100%;
         padding: 0;
         border-bottom: 1px solid #eee;
     }
 
-    #site_headero #navyo > li > a {
+    #contact-site_header #contact-navy > li > a {
         padding: 15px 0;
         display: block;
         width: 100%;
         position: relative;
     }
 
-    #site_headero .mega_menuo {
+    #contact-site_header .contact-mega_menu {
         position: static;
         width: 100%;
         height: 0;
@@ -305,12 +305,12 @@
         transition: height 0.3s ease;
     }
 
-    #site_headero .has_mega_menuo .mega_menuo.expanded {
+    #contact-site_header .contact-has_mega_menu .contact-mega_menu.expanded {
         height: auto;
         padding: 10px 0;
     }
 
-    #site_headero .mega_menuo ul ul {
+    #contact-site_header .contact-mega_menu ul ul {
         position: static;
         width: 100%;
         box-shadow: none;
@@ -320,41 +320,41 @@
         transition: height 0.3s ease;
     }
 
-    #site_headero .mega_menuo ul ul.expanded {
+    #contact-site_header .contact-mega_menu ul ul.expanded {
         height: auto;
     }
 
-    #site_headero .dropdown-toggleo {
+    #contact-site_header .contact-dropdown-toggle {
         display: block;
     }
 }
 
 @media (max-width: 767px) {
-    #site_headero .align_mobile_lets_disco {
+    #contact-site_header .contact-align_mobile_lets_disc {
         margin-top: 20px;
         width: 100% !important;
     }
 
-    #site_headero .navdivo {
+    #contact-site_header .contact-navdiv {
         width: 100%;
     }
 }
 
 /* Lists reset */
-#site_headero ul,
-#site_headero ol {
+#contact-site_header ul,
+#contact-site_header ol {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 /* Links base */
-#site_headero a {
+#contact-site_header a {
     text-decoration: none;
 }
 
 /* Accessibility: focus styles */
-#site_headero #navyo > li > a:focus {
+#contact-site_header #contact-navy > li > a:focus {
     outline: 2px solid #002E8A;
     outline-offset: 2px;
 }
