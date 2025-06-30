@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIT - AI-Powered Business Analytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../header/header.css">
+</head>
+
+<body>
+    <header id="site_header">
+        <div id="navigation_bar">
+            <div class="content">
+                <div id="logo">
+                    <a href="/">
+                        <img src="../images/header/EIT New Logo.webp" alt="">
+                    </a>
+                </div>
+                <nav id="main_nav">
+                    <div id="nav_menu">
+                        <ul id="navy" class="clearfix">
+                            <li class="normal_menu mobile_menu_toggle">
+                                <a href="/"><span>Home</span></a>
+                            </li>
+
+                            <li class="has_mega_menu mobile_menu_toggle current_page_item">
+                                <a href="#">
+                                    <span class="activeNavBoxSpan">
+                                        <p class="activeNavBox">Services</p>
+                                    </span>
+                                </a>
+                                <button class="dropdown-toggle">+</button>
+                                <ul class="mega_menu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="it-services.html"><span>IT Services</span></a></li>
+                                            <li><a href="iot-services.html"><span>IOT</span></a></li>
+                                            <li class="has_sub_sub_menu">
+                                                <a href="./ai_development_services/ai_development_service.html">
+                                                    <span>AI</span>
+                                                </a>
+                                                <button class="dropdown-toggle">+</button>
+                                                <ul>
+                                                    <li><a href="#"><span>AI Powered No Code Low Code</span></a></li>
+                                                    <li><a href="./business-analytics/ai-business-analytics.html"><span>AI Powered Business Analytics</span></a></li>
+                                                    <li><a href="./business-automation/index.html"><span>AI Powered Office Automation</span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has_mega_menu mobile_menu_toggle">
+                                <a href="#"><span>Who We Are</span></a>
+                                <button class="dropdown-toggle">+</button>
+                                <ul class="mega_menu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="about-us.html"><span>About Us</span></a></li>
+                                            <li><a href="clients.html"><span>Clients</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="normal_menu mobile_menu_toggle">
+                                <a href="contact-us.html"><span>Contact Us</span></a>
+                            </li>
+                            <li class="normal_menu mobile_menu_toggle">
+                                <a href="blogs.html"><span>Blogs</span></a>
+                            </li>
+
+                            <li class="normal_menu mobile_menu_toggle align_mobile_lets_disc">
+                                <div class="navdiv">
+                                    <div style=" width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                        <img style="width: 30px; height: 30px; margin-right: 20px; background-color: white; color: black;" src="https://ethicalintelligent.com/images/new2/MAIL%20navbar.webp" alt="message">
+                                    </div>
+                                    <div>
+                                        <a href="mailto:sales@ethicalintelligent.com">
+                                        <h6>Get in touch with us</h6>
+                                        <p>sales@ethicalintelligent.com</p></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="clear"></div>
+            </div>
+            <span class="mobile_menu_trigger">
+                <a href="#" class="nav_trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section style="padding-top: 100px;" class="eit-gradient text-white relative overflow-hidden px-48 py-80">
+        <div class="max-w-7xl mx-auto" id="hero">
+            <div class="grid lg-grid-2 gap-16 items-center min-h-600">
+                <!-- Left Content -->
+                <div class="space-y-8 relative z-10">
+                    <div class="space-y-6">
+                        <h1 class="text-5xl lg:text-6xl font-bold leading-tight">
+                            EIT's AI-Powered <br>Business Analytics
+                        </h1>
+                        <p class="text-xl lg:text-2xl text-blue-100 font-semibold">
+                            From Data to Decisions—No Experts Needed
+                        </p>
+                        <p class="text-lg text-blue-200 leading-relaxed">
+                            Unlock powerful, real-time insights with EIT's self-driving analytics
+                            platform.
+                            Ask questions in natural language and get intelligent dashboards—no code, no
+                            SQL, no delays.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-1 sm-grid-2 gap-4">
+                        <div class="flex items-center space-x-3 bg-white-10 backdrop-blur-sm rounded-lg p-3">
+                            <span class="check-icon"></span>
+                            <span class="text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    style="color: rgb(134 239 172); margin-right: 6px;" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>AI-Generated Reports & Dashboards</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-white-10 backdrop-blur-sm rounded-lg p-3">
+                            <span class="check-icon"></span>
+                            <span class="text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    style="color: rgb(134 239 172); margin-right: 6px;" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>Natural
+                                Language Query Support</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-white-10 backdrop-blur-sm rounded-lg p-3">
+                            <span class="check-icon"></span>
+                            <span class="text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    style="color: rgb(134 239 172); margin-right: 6px;" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>Multi-Format Export (PDF, Excel, JSON)</span>
+
+                        </div>
+                        <div class="flex items-center space-x-3 bg-white-10 backdrop-blur-sm rounded-lg p-3">
+                            <span class="check-icon"></span>
+                            <span class="text-sm"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    style="color: rgb(134 239 172); margin-right: 6px;" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                    <path d="m9 11 3 3L22 4"></path>
+                                </svg>100%
+                                Secure, Self-Hosted Architecture</span>
+                        </div>
+                    </div>
+
+                    <div class="gradient-yellow rounded-xl p-4">
+                        <p class="text-xl font-semibold text-yellow-200 flex items-center gap-2">
+                            <span>✨</span>
+                            Get started in minutes - Ask More. Know More. Do More.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right AI Image -->
+                <div class="relative z-10 flex justify-center items-center">
+                    <div class="relative">
+                        <img src="../images/business-analytics/AI-business-analytics.png" alt="AI-Powered Business Analytics"
+                            class="w-full max-w-lg h-auto object-contain rounded-2xl shadow-2xl animate-float" />
+                        <!-- Floating AI elements -->
+                        <div class="absolute bg-white-20 backdrop-blur-sm rounded-lg p-3 animate-pulse"
+                            style="top: -1rem; left: -1rem;">
+                            <div class="flex items-center gap-2 text-white text-sm font-semibold">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-brain h-4 w-4"
+                                        data-lov-id="src/pages/Index.tsx:79:20" data-lov-name="Brain"
+                                        data-component-path="src/pages/Index.tsx" data-component-line="79"
+                                        data-component-file="Index.tsx" data-component-name="Brain"
+                                        data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
+                                        <path
+                                            d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z">
+                                        </path>
+                                        <path
+                                            d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z">
+                                        </path>
+                                        <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path>
+                                        <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path>
+                                        <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path>
+                                        <path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path>
+                                        <path d="M19.938 10.5a4 4 0 0 1 .585.396"></path>
+                                        <path d="M6 18a4 4 0 0 1-1.967-.516"></path>
+                                        <path d="M19.967 17.484A4 4 0 0 1 18 18"></path>
+                                    </svg></span> AI Processing
+                            </div>
+                        </div>
+                        <div class="absolute bg-white-20 backdrop-blur-sm rounded-lg p-3 animate-pulse"
+                            style="bottom: -1rem; right: -1rem; animation-delay: 1s;">
+                            <div class="flex items-center gap-2 text-white text-sm font-semibold">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-chart-column h-4 w-4"
+                                        data-lov-id="src/pages/Index.tsx:87:20" data-lov-name="BarChart3"
+                                        data-component-path="src/pages/Index.tsx" data-component-line="87"
+                                        data-component-file="Index.tsx" data-component-name="BarChart3"
+                                        data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
+                                        <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                                        <path d="M18 17V9"></path>
+                                        <path d="M13 17V5"></path>
+                                        <path d="M8 17v-3"></path>
+                                    </svg></span> Real-time Analytics
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Technology Showcase -->
+    <section class="py-80 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md-grid-3 gap-8 items-center">
+                <div class="text-center">
+                    <img src="../images/business-analytics/advanced-ai-processing.png" alt="Advanced AI Processing"
+
+                        class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+                    <h3 class="text-xl font-semibold gradient-text">Advanced AI Processing</h3>
+                </div>
+                <div class="text-center">
+                    <img src="../images/business-analytics/smart-data-analysis.png" alt="Smart Data Analysis"
+
+                        class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+                    <h3 class="text-xl font-semibold gradient-text">Smart Data Analysis</h3>
+                </div>
+                <div class="text-center">
+                    <img src="../images/business-analytics/intelligent-insights.png" alt="Intelligent Insights"
+
+                        class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+                    <h3 class="text-xl font-semibold gradient-text">Intelligent Insights</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Key Features Section -->
+    <section class="py-80 px-4 section-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="min-w-sm max1-w-lg h-12 inline-flex items-center gap-2 px-4 py-2 rounded-2xl text-sm font-semibold mb-4"
+                    style="background: rgba(20, 22, 107, 0.1); color: #14166B;">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-cpu h-4 w-4" data-lov-id="src/pages/Index.tsx:122:14"
+                            data-lov-name="Cpu" data-component-path="src/pages/Index.tsx" data-component-line="122"
+                            data-component-file="Index.tsx" data-component-name="Cpu"
+                            data-component-content="%7B%22className%22%3A%22h-4%20w-4%22%7D">
+                            <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                            <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+                            <path d="M15 2v2"></path>
+                            <path d="M15 20v2"></path>
+                            <path d="M2 15h2"></path>
+                            <path d="M2 9h2"></path>
+                            <path d="M20 15h2"></path>
+                            <path d="M20 9h2"></path>
+                            <path d="M9 2v2"></path>
+                            <path d="M9 20v2"></path>
+                        </svg></span> Core Features
+                </div>
+                <h2 class="text-4xl font-bold gradient-text mb-4">
+                    Transform Your Data Into Insights
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Three powerful capabilities that revolutionize how you interact with your business
+                    data
+                </p>
+            </div>
+
+            <div class="grid md-grid-3 gap-8">
+                <div class="card feature-card p-8 text-center">
+                    <div class="feature-icon eit-gradient"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-message-square h-8 w-8 text-white"
+                            data-lov-id="src/pages/Index.tsx:137:18" data-lov-name="MessageSquare"
+                            data-component-path="src/pages/Index.tsx" data-component-line="137"
+                            data-component-file="Index.tsx" data-component-name="MessageSquare"
+                            data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-white%22%7D">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z">
+                            </path>
+                        </svg></div>
+                    <h3 class="text-2xl font-bold gradient-text mb-4">
+                        Natural Language Queries
+                    </h3>
+                    <p class="text-gray-600 text-lg">
+                        Ask questions in any language, get instant insights
+                    </p>
+                </div>
+
+                <div class="card feature-card p-8 text-center">
+                    <div class="feature-icon eit-gradient"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chart-column h-8 w-8 text-white"
+                            data-lov-id="src/pages/Index.tsx:151:18" data-lov-name="BarChart3"
+                            data-component-path="src/pages/Index.tsx" data-component-line="151"
+                            data-component-file="Index.tsx" data-component-name="BarChart3"
+                            data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-white%22%7D">
+                            <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                            <path d="M18 17V9"></path>
+                            <path d="M13 17V5"></path>
+                            <path d="M8 17v-3"></path>
+                        </svg></div>
+                    <h3 class="text-2xl font-bold gradient-text mb-4">
+                        Auto-Generated Visualizations
+                    </h3>
+                    <p class="text-gray-600 text-lg">
+                        Clear charts and graphs to understand trends at a glance
+                    </p>
+                </div>
+
+                <div class="card feature-card p-8 text-center">
+                    <div class="feature-icon eit-gradient"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap h-8 w-8 text-white"
+                            data-lov-id="src/pages/Index.tsx:165:18" data-lov-name="Zap"
+                            data-component-path="src/pages/Index.tsx" data-component-line="165"
+                            data-component-file="Index.tsx" data-component-name="Zap"
+                            data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-white%22%7D">
+                            <path
+                                d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                            </path>
+                        </svg></div>
+                    <h3 class="text-2xl font-bold gradient-text mb-4">
+                        Real-Time Results
+                    </h3>
+                    <p class="text-gray-600 text-lg">
+                        Instant analytics without waiting for reports
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Images Section with AI Context -->
+    <section class="py-20 px-4 section-gray">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold gradient-text mb-4">AI-Powered Business Intelligence in
+                    Action</h2>
+                <p class="text-lg text-gray-600">See how our platform transforms complex data into
+                    actionable insights
+                </p>
+            </div>
+            <div class="grid md-grid-2 gap-12 items-center">
+                <div class="relative" style="margin-right: 2rem;">
+                    <img src="../images/business-analytics/dashboard-1.png" alt="EIT Analytics Dashboard"
+
+                        class="rounded-lg shadow-2xl animate-float dashboard-image" />
+                    <div class="absolute bg-white rounded-lg p-4 shadow-lg"
+                        style="bottom: -1rem; right: -1rem; padding: 0.675rem;">
+                        <div class="flex items-center gap-2 font-semibold gradient-text">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-network h-5 w-5"
+                                    data-lov-id="src/pages/Index.tsx:191:18" data-lov-name="Network"
+                                    data-component-path="src/pages/Index.tsx" data-component-line="191"
+                                    data-component-file="Index.tsx" data-component-name="Network"
+                                    data-component-content="%7B%22className%22%3A%22h-5%20w-5%22%7D">
+                                    <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                                    <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                                    <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                                    <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+                                    <path d="M12 12V8"></path>
+                                </svg></span>
+                            Real-time Data
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="../images/business-analytics/dashboard-2.png" alt="EIT Query Interface"
+
+                        class="rounded-lg shadow-2xl animate-float dashboard-image" style="animation-delay: 1s;" />
+                    <div class="absolute bg-white rounded-lg p-4 shadow-lg"
+                        style="top: -1rem; left: -0.3rem; padding: 0.675rem;">
+                        <div class="flex items-center gap-2 font-semibold gradient-text">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-bot h-5 w-5"
+                                    data-lov-id="src/pages/Index.tsx:202:18" data-lov-name="Bot"
+                                    data-component-path="src/pages/Index.tsx" data-component-line="202"
+                                    data-component-file="Index.tsx" data-component-name="Bot"
+                                    data-component-content="%7B%22className%22%3A%22h-5%20w-5%22%7D">
+                                    <path d="M12 8V4H8"></path>
+                                    <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                                    <path d="M2 14h2"></path>
+                                    <path d="M20 14h2"></path>
+                                    <path d="M15 13v2"></path>
+                                    <path d="M9 13v2"></path>
+                                </svg></span>
+                            AI Assistant
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why EIT Outperforms Section -->
+    <section class="py-80 px-4 section-gradient-subtle">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-4"
+                    style="background: #14166b1a; color: #14166B; border-radius: 9999px; padding-left: 1rem; padding-right: 1rem; display: inline; padding: .675rem; margin-bottom: 10rem;">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-sparkles h-4 w-4">
+                            <path
+                                d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+                            </path>
+                            <path d="M20 3v4"></path>
+                            <path d="M22 5h-4"></path>
+                            <path d="M4 17v2"></path>
+                            <path d="M5 18H3"></path>
+                        </svg></span> Competitive Advantage
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text mb-4 leading-tight">
+                    Why EIT's AI-Powered Business Analytics<br>
+                    <span style="color: #0B4CB8;">Outperforms Traditional BI Tools</span>
+                </h2>
+                <div class="w-24 h-1 eit-gradient mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid lg-grid-2 gap-6">
+                <!-- Autonomous Analytics -->
+                <div class="competitive-card p-6" style="border-radius: 8px;"">
+                    <div class=" flex items-center mb-6">
+                    <div>
+                        <span class="text-2xl mr-2" style="margin-right: 8px;">🤖</span>
+                        <h3 class="text-xl font-bold gradient-text inline" style="display: inline;">
+                            Fully Autonomous Analytics
+                        </h3>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="check-icon-small bg-green-100 mr-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" style="color: #16a34a; margin-right: 6px;" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                <path d="m9 11 3 3L22 4"></path>
+                            </svg></div>
+                        <div>
+                            <h4 class="font-semibold gradient-text mb-1">AI-Generated Dashboards</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">No manual drag-and-drop,
+                                Our system
+                                doesn't just retrieve data; it creates complete reports with optimal
+                                visualizations
+                                (pie charts, bar graphs, heat maps, etc..)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="check-icon-small bg-green-100 mr-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" style="color: #16a34a; margin-right: 6px;" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                <path d="m9 11 3 3L22 4"></path>
+                            </svg></div>
+                        <div>
+                            <h4 class="font-semibold gradient-text mb-1">Self-Optimizing Output</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">The AI selects the most
+                                effective way
+                                to present your data based on context and best practices</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="check-icon-small bg-green-100 mr-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" style="color: #16a34a; margin-right: 6px;" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                <path d="m9 11 3 3L22 4"></path>
+                            </svg></div>
+                        <div>
+                            <h4 class="font-semibold gradient-text mb-1">Future-Ready</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">100% AI-generated
+                                dashboards from raw
+                                data with zero configuration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Superiority -->
+            <div class="competitive-card competitive-card-alt p-6" style="border-radius: 8px;">
+                <div class="flex items-center mb-6">
+                    <div>
+                        <span class="text-2xl mr-2" style="margin-right: 8px;">💻</span>
+                        <h3 class="text-xl font-bold gradient-text inline" style="display: inline;">
+                            Technical Superiority
+                        </h3>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="check-icon-small bg-green-100 mr-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" style="color: #16a34a; margin-right: 6px;" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                <path d="m9 11 3 3L22 4"></path>
+                            </svg></div>
+                        <div>
+                            <h4 class="font-semibold gradient-text mb-1">Seamless Cross-Database
+                                Compatibility</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">Delivers fully structured,
+                                editable
+                                results with native support for MySQL, PostgreSQL, Oracle, SQL Server,
+                                and
+                                more—eliminating silos and streamlining integration.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="check-icon-small bg-green-100 mr-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" style="color: #16a34a; margin-right: 6px;" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                <path d="m9 11 3 3L22 4"></path>
+                            </svg></div>
+                        <div>
+                            <h4 class="font-semibold gradient-text mb-1">Multi-Database Connectivity
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">Analyze across all your
+                                data sources
+                                simultaneously</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="check-icon-small bg-green-100 mr-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" style="color: #16a34a; margin-right: 6px;" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                                <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                <path d="m9 11 3 3L22 4"></path>
+                            </svg></div>
+                        <div>
+                            <h4 class="font-semibold gradient-text mb-1">No JavaScript Needed</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">Build complex workflows
+                                without coding
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 text-center">
+            <div class="eit-gradient text-white p-6 rounded-2xl inline-block shadow-xl" style="display: inline-block;">
+                <h3 class="text-xl font-bold mb-2">
+                    No Code, No SQL – "Build complex workflows without code—just talk to your data"
+                </h3>
+            </div>
+        </div>
+
+        <div class="grid lg-grid-2 gap-6 mt-10">
+            <!-- Security -->
+            <div class="competitive-card competitive-card-green p-6" style="border-radius: 8px;"">
+                    <div class=" flex items-center mb-6">
+                <div>
+                    <span class="text-2xl mr-2" style="margin-right: 8px;">🔐</span>
+                    <h3 class="text-xl font-bold gradient-text inline" style="display: inline;">
+                        Unmatched Security & Control
+                    </h3>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <div class="flex items-start">
+                    <div class="check-icon-small bg-green-100 mr-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" style="color: #16a34a; margin-right: 6px;" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                            <path d="m9 11 3 3L22 4"></path>
+                        </svg></div>
+                    <div>
+                        <h4 class="font-semibold gradient-text mb-1">Our Self hosted Technology</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">No third-party AI dependencies;
+                            everything runs on our secure, proprietary models</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="check-icon-small bg-green-100 mr-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" style="color: #16a34a; margin-right: 6px;" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                            <path d="m9 11 3 3L22 4"></path>
+                        </svg></div>
+                    <div>
+                        <h4 class="font-semibold gradient-text mb-1">100% Local Processing</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Sensitive data never leaves
+                            your
+                            infrastructure</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="check-icon-small bg-green-100 mr-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20" style="color: #16a34a; margin-right: 6px;" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                            <path d="m9 11 3 3L22 4"></path>
+                        </svg></div>
+                    <div>
+                        <h4 class="font-semibold gradient-text mb-1">Military-Grade Encryption</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">End-to-end protection for all
+                            your data
+                            assets</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Output Options -->
+        <div class="competitive-card competitive-card-purple p-6" style="border-radius: 8px;"">
+                    <div class=" flex items-center mb-6">
+            <div>
+                <span class="text-2xl mr-2" style="margin-right: 8px;">📊</span>
+                <h3 class="text-xl font-bold gradient-text inline" style="display: inline;">
+                    Intelligent Output Options
+                </h3>
+            </div>
+        </div>
+        <div class="space-y-4">
+            <div class="flex items-start">
+                <div class="check-icon-small bg-green-100 mr-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                        height="20" style="color: #16a34a; margin-right: 6px;" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                    </svg></div>
+                <div>
+                    <h4 class="font-semibold gradient-text mb-1">Multi-Format Export</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">PDFs for executives, Excel for
+                        finance,
+                        JSON for devs—all from the same query</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <div class="check-icon-small bg-green-100 mr-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                        height="20" style="color: #16a34a; margin-right: 6px;" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                    </svg></div>
+                <div>
+                    <h4 class="font-semibold gradient-text mb-1">Text Analysis Integration</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Combine quantitative data with
+                        qualitative insights</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <div class="check-icon-small bg-green-100 mr-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                        height="20" style="color: #16a34a; margin-right: 6px;" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                    </svg></div>
+                <div>
+                    <h4 class="font-semibold gradient-text mb-1">Smart Narrative Generation</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Automatic explanations of trends
+                        and
+                        anomalies</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <div class="check-icon-small bg-green-100 mr-3 mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                        height="20" style="color: #16a34a; margin-right: 6px;" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-circle-check-big h-6 w-6 text-green-600">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                    </svg></div>
+                <div>
+                    <h4 class="font-semibold gradient-text mb-1">No Code, No SQL</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Build complex workflows without
+                        code—just talk to your data</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-80 px-4 section-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold gradient-text mb-4">
+                    How It Works: Zero-Effort Analytics
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Four simple steps to transform your data into actionable insights
+                </p>
+            </div>
+
+            <div class="grid md-grid-4 gap-8">
+                <div class="text-center">
+                    <div class="eit-gradient w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white" style="font-size: 2.5rem;"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-database h-10 w-10 text-white"
+                                data-lov-id="src/pages/Index.tsx:444:16" data-lov-name="Database"
+                                data-component-path="src/pages/Index.tsx" data-component-line="444"
+                                data-component-file="Index.tsx" data-component-name="Database"
+                                data-component-content="%7B%22className%22%3A%22h-10%20w-10%20text-white%22%7D">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                                <path d="M3 12A9 3 0 0 0 21 12"></path>
+                            </svg></span>
+                    </div>
+                    <h3 class="text-xl font-bold gradient-text mb-4">Connect</h3>
+                    <p class="text-gray-600">
+                        Link your databases (as many as you need) in seconds
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="eit-gradient w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white"
+                            style="font-size: 2.5rem; align-items: center; justify-content: center; text-align: center;"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-message-square h-10 w-10 text-white"
+                                data-lov-id="src/pages/Index.tsx:454:16" data-lov-name="MessageSquare"
+                                data-component-path="src/pages/Index.tsx" data-component-line="454"
+                                data-component-file="Index.tsx" data-component-name="MessageSquare"
+                                data-component-content="%7B%22className%22%3A%22h-10%20w-10%20text-white%22%7D">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg></span>
+                    </div>
+                    <h3 class="text-xl font-bold gradient-text mb-4">Ask</h3>
+                    <p class="text-gray-600">
+                        Pose questions in natural language: "Show Q3 sales performance with customer sentiment analysis"
+                        (in any language).
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="eit-gradient w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white" style="font-size: 2.5rem;"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-sparkles h-10 w-10 text-white">
+                                <path
+                                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z">
+                                </path>
+                                <path d="M20 3v4"></path>
+                                <path d="M22 5h-4"></path>
+                                <path d="M4 17v2"></path>
+                                <path d="M5 18H3"></path>
+                            </svg></span>
+                    </div>
+                    <h3 class="text-xl font-bold gradient-text mb-4">Receive</h3>
+                    <div class="text-gray-600 space-y-2">
+                        <p>Get a complete AI-built report with:</p>
+                        <ul class="text-sm space-y-1">
+                            <li>• Professionally designed visualizations</li>
+                            <li>• Executive summary</li>
+                            <li>• Detailed analysis</li>
+                            <li>• Actionable recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <div class="eit-gradient w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white" style="font-size: 2.5rem;"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-download h-10 w-10 text-white"
+                                data-lov-id="src/pages/Index.tsx:480:16" data-lov-name="Download"
+                                data-component-path="src/pages/Index.tsx" data-component-line="480"
+                                data-component-file="Index.tsx" data-component-name="Download"
+                                data-component-content="%7B%22className%22%3A%22h-10%20w-10%20text-white%22%7D">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" x2="12" y1="15" y2="3"></line>
+                            </svg></span>
+                    </div>
+                    <h3 class="text-xl font-bold gradient-text mb-4">Export/Share</h3>
+                    <p class="text-gray-600">
+                        One-click export to your stack in many formats like pdf, Excel etc...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section class="py-80 px-4 eit-gradient text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">
+                    EIT for Every Team – Instant Insights, Zero Complexity
+                </h2>
+                <p class="text-xl text-blue-100 mb-4">
+                    AI-Powered Analytics for Every Business Role
+                </p>
+                <p class="text-lg text-blue-200 max-w-4xl mx-auto">
+                    EIT's AI-Powered self-driving analytics platform empowers any business to unlock intelligent
+                    insights—without the hassle of traditional BI tools. From startups to enterprises, our software
+                    adapts seamlessly to your needs.
+                </p>
+            </div>
+
+            <div class="grid md-grid-2 lg-grid-3 gap-8">
+                <div class="card bg-white-10 backdrop-blur-sm border-white-20 p-6">
+                    <span style="font-size: 2rem; color: #fde047;"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-users h-8 w-8 text-yellow-300 mb-4"
+                            data-lov-id="src/pages/Index.tsx:509:16" data-lov-name="Users"
+                            data-component-path="src/pages/Index.tsx" data-component-line="509"
+                            data-component-file="Index.tsx" data-component-name="Users"
+                            data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-yellow-300%20mb-4%22%7D">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg></span>
+                    <h3 class="text-xl font-bold mb-3 mt-4" style="color: #020817;">Business Leaders & Executives</h3>
+                    <p class="text-blue-100">Make data-driven decisions faster with AI-generated reports and executive
+                        summaries.</p>
+                </div>
+
+                <div class="card bg-white-10 backdrop-blur-sm border-white-20 p-6">
+                    <span style="font-size: 2rem; color: #fde047;"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-trending-up h-8 w-8 text-yellow-300 mb-4"
+                            data-lov-id="src/pages/Index.tsx:517:16" data-lov-name="TrendingUp"
+                            data-component-path="src/pages/Index.tsx" data-component-line="517"
+                            data-component-file="Index.tsx" data-component-name="TrendingUp"
+                            data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-yellow-300%20mb-4%22%7D">
+                            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                            <polyline points="16 7 22 7 22 13"></polyline>
+                        </svg></span>
+                    <h3 class="text-xl font-bold mb-3 mt-4" style="color: #020817;">Operations Teams</h3>
+                    <p class="text-blue-100">Monitor real-time performance metrics and automate workflows without
+                        coding.</p>
+                </div>
+
+                <div class="card bg-white-10 backdrop-blur-sm border-white-20 p-6">
+                    <span style="font-size: 2rem; color: #fde047;"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chart-column h-8 w-8 text-yellow-300 mb-4"
+                            data-lov-id="src/pages/Index.tsx:525:16" data-lov-name="BarChart3"
+                            data-component-path="src/pages/Index.tsx" data-component-line="525"
+                            data-component-file="Index.tsx" data-component-name="BarChart3"
+                            data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-yellow-300%20mb-4%22%7D">
+                            <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                            <path d="M18 17V9"></path>
+                            <path d="M13 17V5"></path>
+                            <path d="M8 17v-3"></path>
+                        </svg></span>
+                    <h3 class="text-xl font-bold mb-3 mt-4" style="color: #020817;">Sales & Marketing</h3>
+
+                    <p class="text-blue-100">Track campaigns, customer behavior, and revenue trends in seconds.</p>
+                </div>
+
+                <div class="card bg-white-10 backdrop-blur-sm border-white-20 p-6">
+                    <span style="font-size: 2rem; color: #fde047;"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-file-text h-8 w-8 text-yellow-300 mb-4"
+                            data-lov-id="src/pages/Index.tsx:533:16" data-lov-name="FileText"
+                            data-component-path="src/pages/Index.tsx" data-component-line="533"
+                            data-component-file="Index.tsx" data-component-name="FileText"
+                            data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-yellow-300%20mb-4%22%7D">
+                            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                            <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                            <path d="M10 9H8"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                        </svg></span>
+                    <h3 class="text-xl font-bold mb-3 mt-4" style="color: #020817;">Finance Teams</h3>
+                    <p class="text-blue-100">Generate compliance-ready reports and forecasts with built-in audit trails.
+                    </p>
+                </div>
+
+                <div class="card bg-white-10 backdrop-blur-sm border-white-20 p-6">
+                    <span style="font-size: 2rem; color: #fde047;"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-database h-8 w-8 text-yellow-300 mb-4"
+                            data-lov-id="src/pages/Index.tsx:541:16" data-lov-name="Database"
+                            data-component-path="src/pages/Index.tsx" data-component-line="541"
+                            data-component-file="Index.tsx" data-component-name="Database"
+                            data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-yellow-300%20mb-4%22%7D">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                            <path d="M3 12A9 3 0 0 0 21 12"></path>
+                        </svg></span>
+                    <h3 class="text-xl font-bold mb-3 mt-4" style="color: #020817;">IT & Data Teams</h3>
+                    <p class="text-blue-100">Connect multiple databases securely and get structured outputs (JSON,
+                        Excel) for seamless integration.</p>
+                </div>
+
+                <div class="card bg-white-10 backdrop-blur-sm border-white-20 p-6">
+                    <span style="font-size: 2rem; color: #fde047;"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-zap h-8 w-8 text-yellow-300 mb-4"
+                            data-lov-id="src/pages/Index.tsx:549:16" data-lov-name="Zap"
+                            data-component-path="src/pages/Index.tsx" data-component-line="549"
+                            data-component-file="Index.tsx" data-component-name="Zap"
+                            data-component-content="%7B%22className%22%3A%22h-8%20w-8%20text-yellow-300%20mb-4%22%7D">
+                            <path
+                                d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                            </path>
+                        </svg></span>
+                    <h3 class="text-xl font-bold mb-3 mt-4" style="color: #020817;">Manufacturing & Logistics</h3>
+                    <p class="text-blue-100">Optimize supply chains with AI-driven efficiency insights.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-2xl font-semibold text-yellow-200">
+                    No technical skills needed—just ask questions and get AI-powered answers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-80 px-4 section-gray">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold gradient-text mb-6">
+                Ready to Transform Your Business Analytics?
+            </h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Join thousands of companies already using EIT's AI-powered analytics platform
+            </p>
+            <div class="flex flex-col sm-flex-row gap-4 justify-center">
+                <button class="btn btn-primary btn-large">
+                    Start Free Trial
+                    <span class="ml-2">→</span>
+                </button>
+                <button class="btn btn-navy-outline btn-large">
+                    Schedule Demo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+
+
+    
+    <!-- lets talk icon start -->
+   <div class="chat-widget-container">
+        <div class="original-chat-icon" id="chatTrigger">
+            <img src="https://ethicalintelligent.com/images/new/lets talk.png" alt="Chat with us">
+        </div>
+
+        <div class="contact-form" id="contactForm">
+            <div class="form-container">
+               <button style="font-weight: 600; font-size: 30px; border: 2px solid #002e8a; height: 25px; width: 25px;" class="cancel-button" id="closeFormButton" onclick="hideForm()">x
+                   <!-- <img style="border: 2px solid #002e8a; border-radius: 9999px; width: 27px;" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/X_mark_18x18_04.gif" alt="Close Form"> -->
+               </button>
+
+                <div class="form-header">
+                    <h2>Start Your Digital<br>Transformation Today!</h2>
+                </div>
+                <form action="https://formsubmit.co/ethicalintelligentclients@gmail.com" method="POST" enctype="multipart/form-data">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" name="phone" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="company" placeholder="Company Name">
+                    </div>
+                    <div class="form-row">
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-footer">
+                        <div class="form-actions">
+                            <label class="attach-button">
+                                <input type="file" name="attachment" style="display: none;">
+                                <span>Attach File</span>
+                            </label>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                </form>
+            </div>
+        </div>
+    </div>
+ <script src="script.js"></script>
+    <script src="../header/header.js"></script>
+</body>
+</html>
