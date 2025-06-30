@@ -1,3 +1,4 @@
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +17,10 @@ body {
 #site_header {
     background: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
 }
 
@@ -52,17 +56,19 @@ body {
     align-items: center;
 }
 
-#navy>ul {
+/* If #navy contains nested <ul> elements */
+#navy ul {
     list-style: none;
 }
 
-#navy>li {
+/* Top-level menu items */
+#navy > li {
     position: relative;
     padding: 0 15px;
     list-style: none;
 }
 
-#navy>li>a {
+#navy > li > a {
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
@@ -71,6 +77,7 @@ body {
     display: inline-block;
 }
 
+/* Active nav item */
 .activeNavBox {
     background: #002E8A;
     color: white;
@@ -113,9 +120,11 @@ body {
     font-size: 14px;
 }
 
-.mega_menu li a:hover {
+.mega_menu li a:hover,
+.mega_menu li a:focus {
     background: #f5f5f5;
     color: #002E8A;
+    outline: none;
 }
 
 /* Nested submenus */
@@ -125,12 +134,15 @@ body {
     top: 0;
     background: white;
     width: 220px;
+    opacity: 0;
+    visibility: hidden;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 0 4px 4px 4px;
 }
 
-.mega_menu li:hover>ul {
+.mega_menu li:hover > ul,
+.mega_menu li:focus-within > ul {
     opacity: 1;
     visibility: visible;
 }
@@ -222,47 +234,25 @@ body {
     z-index: 10;
 }
 
-/* Top-level Mega Menu Hover */
-.has_mega_menu:hover .mega_menu {
-    opacity: 1;
-    visibility: visible;
+/* Mobile menu active state for hamburger */
+.nav_trigger.active span:first-child {
+    transform: rotate(45deg);
+    top: 50%;
 }
 
-
-/* Nested Submenu Hover (AI submenu) */
-.mega_menu li:hover>ul {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* Base styles for all menus */
-.mega_menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    width: 200px;
+.nav_trigger.active span:nth-child(2) {
     opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 100;
-    border-radius: 4px;
-    padding: 10px 0;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Nested submenu positioning */
-.mega_menu ul ul {
-    position: absolute;
-    left: 100%;
-    top: 0;
-    background: white;
-    width: 220px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 0 4px 4px 4px;
+.nav_trigger.active span:last-child {
+    transform: rotate(-45deg);
+    bottom: 50%;
+}
+
+/* Nested submenu container */
+.has_sub_sub_menu {
+    position: relative;
+    top: 8px;
 }
 
 /* Responsive styles */
@@ -290,13 +280,13 @@ body {
         right: 0;
     }
 
-    #navy>li {
+    #navy > li {
         width: 100%;
         padding: 0;
         border-bottom: 1px solid #eee;
     }
 
-    #navy>li>a {
+    #navy > li > a {
         padding: 15px 0;
         display: block;
         width: 100%;
@@ -337,24 +327,6 @@ body {
     .dropdown-toggle {
         display: block;
     }
-
-    .nav_trigger.active span:first-child {
-        transform: rotate(45deg);
-        top: 50%;
-    }
-
-    .nav_trigger.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .nav_trigger.active span:last-child {
-        transform: rotate(-45deg);
-        bottom: 50%;
-    }
-
-    .has_sub_sub_menu {
-        position: relative;
-    }
 }
 
 @media (max-width: 767px) {
@@ -368,7 +340,7 @@ body {
     }
 }
 
-
+/* Lists reset */
 ul,
 ol {
     list-style: none;
@@ -376,23 +348,13 @@ ol {
     margin: 0;
 }
 
-.has_sub_sub_menu {
-    position: relative;
-    top: 8px;
-}
-
-a{
+/* Links base */
+a {
     text-decoration: none;
 }
 
-.navdiv:hover{
-    background-color: none;
-}
-
-#site_header{
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    z-index:100;
+/* Accessibility: focus styles */
+#navy > li > a:focus {
+    outline: 2px solid #002E8A;
+    outline-offset: 2px;
 }
