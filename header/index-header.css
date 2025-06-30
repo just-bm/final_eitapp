@@ -147,7 +147,7 @@ body {
 }
 
 .navdivo:hover {
-    background: #e8f0fe;
+   cursor: pointer;
 }
 
 .navdivo img {
