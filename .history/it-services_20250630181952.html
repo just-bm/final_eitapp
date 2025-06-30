@@ -1790,20 +1790,19 @@
 
     <!-- lets talk icon start -->
     <div class="chat-widget-container">
+        <!-- Chat Icon -->
         <div class="original-chat-icon" id="chatTrigger">
-            <img src="https://ethicalintelligent.com/images/new/lets talk.png" alt="Chat with us">
+            <img src="images/new/lets talk.png" alt="Chat with us">
         </div>
 
+        <!-- Contact Form (hidden by default) -->
         <div class="contact-form" id="contactForm">
             <div class="form-container">
-               <button style="font-weight: 600; font-size: 30px; border: 2px solid #002e8a; height: 25px; width: 25px;" class="cancel-button" id="closeFormButton" onclick="hideForm()">x
-                   <!-- <img style="border: 2px solid #002e8a; border-radius: 9999px; width: 27px;" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/X_mark_18x18_04.gif" alt="Close Form"> -->
-               </button>
-
                 <div class="form-header">
                     <h2>Start Your Digital<br>Transformation Today!</h2>
                 </div>
-                <form action="https://formsubmit.co/ethicalintelligentclients@gmail.com" method="POST" enctype="multipart/form-data">
+                <form action="https://formsubmit.co/ethicalintelligentclients@gmail.com" method="POST"
+                    enctype="multipart/form-data">
                     <div class="form-row">
                         <input type="text" name="name" placeholder="Name" required>
                     </div>
@@ -1834,8 +1833,6 @@
         </div>
     </div>
 
-    
-   
     <style>
         /* Original chat icon styles */
         .original-chat-icon {
@@ -1857,7 +1854,7 @@
         }
 
         .original-chat-icon img {
-            width: 55px;
+            width: 70px;
             height: auto;
         }
 
@@ -2077,103 +2074,41 @@
                 gap: 10px;
             }
         }
-        .cancel-button {
-    position: absolute;
-    top: 10px; /* Adjust as needed for spacing from top */
-    right: 13px; /* Adjust as needed for spacing from right */
-    background: none; /* Remove default button background */
-    border: none; /* Remove default button border */
-    padding: 0; /* Remove default button padding */
-    cursor: pointer;
-    z-index: 10;
-    line-height: 1; /* Helps with vertical alignment of the image */
-    display: flex; /* Use flexbox to center the image if needed */
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 4px;
-}
-
-.cancel-button:hover {
-    /* You might add a subtle shadow or filter on hover if desired */
-    filter: brightness(1.2); /* Example: make the logo slightly brighter on hover */
-      transform: scale(1.1);
-}
     </style>
 
     <script>
-          const chatTrigger = document.getElementById('chatTrigger');
-    const contactForm = document.getElementById('contactForm');
-    const formContainer = document.querySelector('.form-container'); // The inner container for the form itself
-    const closeFormButton = document.getElementById('closeFormButton'); // NEW: Get the cancel button
+        document.addEventListener('DOMContentLoaded', function () {
+            const chatTrigger = document.getElementById('chatTrigger');
+            const contactForm = document.getElementById('contactForm');
 
-    // Function to show the form
-    function showForm() {
-        contactForm.style.display = 'block';
-    }
+            // Toggle form visibility when chat icon is clicked
+            chatTrigger.addEventListener('click', function (e) {
+                e.preventDefault();
+                if (contactForm.style.display === 'block') {
+                    contactForm.style.display = 'none';
+                } else {
+                    contactForm.style.display = 'block';
+                }
+            });
 
-    // Function to hide the form
-    function hideForm() {
-        contactForm.style.display = 'none';
-    }
+            // Form submission
+            const form = document.querySelector('.form-container form');
+            form.addEventListener('submit', function (e) {
+                // You can add submission handling here if needed
+            });
 
-    // Toggle form visibility when chat icon is clicked
-    chatTrigger.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation(); // Prevents this click from bubbling up to the document
-        if (contactForm.style.display === 'block') {
-            hideForm();
-        } else {
-            showForm();
-        }
-    });
+            // File input display
+            const fileInput = document.querySelector('input[type="file"]');
+            const attachButton = document.querySelector('.attach-button span');
 
-    // NEW: Close the form when the cancel button is clicked
-    if (closeFormButton) { // Check if the button exists
-        closeFormButton.addEventListener('click', function(e) {
-            e.stopPropagation(); // Prevents this click from bubbling up to the formContainer or document
-            hideForm();
+            fileInput.addEventListener('change', function () {
+                if (this.files && this.files.length > 0) {
+                    attachButton.textContent = this.files[0].name;
+                } else {
+                    attachButton.textContent = 'Attach File';
+                }
+            });
         });
-    }
-
-    // Close the form when clicking anywhere on the document OUTSIDE the form or the trigger
-    document.addEventListener('click', function(event) {
-        // Check if the clicked element is NOT the chat trigger
-        // AND NOT inside the contact form itself
-        if (!chatTrigger.contains(event.target) && !contactForm.contains(event.target)) {
-            hideForm();
-        }
-    });
-
-    // Prevent clicks INSIDE the form (form-container) from closing it
-    formContainer.addEventListener('click', function(event) {
-        event.stopPropagation();
-    });
-
-
-    // --- Chat Widget Form Submission (for formsubmit.co, unchanged) ---
-    const chatForm = document.querySelector('#contactForm .form-container form');
-    if (chatForm) {
-        chatForm.addEventListener('submit', function(e) {
-            // The formsubmit.co action attribute handles the actual submission.
-            // You might want to add custom logic here, like a temporary message
-            // or closing the form *after* submission.
-        });
-    }
-
-
-    // --- File input display for the chat widget form (unchanged) ---
-    const fileInput = document.querySelector('#contactForm input[type="file"]');
-    const attachButtonSpan = document.querySelector('#contactForm .attach-button span');
-
-    if (fileInput && attachButtonSpan) {
-        fileInput.addEventListener('change', function() {
-            if (this.files && this.files.length > 0) {
-                attachButtonSpan.textContent = this.files[0].name;
-            } else {
-                attachButtonSpan.textContent = 'Attach File';
-            }
-        });
-    }
     </script>
     <!-- lets talk icon start end -->
 
