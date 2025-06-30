@@ -1841,9 +1841,9 @@ header.header {
 .original-chat-icon {
     position: absolute;
     position: fixed;
-    top: 13vh;
+    top: 11vh;
     right: 20px;
-    z-index: 0;
+    z-index: 9999;
     transition: all 0.3s ease;
     animation: subtle-pulse 2s infinite;
     cursor: pointer;
@@ -2061,26 +2061,4 @@ header.header {
         flex-direction: column;
         gap: 10px;
     }
-}
-
-.cancel-button {
-    position: absolute;
-    top: 10px; /* Adjust as needed for spacing from top */
-    right: 13px; /* Adjust as needed for spacing from right */
-    background: none; /* Remove default button background */
-    border: none; /* Remove default button border */
-    padding: 0; /* Remove default button padding */
-    cursor: pointer;
-    z-index: 10;
-    line-height: 1; /* Helps with vertical alignment of the image */
-    display: flex; /* Use flexbox to center the image if needed */
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 3px;
-}
-
-.cancel-button:hover {
-    /* You might add a subtle shadow or filter on hover if desired */
-    filter: brightness(1.2); /* Example: make the logo slightly brighter on hover */
-      transform: scale(1.1);
 }
