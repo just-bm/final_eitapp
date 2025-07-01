@@ -6,635 +6,627 @@
     <title>Ethical Intelligent Technologies - No-Code/Low-Code Platform</title>
     <style>
     
-        /* Reset and Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-            overflow-x: hidden;
-            position: relative;
-        }
-
-        /* Decorative Elements */
-        .image-container {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            overflow: hidden;
-        }
-
-        .image-container img {
-            position: absolute;
-            opacity: 0.08;
-            max-width: 180px;
-        }
-
-        .image-left {
-            left: 0;
-        }
-
-        .image-right {
-            right: 0;
-        }
-
-        /* Hero Section */
-        .horizontal-flex {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 80px 5%;
-            max-width: 1400px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .flex-box {
-            flex: 1;
-            min-width: 400px;
-            padding: 30px;
-            z-index: 1;
-        }
-
-        .video-box {
-            flex: 1;
-            min-width: 400px;
-            padding: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .video-box video {
-            width: 100%;
-            max-width: 700px;
-            border-radius: 12px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .bullet-point {
-            display: flex;
-            align-items: flex-start;
-            margin: 18px 0;
-            font-size: 17px;
-        }
-
-        .bullet-image {
-            width: 22px;
-            margin-right: 12px;
-            margin-top: 3px;
-        }
-
-        .connect-btn {
-            background: linear-gradient(135deg, #14176c, #133aa5);
-            color: white;
-            border: none;
-            padding: 14px 28px;
-            border-radius: 30px;
-            font-weight: 600;
-            font-size: 17px;
-            margin-top: 25px;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.3s ease;
-        }
-
-        .connect-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(19, 58, 165, 0.3);
-        }
-
-        .connect-btn img {
-            filter: brightness(0) invert(1);
-            height: 18px;
-        }
-
-        /* Showcase Section */
-        .vertical-flex-container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-            text-align: center;
-        }
-
-        .text-boxes div:first-child {
-            font-size: 28px;
-            font-weight: 700;
-            color: rgb(47,49,125);
-            margin-bottom: 15px;
-        }
-
-        .text-boxes div:nth-child(2) {
-            font-size: 16px;
-            color: rgb(20,23,108);
-            line-height: 1.7;
-            margin: 30px 0;
-        }
-
-        .text-boxes div:last-child {
-            font-size: 26px;
-            font-weight: 700;
-            color: rgb(20,23,108);
-            line-height: 1.4;
-            margin-top: 40px;
-        }
-
-        /* Gallery Section */
-        .main-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-            gap: 20px;
-        }
-
-        .image-column {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            flex: 1;
-            min-width: 250px;
-        }
-
-        .gallery-image {
-            width: 100%;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .gallery-image:hover {
-            transform: scale(1.02);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .display-screen {
-            flex: 2;
-            min-width: 350px;
-            background-color: white;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .display-image {
-            width: 100%;
-            max-height: 450px;
-            border-radius: 8px;
-            object-fit: contain;
-        }
-
-        .image-title {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: #14176c;
-        }
-
-        /* Design Section */
-        .parent {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 70px auto;
-            padding: 0 30px;
-            gap: 30px;
-        }
-
-        .left {
-            flex: 1;
-            min-width: 300px;
-            padding: 20px;
-        }
-
-        .left div:first-child {
-            font-size: 26px;
-            font-weight: 700;
-            color: rgb(11,75,183);
-            line-height: 1.3;
-        }
-
-        .left div:last-child {
-            font-size: 26px;
-            font-weight: 700;
-            color: rgb(20,23,108);
-            line-height: 1.3;
-            margin-top: 10px;
-        }
-
-        .right {
-            flex: 2;
-            min-width: 300px;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .box {
-            flex: 1;
-            min-width: 280px;
-            background-color: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-
-        .box-number {
-            font-size: 24px;
-            font-weight: 700;
-            color: #133aa5;
-            margin-bottom: 12px;
-        }
-
-        .box b {
-            font-size: 18px;
-            display: block;
-            margin-bottom: 12px;
-            line-height: 1.4;
-        }
-
-        .box p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        .spacer {
-            height: 12px;
-        }
-
-        /* AI-Powered Section */
-        .parent-flex {
-            max-width: 1200px;
-            margin: 80px auto;
-            padding: 0 30px;
-        }
-
-        .heading-part {
-            font-size: 28px;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 40px;
-            line-height: 1.3;
-        }
-
-        .heading-part span:first-child {
-            color: rgb(11,75,183);
-        }
-
-        .heading-part span:last-child {
-            color: rgb(20,23,108);
-        }
-
-        .child-row-2 {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            align-items: center;
-        }
-
-        .child-2 {
-            flex: 1;
-            min-width: 300px;
-            background-color: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            font-size: 16px;
-            line-height: 1.7;
-        }
-
-        .child-2 ul {
-            margin: 15px 0;
-            padding-left: 20px;
-        }
-
-        .child-2 li {
-            margin-bottom: 8px;
-        }
-
-        .child-3 {
-            flex: 1;
-            min-width: 300px;
-            position: relative;
-            height: 400px;
-        }
-
-        .sub-flex {
-            position: absolute;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .sub-flex-1 {
-            width: 160px;
-            height: 160px;
-            top: 0;
-            right: 0;
-            z-index: 1;
-        }
-
-        .sub-flex-2 {
-            width: 160px;
-            height: 160px;
-            bottom: 0;
-            left: 0;
-            z-index: 1;
-        }
-
-        .sub-flex-3 {
-            width: 100%;
-            height: 320px;
-            top: 40px;
-            left: 0;
-            z-index: 2;
-        }
-
-        .sub-flex img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Video Section */
-        .video-container {
-            max-width: 1200px;
-            margin: 80px auto;
-            padding: 0 30px;
-            text-align: center;
-        }
-
-        .video-container h1 {
-            font-size: 28px;
-            line-height: 1.4;
-            color: rgb(20,23,108);
-        }
-
-        .video-container h1 span:last-child {
-            color: rgb(11,75,183);
-        }
-
-        .video-wrapper {
-            margin-top: 30px;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .video-wrapper video {
-            width: 100%;
-            max-height: 500px;
-        }
-
-        /* How It Works Section */
-        .main-heading {
-            text-align: center;
-            font-size: 32px;
-            color: #14176c;
-            margin: 60px 0 40px;
-            font-weight: 700;
-        }
-
-        .flex-container {
-            max-width: 1200px;
-            margin: 0 auto 80px;
-            padding: 0 30px;
-            position: relative;
-        }
-
-        .flex-row {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            margin-bottom: 60px;
-            position: relative;
-        }
-
-        .flex-item {
-            flex: 1;
-            min-width: 300px;
-            padding: 20px;
-        }
-
-        .image-box {
-            background-color: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .image-box img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
-        .text-box {
-            padding: 20px;
-        }
-
-        .text-box h3 {
-            color: #14176c;
-            margin-bottom: 15px;
-            font-size: 22px;
-            font-weight: 600;
-        }
-
-        .text-box p {
-            font-size: 16px;
-            line-height: 1.7;
-        }
-
-        .connector {
-            position: absolute;
-            width: 120px;
-            z-index: -1;
-            opacity: 0.3;
-        }
-
-        .connector-1 {
-            top: 100px;
-            right: 10%;
-        }
-
-        .connector-2 {
-            top: 300px;
-            left: 10%;
-        }
-
-        .connector-3 {
-            top: 500px;
-            right: 10%;
-        }
-
-        .connector-4 {
-            top: 700px;
-            left: 10%;
-        }
-
-        /* Responsive Adjustments */
-        @media (max-width: 1024px) {
-            .horizontal-flex {
-                padding: 60px 5%;
-            }
-            
-            .video-box video {
-                max-width: 600px;
-            }
-            
-            .display-screen {
-                min-width: 300px;
-            }
-            
-            .connector {
-                width: 100px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .horizontal-flex {
-                flex-direction: column;
-                padding: 50px 5%;
-            }
-            
-            .flex-box, .video-box {
-                min-width: 100%;
-                padding: 20px;
-            }
-            
-            .main-container {
-                flex-direction: column;
-            }
-            
-            .image-column {
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-            
-            .gallery-image {
-                max-width: 200px;
-            }
-            
-            .display-screen {
-                order: -1;
-                margin-bottom: 30px;
-                min-width: 100%;
-            }
-            
-            .parent {
-                flex-direction: column;
-                padding: 0 20px;
-            }
-            
-            .child-row-2 {
-                flex-direction: column;
-            }
-            
-            .child-3 {
-                height: 350px;
-                margin-top: 30px;
-            }
-            
-            .flex-row {
-                flex-direction: column;
-            }
-            
-            .flex-row:nth-child(even) {
-                flex-direction: column-reverse;
-            }
-            
-            .connector {
-                display: none;
-            }
-            
-            .main-heading {
-                font-size: 28px;
-                margin: 50px 0 30px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .horizontal-flex {
-                padding: 40px 15px;
-            }
-            
-            .flex-box {
-                padding: 15px;
-            }
-            
-            .bullet-point {
-                font-size: 16px;
-            }
-            
-            .connect-btn {
-                font-size: 16px;
-                padding: 12px 25px;
-            }
-            
-            .text-boxes div:first-child {
-                font-size: 24px;
-            }
-            
-            .text-boxes div:last-child {
-                font-size: 22px;
-            }
-            
-            .gallery-image {
-                max-width: 150px;
-            }
-            
-            .box {
-                min-width: 100%;
-            }
-            
-            .child-2, .text-box {
-                padding: 20px;
-            }
-            
-            .child-3 {
-                height: 280px;
-            }
-            
-            .video-container h1 {
-                font-size: 24px;
-            }
-            
-            .text-box h3 {
-                font-size: 20px;
-            }
-        }
+      /* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+/* Image Container for decorative triangles */
+.image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    opacity: 0.1;
+    max-width: 200px;
+}
+
+.image-left {
+    left: 0;
+}
+
+.image-right {
+    right: 0;
+}
+
+/* Part 1: Hero Section */
+.horizontal-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 5%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.flex-box {
+    flex: 1;
+    min-width: 350px;
+    padding: 30px;
+}
+
+.video-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 600px;
+}
+
+.video-box video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.bullet-point {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.bullet-image {
+    width: 24px;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.connect-btn {
+    background: linear-gradient(135deg, #14176c, #133aa5);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.connect-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(19, 58, 165, 0.4);
+}
+
+.connect-btn img {
+    filter: brightness(0) invert(1);
+    height: 20px;
+}
+
+/* Part 2: Showcase Section */
+.vertical-flex-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.text-boxes {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.text-boxes div:first-child {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.text-boxes div:nth-child(2) {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.text-boxes div:last-child {
+    font-size: 28px;
+    margin-top: 50px;
+    line-height: 1.4;
+}
+
+/* Gallery Section */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 30px;
+    gap: 30px;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.gallery-image {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.display-screen {
+    flex: 2;
+    min-width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.display-image {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.image-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #14176c;
+}
+
+/* Part 3: Design Section */
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 0 40px;
+    gap: 40px;
+}
+
+.left {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+}
+
+.left div:first-child {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.left div:last-child {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-top: 15px;
+}
+
+.right {
+    flex: 2;
+    min-width: 400px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.box {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.box-number {
+    font-size: 28px;
+    font-weight: 700;
+    color: #133aa5;
+    margin-bottom: 15px;
+}
+
+.box b {
+    font-size: 22px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.box p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.spacer {
+    height: 15px;
+}
+
+/* Part 4: AI-Powered Section */
+.parent-flex {
+    max-width: 1400px;
+    margin: 100px auto;
+    padding: 0 40px;
+}
+
+.heading-part {
+    font-size: 32px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.child-row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.child-2 {
+    flex: 1;
+    min-width: 350px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.child-2 ul {
+    margin: 20px 0;
+}
+
+.child-2 li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.child-3 {
+    flex: 1;
+    min-width: 400px;
+    position: relative;
+    height: 500px;
+}
+
+.sub-flex {
+    position: absolute;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.sub-flex-1 {
+    width: 200px;
+    height: 200px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.sub-flex-2 {
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.sub-flex-3 {
+    width: 100%;
+    height: 400px;
+    top: 50px;
+    left: 0;
+    z-index: 2;
+}
+
+.sub-flex img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Part 5: Video Section */
+.video-container {
+    max-width: 1400px;
+    margin: 100px auto;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.video-container h1 {
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+.video-wrapper {
+    margin-top: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.video-wrapper video {
+    width: 100%;
+    max-height: 600px;
+}
+
+/* Part 6: How It Works Section */
+.main-heading {
+    text-align: center;
+    font-size: 40px;
+    color: #14176c;
+    margin: 80px 0 60px;
+    font-weight: 700;
+}
+
+.flex-container {
+    max-width: 1400px;
+    margin: 0 auto 100px;
+    padding: 0 40px;
+    position: relative;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.flex-item {
+    flex: 1;
+    min-width: 350px;
+    padding: 30px;
+}
+
+.image-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-box {
+    padding: 30px;
+}
+
+.text-box h3 {
+    color: #14176c;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.text-box p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.connector {
+    position: absolute;
+    width: 150px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.connector-1 {
+    top: 120px;
+    right: 12%;
+}
+
+.connector-2 {
+    top: 350px;
+    left: 12%;
+}
+
+.connector-3 {
+    top: 580px;
+    right: 12%;
+}
+
+.connector-4 {
+    top: 810px;
+    left: 12%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .horizontal-flex {
+        max-width: 1200px;
+    }
+    
+    .video-box {
+        min-width: 500px;
+    }
+    
+    .main-container {
+        max-width: 1200px;
+    }
+    
+    .parent, .parent-flex, .video-container, .flex-container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .horizontal-flex {
+        flex-direction: column;
+    }
+    
+    .flex-box {
+        width: 100%;
+    }
+    
+    .video-box {
+        margin-top: 40px;
+        min-width: 100%;
+    }
+    
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .image-column {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .gallery-image {
+        max-width: 250px;
+    }
+    
+    .display-screen {
+        order: -1;
+        margin-bottom: 40px;
+        min-width: 80%;
+    }
+    
+    .connector {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .parent {
+        flex-direction: column;
+    }
+    
+    .child-row-2 {
+        flex-direction: column;
+    }
+    
+    .child-3 {
+        height: 400px;
+        margin-top: 40px;
+    }
+    
+    .flex-row {
+        flex-direction: column;
+    }
+    
+    .flex-row:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    
+    .box {
+        min-width: 100%;
+    }
+    
+    .video-container h1 {
+        font-size: 24px;
+    }
+    
+    .main-heading {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .horizontal-flex {
+        padding: 30px 15px;
+    }
+    
+    .flex-box {
+        padding: 15px;
+    }
+    
+    .bullet-point {
+        font-size: 16px;
+    }
+    
+    .connect-btn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+    
+    .gallery-image {
+        max-width: 100%;
+    }
+    
+    .display-screen {
+        min-width: 100%;
+        padding: 20px;
+    }
+    
+    .main-heading {
+        font-size: 28px;
+    }
+    
+    .text-box h3 {
+        font-size: 24px;
+    }
+    
+    .box {
+        padding: 20px;
+    }
+    
+    .child-2, .text-box {
+        padding: 25px;
+    }
+    
+    .child-3 {
+        height: 300px;
+    }
+}
     </style>
     <link rel="stylesheet" href="header/header.css">
     <link rel="stylesheet" href="footer/footer.css">
@@ -825,8 +817,8 @@
 
     <!-- Design Section -->
     <div class="parent">
-        <div class="left">
-            <div>Design. Validate.<br>Deploy.</div> 
+        <div class="left" style="margin-top: 80px; align-items: center; justify-self: center;">
+            <div>Design, Validate<br>and Deploy.</div> <br>
             <div>All Without<br>Writing Code.</div>
         </div>
         
@@ -884,14 +876,14 @@
             </div>
 
             <div class="child-3">
-                <div class="sub-flex sub-flex-1">
+                <!-- <div class="sub-flex sub-flex-1">
                     <img src="images/PromptToUI/BackgroundPattern.png" alt="Pattern background">
                 </div>
                 <div class="sub-flex sub-flex-2">
                     <img src="images/PromptToUI/BackgroundPattern.png" alt="Pattern background">
-                </div>
+                </div> -->
                 <div class="sub-flex sub-flex-3">
-                    <img src="images/PromptToUI/DemoMain.png" alt="UI Demo">
+                    <img src="images/PromptToUI/DemoMain.png" alt="UI Demo"  style="height: fit-content;">
                 </div>
             </div>
         </div>
