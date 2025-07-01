@@ -1,47 +1,751 @@
 <!DOCTYPE html>
-<html lang="en"> 
-   <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethical Intelligent Technologies - No-Code/Low-Code Platform</title>
-    <link rel="stylesheet" href="common.css">
-   </head>
-    <body>
-    <!-- TopBar content -->
-      <div class="top-bar">
-        <img src="images/EIT Logo 01 4.png" alt="Logo" class="logo">
-        <div class="button-contact">
-            <div class="nav-buttons">
-                <a class="nav-button">Home</a>
-                <a class="nav-button">Services</a>
-                <a class="nav-button">Who Are We</a>
-                <a class="nav-button">Contact Us</a>
-                <a class="nav-button">Blogs</a>
-            </div>
-            
-            <div class="contact-flex">
-                <img src="images/mail.png" alt="Contact" class="contact-image">
-                <div class="contact-text">
-                    <div>Get in touch with us </div>
-                    <div>sales@ethicalintelligent.com</div>
-                </div>
-            </div>
-        </div>
-     </div>
- <div class="image-container">
-    <img src="images\triangles\t1.png" alt="Image 1" class="image-left" style="top: 80px;">
-    <img src="images\triangles\t2.png" alt="Image 2" class="image-right" style="top: 300px;">
-    <img src="images\triangles\t3.png" alt="Image 3" class="image-left" style="top: 420px;">
-</div>
-    <!-- Part1 content -->
+    <style>
     
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-      <div class="horizontal-flex">
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Decorative Elements */
+        .image-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            position: absolute;
+            opacity: 0.08;
+            max-width: 180px;
+        }
+
+        .image-left {
+            left: 0;
+        }
+
+        .image-right {
+            right: 0;
+        }
+
+        /* Hero Section */
+        .horizontal-flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .flex-box {
+            flex: 1;
+            min-width: 400px;
+            padding: 30px;
+            z-index: 1;
+        }
+
+        .video-box {
+            flex: 1;
+            min-width: 400px;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-box video {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .bullet-point {
+            display: flex;
+            align-items: flex-start;
+            margin: 18px 0;
+            font-size: 17px;
+        }
+
+        .bullet-image {
+            width: 22px;
+            margin-right: 12px;
+            margin-top: 3px;
+        }
+
+        .connect-btn {
+            background: linear-gradient(135deg, #14176c, #133aa5);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 17px;
+            margin-top: 25px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .connect-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(19, 58, 165, 0.3);
+        }
+
+        .connect-btn img {
+            filter: brightness(0) invert(1);
+            height: 18px;
+        }
+
+        /* Showcase Section */
+        .vertical-flex-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .text-boxes div:first-child {
+            font-size: 28px;
+            font-weight: 700;
+            color: rgb(47,49,125);
+            margin-bottom: 15px;
+        }
+
+        .text-boxes div:nth-child(2) {
+            font-size: 16px;
+            color: rgb(20,23,108);
+            line-height: 1.7;
+            margin: 30px 0;
+        }
+
+        .text-boxes div:last-child {
+            font-size: 26px;
+            font-weight: 700;
+            color: rgb(20,23,108);
+            line-height: 1.4;
+            margin-top: 40px;
+        }
+
+        /* Gallery Section */
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .image-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .gallery-image {
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .display-screen {
+            flex: 2;
+            min-width: 350px;
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .display-image {
+            width: 100%;
+            max-height: 450px;
+            border-radius: 8px;
+            object-fit: contain;
+        }
+
+        .image-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #14176c;
+        }
+
+        /* Design Section */
+        .parent {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 70px auto;
+            padding: 0 30px;
+            gap: 30px;
+        }
+
+        .left {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .left div:first-child {
+            font-size: 26px;
+            font-weight: 700;
+            color: rgb(11,75,183);
+            line-height: 1.3;
+        }
+
+        .left div:last-child {
+            font-size: 26px;
+            font-weight: 700;
+            color: rgb(20,23,108);
+            line-height: 1.3;
+            margin-top: 10px;
+        }
+
+        .right {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            flex: 1;
+            min-width: 280px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .box-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: #133aa5;
+            margin-bottom: 12px;
+        }
+
+        .box b {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .box p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .spacer {
+            height: 12px;
+        }
+
+        /* AI-Powered Section */
+        .parent-flex {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 30px;
+        }
+
+        .heading-part {
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        .heading-part span:first-child {
+            color: rgb(11,75,183);
+        }
+
+        .heading-part span:last-child {
+            color: rgb(20,23,108);
+        }
+
+        .child-row-2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .child-2 {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .child-2 ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        .child-2 li {
+            margin-bottom: 8px;
+        }
+
+        .child-3 {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+            height: 400px;
+        }
+
+        .sub-flex {
+            position: absolute;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .sub-flex-1 {
+            width: 160px;
+            height: 160px;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .sub-flex-2 {
+            width: 160px;
+            height: 160px;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .sub-flex-3 {
+            width: 100%;
+            height: 320px;
+            top: 40px;
+            left: 0;
+            z-index: 2;
+        }
+
+        .sub-flex img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Video Section */
+        .video-container {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 30px;
+            text-align: center;
+        }
+
+        .video-container h1 {
+            font-size: 28px;
+            line-height: 1.4;
+            color: rgb(20,23,108);
+        }
+
+        .video-container h1 span:last-child {
+            color: rgb(11,75,183);
+        }
+
+        .video-wrapper {
+            margin-top: 30px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            max-height: 500px;
+        }
+
+        /* How It Works Section */
+        .main-heading {
+            text-align: center;
+            font-size: 32px;
+            color: #14176c;
+            margin: 60px 0 40px;
+            font-weight: 700;
+        }
+
+        .flex-container {
+            max-width: 1200px;
+            margin: 0 auto 80px;
+            padding: 0 30px;
+            position: relative;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .flex-item {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .image-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-box img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .text-box {
+            padding: 20px;
+        }
+
+        .text-box h3 {
+            color: #14176c;
+            margin-bottom: 15px;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .text-box p {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .connector {
+            position: absolute;
+            width: 120px;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .connector-1 {
+            top: 100px;
+            right: 10%;
+        }
+
+        .connector-2 {
+            top: 300px;
+            left: 10%;
+        }
+
+        .connector-3 {
+            top: 500px;
+            right: 10%;
+        }
+
+        .connector-4 {
+            top: 700px;
+            left: 10%;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 1024px) {
+            .horizontal-flex {
+                padding: 60px 5%;
+            }
+            
+            .video-box video {
+                max-width: 600px;
+            }
+            
+            .display-screen {
+                min-width: 300px;
+            }
+            
+            .connector {
+                width: 100px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .horizontal-flex {
+                flex-direction: column;
+                padding: 50px 5%;
+            }
+            
+            .flex-box, .video-box {
+                min-width: 100%;
+                padding: 20px;
+            }
+            
+            .main-container {
+                flex-direction: column;
+            }
+            
+            .image-column {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            
+            .gallery-image {
+                max-width: 200px;
+            }
+            
+            .display-screen {
+                order: -1;
+                margin-bottom: 30px;
+                min-width: 100%;
+            }
+            
+            .parent {
+                flex-direction: column;
+                padding: 0 20px;
+            }
+            
+            .child-row-2 {
+                flex-direction: column;
+            }
+            
+            .child-3 {
+                height: 350px;
+                margin-top: 30px;
+            }
+            
+            .flex-row {
+                flex-direction: column;
+            }
+            
+            .flex-row:nth-child(even) {
+                flex-direction: column-reverse;
+            }
+            
+            .connector {
+                display: none;
+            }
+            
+            .main-heading {
+                font-size: 28px;
+                margin: 50px 0 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .horizontal-flex {
+                padding: 40px 15px;
+            }
+            
+            .flex-box {
+                padding: 15px;
+            }
+            
+            .bullet-point {
+                font-size: 16px;
+            }
+            
+            .connect-btn {
+                font-size: 16px;
+                padding: 12px 25px;
+            }
+            
+            .text-boxes div:first-child {
+                font-size: 24px;
+            }
+            
+            .text-boxes div:last-child {
+                font-size: 22px;
+            }
+            
+            .gallery-image {
+                max-width: 150px;
+            }
+            
+            .box {
+                min-width: 100%;
+            }
+            
+            .child-2, .text-box {
+                padding: 20px;
+            }
+            
+            .child-3 {
+                height: 280px;
+            }
+            
+            .video-container h1 {
+                font-size: 24px;
+            }
+            
+            .text-box h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="header/header.css">
+    <link rel="stylesheet" href="footer/footer.css">
+</head>
+<body>
+    <!-- Decorative Background Elements -->
+    <div class="image-container">
+        <img src="images/triangles/t1.png" alt="Decorative triangle" class="image-left" style="top: 80px;">
+        <img src="images/triangles/t2.png" alt="Decorative triangle" class="image-right" style="top: 300px;">
+        <img src="images/triangles/t3.png" alt="Decorative triangle" class="image-left" style="top: 420px;">
+    </div>
+    
+    <header id="site_header">
+        <div id="navigation_bar">
+            <div class="content">
+                <div id="logo">
+                    <a href="/">
+                        <img src="../images/header/EIT New Logo.webp" alt="">
+                    </a>
+                </div>
+                <nav id="main_nav">
+                    <div id="nav_menu">
+                        <ul id="navy" class="clearfix">
+                            <li class="normal_menu mobile_menu_toggle">
+                                <a href="/"><span>Home</span></a>
+                            </li>
+
+                            <li class="has_mega_menu mobile_menu_toggle current_page_item">
+                                <a href="#">
+                                    <span class="activeNavBoxSpan">
+                                        <p class="activeNavBox">Services</p>
+                                    </span>
+                                </a>
+                                <button class="dropdown-toggle">+</button>
+                                <ul class="mega_menu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="it-services.html"><span>IT Services</span></a></li>
+                                            <li><a href="iot-services.html"><span>IOT</span></a></li>
+                                            <li class="has_sub_sub_menu">
+                                                <a href="./ai_development_services/ai_development_service.html">
+                                                    <span>AI</span>
+                                                </a>
+                                                <button class="dropdown-toggle">+</button>
+                                                <ul>
+                                                    <li><a href="#"><span>AI Powered No Code Low Code</span></a></li>
+                                                    <li><a href="./business analytics/ai-business-analytics.html"><span>AI Powered Business Analytics</span></a></li>
+                                                    <li><a href="./business automation/index.html"><span>AI Powered Office Automation</span></a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has_mega_menu mobile_menu_toggle">
+                                <a href="#"><span>Who We Are</span></a>
+                                <button class="dropdown-toggle">+</button>
+                                <ul class="mega_menu">
+                                    <li>
+                                        <ul>
+                                            <li><a href="about-us.html"><span>About Us</span></a></li>
+                                            <li><a href="clients.html"><span>Clients</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="normal_menu mobile_menu_toggle">
+                                <a href="contact-us.html"><span>Contact Us</span></a>
+                            </li>
+                            <li class="normal_menu mobile_menu_toggle">
+                                <a href="blogs.html"><span>Blogs</span></a>
+                            </li>
+
+                            <li class="normal_menu mobile_menu_toggle align_mobile_lets_disc">
+                                <div class="navdiv">
+                                    <div style=" width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                        <img style="width: 30px; height: 30px; margin-right: 20px; background-color: white; color: black;" src="https://ethicalintelligent.com/images/new2/MAIL%20navbar.webp" alt="message">
+                                    </div>
+                                    <div>
+                                        <a href="mailto:sales@ethicalintelligent.com">
+                                        <h6>Get in touch with us</h6>
+                                        <p>sales@ethicalintelligent.com</p></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="clear"></div>
+            </div>
+            <span class="mobile_menu_trigger">
+                <a href="#" class="nav_trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </span>
+        </div>
+    </header>
+
+
+    <script src="header.js"></script>
+
+
+    <!-- Hero Section -->
+    <div class="horizontal-flex">
         <div class="flex-box">
-            <div style="font-weight: 700; color: rgb(47,49,125); font-size: 18px; align-items: center;">
+            <div style="font-weight: 700; color: rgb(47,49,125); font-size: 18px;">
                 AI-Powered
             </div>
-            <p style="font-size: 28px; font-weight: 750;  letter-spacing: 0px; margin: 0;">
+            <p style="font-size: 36px; font-weight: 750; letter-spacing: 0px; margin: 15px 0 25px;">
                 <span style="color: rgb(20,23,108);">Full Stack </span>
                 <span style="color: rgb(19,58,165);">No Code<br>Low Code </span>
                 <span style="color: rgb(20,23,108);">Framework</span>
@@ -69,7 +773,7 @@
             </div>
 
             <button class="connect-btn">
-                Connect with us | <img src="images/Connect_with_us.png" alt="icon" style="height:16px;object-fit:cover;">
+                Connect with us | <img src="images/Connect_with_us.png" alt="Connect icon">
             </button>
         </div>
         
@@ -79,112 +783,86 @@
                 Your browser does not support the video tag.
             </video>
         </div>
-     </div>
+    </div>
 
-      
-
-
-
-     <div class="vertical-flex-container">
-        <div class="flex-box text-boxes">
-            <div style="font-size: 24px; font-weight: 700; letter-spacing: 0px;line-height: 0.8; margin: 0; color: rgb(20,23,108)">
-                Revolutionize Enterprise Solutions with No-Code/Low-Code
-            </div>
-            
-            <div style="font-size: 10px; letter-spacing: 0px; margin-top: 35px; color: rgb(20,23,108); text-align: center;">
+    <!-- Showcase Section -->
+    <div class="vertical-flex-container">
+        <div class="text-boxes">
+            <div>Revolutionize Enterprise Solutions with No-Code/Low-Code</div>
+            <div>
                 In today's fast-paced business environment, deftness is key. 
-                At Ethical Intelligent Technologies, we enable<br>enterprises to quicken their digital 
-                transformation through No-Code/Low-Code platforms. Our solutions permit your<br> teams to 
-                construct, customize, and scale enterprise-grade software-without the complexity of traditional coding.
+                At Ethical Intelligent Technologies, we enable enterprises to quicken their digital 
+                transformation through No-Code/Low-Code platforms. Our solutions permit your teams to 
+                construct, customize, and scale enterprise-grade software without the complexity of traditional coding.
             </div>
-       
-            <div style="font-size: 24px; font-weight: 750;  letter-spacing: 0.3px; margin: 0; color: rgb(20,23,108); margin-top: 37px;text-align: center;">
-                Below is a showcase of our applications, built<br>utilizing No-Code/Low-Code framework
-            </div>
+            <div>Below is a showcase of our applications, built utilizing No-Code/Low-Code framework</div>
         </div>
-     </div>
+    </div>
 
-    <!-- Part2 content -->
-     <div class="main-container">
+    <!-- Gallery Section -->
+    <div class="main-container">
         <div class="image-column">
-            <img src="images\ShowCase\image1.png" alt="Image 1" class="gallery-image" 
-                 onclick="showImage('images\\ShowCase\\image1.png', 'Rental Application')">
-            <img src="images\ShowCase\image2.png" alt="Image 2" class="gallery-image" 
-                 onclick="showImage('images\\ShowCase\\image2.png', 'Fleet Tracking Application')">
-            <img src="images\ShowCase\image3.png" alt="Image 3" class="gallery-image" 
-                 onclick="showImage('images\\ShowCase\\image3.png', 'Diesel Generator Monitoring')">
-            <img src="images\ShowCase\image4.png" alt="Image 4" class="gallery-image" 
-                 onclick="showImage('images\\ShowCase\\image4.png', 'Telecom Power Monitoring')">
-            <img src="images\ShowCase\image5.png" alt="Image 5" class="gallery-image" 
-                 onclick="showImage('images\\ShowCase\\image5.png', 'Street Lights Monitoring')">
+            <img src="images/ShowCase/image1.png" alt="Rental Application" class="gallery-image" onclick="showImage('images/ShowCase/image1.png', 'Rental Application')">
+            <img src="images/ShowCase/image2.png" alt="Fleet Tracking Application" class="gallery-image" onclick="showImage('images/ShowCase/image2.png', 'Fleet Tracking Application')">
+            <img src="images/ShowCase/image3.png" alt="Diesel Generator Monitoring" class="gallery-image" onclick="showImage('images/ShowCase/image3.png', 'Diesel Generator Monitoring')">
+            <img src="images/ShowCase/image4.png" alt="Telecom Power Monitoring" class="gallery-image" onclick="showImage('images/ShowCase/image4.png', 'Telecom Power Monitoring')">
+            <img src="images/ShowCase/image5.png" alt="Street Lights Monitoring" class="gallery-image" onclick="showImage('images/ShowCase/image5.png', 'Street Lights Monitoring')">
         </div>
         
-        <div class="display-screen" id="displayScreen" 
-             onmouseenter="pauseSlideshow()" 
-             onmouseleave="resumeSlideshow()">
+        <div class="display-screen" id="displayScreen" onmouseenter="pauseSlideshow()" onmouseleave="resumeSlideshow()">
             <div class="image-title" id="display-title">Rental Application</div>
-            <img src="images\ShowCase\image1.png" alt="Display Image" class="display-image" id="display-img">
+            <img src="images/ShowCase/image1.png" alt="Display Image" class="display-image" id="display-img">
         </div>
         
         <div class="image-column">
-            <img src="images\ShowCase\image6.png" alt="Image 6" class="gallery-image" 
-                 onclick="showImage('images\\ShowCase\\image6.png', 'GE Fleet Mobile Tracking')">
-            <img src="images\ShowCase\image7.png" alt="Image 7" class="gallery-image" 
-                 onclick="showImage('images\\ShowCase\\image7.png', 'Data Center Environment')">
-            <img src="images\ShowCase\image8.png" alt="Image 8" class="gallery-image" 
-                 onclick="showImage('images\\ShowCase\\image8.png', 'Diesel Generator Monitoring')">
-            <img src="images\ShowCase\image9.png" alt="Image 9" class="gallery-image" 
-                 onclick="showImage('images\\ShowCase\\image9.png', 'Property Management')">
-            <img src="images\ShowCase\image10.png" alt="Image 10" class="gallery-image" 
-                 onclick="showImage('images\\ShowCase\\image10.png', 'Airport Compliance System')">
+            <img src="images/ShowCase/image6.png" alt="GE Fleet Mobile Tracking" class="gallery-image" onclick="showImage('images/ShowCase/image6.png', 'GE Fleet Mobile Tracking')">
+            <img src="images/ShowCase/image7.png" alt="Data Center Environment" class="gallery-image" onclick="showImage('images/ShowCase/image7.png', 'Data Center Environment')">
+            <img src="images/ShowCase/image8.png" alt="Diesel Generator Monitoring" class="gallery-image" onclick="showImage('images/ShowCase/image8.png', 'Diesel Generator Monitoring')">
+            <img src="images/ShowCase/image9.png" alt="Property Management" class="gallery-image" onclick="showImage('images/ShowCase/image9.png', 'Property Management')">
+            <img src="images/ShowCase/image10.png" alt="Airport Compliance System" class="gallery-image" onclick="showImage('images/ShowCase/image10.png', 'Airport Compliance System')">
         </div>
-     </div>
+    </div>
 
-     <!-- Part3 content -->
-      <div class="parent">
+    <!-- Design Section -->
+    <div class="parent">
         <div class="left">
-            <div style="font-size: 24px; 
-                color: rgb(11,75,183);text-align: left;font-weight: 700;">Design. Validate.<br>Deploy.</div> 
-            <div style="font-size: 24px; 
-                color: rgb(20,23,108);text-align: left;font-weight: 700;">All Without<br>Writing Code.</div>
+            <div>Design. Validate.<br>Deploy.</div> 
+            <div>All Without<br>Writing Code.</div>
         </div>
         
         <div class="right">
             <div class="row first-row">
                 <div class="box">
                     <div class="box-number">1</div> 
-                    <b>Intuitive Drag-and-<br>Drop Interface</b>
+                    <b>Intuitive Drag-and-Drop Interface</b>
                     <div class="spacer"></div>
-                    Build application screens visually,
-                    <br>thereby removing the intricacies<br>
-                    associated with manual layouts.
+                    Build application screens visually, thereby removing the intricacies associated with manual layouts.
                 </div>
                 <div class="box">
                     <div class="box-number">2</div> 
-                    <b>Customized UI<br>Options</b>
+                    <b>Customized UI Options</b>
                     <div class="spacer"></div>
-                    Utilize adaptable, mobile-<br>
-                    responsive UI elements designed<br>
-                    for distinctive applications.
+                    Utilize adaptable, mobile-responsive UI elements designed for distinctive applications.
                 </div>
             </div>
             <div class="row second-row">
                 <div class="box">
                     <div class="box-number">3</div> 
-                    <b>Immediate<br>Validation</b>
-                    <div class="spacer"></div>Instantly test your application on<br>
-                    real devices for quick feedback<br>and seamless iteration.
+                    <b>Immediate Validation</b>
+                    <div class="spacer"></div>
+                    Instantly test your application on real devices for quick feedback and seamless iteration.
                 </div>
                 <div class="box">
                     <div class="box-number">4</div> 
-                    <b>Efficient<br>Deployment</b>
-                    <div class="spacer"></div>Enhance the deployment process<br>with automated generation of APK<br>files.
+                    <b>Efficient Deployment</b>
+                    <div class="spacer"></div>
+                    Enhance the deployment process with automated generation of APK files.
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Part4 content -->
+    <!-- AI-Powered Section -->
     <div class="parent-flex">
         <div class="child-1">
             <span class="heading-part" style="color: rgb(11,75,183);">AI-Powered</span>
@@ -196,32 +874,33 @@
                 Generate fully functional UI components—such as tables, dashboards, or forms—just by describing them in natural language. Instantly get:
                 <div class="spacer"></div> 
 
-                <ul style="list-style-type: square;padding-left: 20px; margin-left: 0;">
-                    <li style="padding-left: 1px;">Beautiful layouts with mock data</li>
-                    <li style="padding-left: 1px;">Editable fields for manual adjustments</li>
-                    <li style="padding-left: 1px;">Exportable JSON or code-ready components</li>
+                <ul style="list-style-type: square;">
+                    <li>Beautiful layouts with mock data</li>
+                    <li>Editable fields for manual adjustments</li>
+                    <li>Exportable JSON or code-ready components</li>
                 </ul>
-                <div class="spacer"></div>AI-enhanced feature radically speeds up prototyping, reduces UI/UX bottlenecks, and empowers teams with minimal design skills to produce production-grade interfaces.
+                <div class="spacer"></div>
+                AI-enhanced feature radically speeds up prototyping, reduces UI/UX bottlenecks, and empowers teams with minimal design skills to produce production-grade interfaces.
             </div>
 
             <div class="child-3">
                 <div class="sub-flex sub-flex-1">
-                    <img src="images\PromptToUI\BackgroundPattern.png" alt="Top Right">
+                    <img src="images/PromptToUI/BackgroundPattern.png" alt="Pattern background">
                 </div>
                 <div class="sub-flex sub-flex-2">
-                    <img src="images\PromptToUI\BackgroundPattern.png" alt="Bottom Left">
+                    <img src="images/PromptToUI/BackgroundPattern.png" alt="Pattern background">
                 </div>
                 <div class="sub-flex sub-flex-3">
-                    <img src="images\PromptToUI\DemoMain.png" alt="Center">
+                    <img src="images/PromptToUI/DemoMain.png" alt="UI Demo">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Part5 content -->
+    <!-- Video Section -->
     <div class="video-container">
-        <h1 style="line-height: 0.8;"><span style="color:rgb(20,23,108);font-size: 24px;">Watch How AI Turns Your Words into</span><br>
-            <span style="color:rgb(11,75,183);font-size: 24px;">Functional UI Components</span></h1>
+        <h1><span style="color:rgb(20,23,108);">Watch How AI Turns Your Words into</span><br>
+            <span style="color:rgb(11,75,183);">Functional UI Components</span></h1>
         <div class="video-wrapper">
             <video autoplay loop muted playsinline>
                 <source src="WordsToComponent.mp4" type="video/mp4">
@@ -230,34 +909,31 @@
         </div>
     </div>
 
-    <!-- Part6 content -->
+    <!-- How It Works Section -->
     <h1 class="main-heading">How This Works</h1>
     <div class="image-container">
-    <img src="images\triangles\t3.png" alt="Image 1" class="image-left" style="top: 350px;">
-    <img src="images\triangles\t2.png" alt="Image 2" class="image-right" style="top: 100px;">
-    <img src="images\triangles\t4.png" alt="Image 3" class="image-left" style="top: 700px;">
-    <img src="images\triangles\t5.png" alt="Image 2" class="image-right" style="top: 1000px;">
-
-</div>
+        <img src="images/triangles/t3.png" alt="Decorative triangle" class="image-left" style="top: 350px;">
+        <img src="images/triangles/t2.png" alt="Decorative triangle" class="image-right" style="top: 100px;">
+        <img src="images/triangles/t4.png" alt="Decorative triangle" class="image-left" style="top: 700px;">
+        <img src="images/triangles/t5.png" alt="Decorative triangle" class="image-right" style="top: 1000px;">
+    </div>
     
     <div class="flex-container">
-        <img class="connector connector-1" src="images\HowThisWorks\RightArrow.png" alt="Connector 1">
-        <img class="connector connector-2" src="images\HowThisWorks\LeftArrow.png" alt="Connector 2">
-        <img class="connector connector-3" src="images\HowThisWorks\RightArrow.png" alt="Connector 3">
-        <img class="connector connector-4" src="images\HowThisWorks\LeftArrow.png" alt="Connector 4">
+        <img class="connector connector-1" src="images/HowThisWorks/RightArrow.png" alt="Connector arrow">
+        <img class="connector connector-2" src="images/HowThisWorks/LeftArrow.png" alt="Connector arrow">
+        <img class="connector connector-3" src="images/HowThisWorks/RightArrow.png" alt="Connector arrow">
+        <img class="connector connector-4" src="images/HowThisWorks/LeftArrow.png" alt="Connector arrow">
         
         <div class="flex-row">
             <div class="flex-item">
                 <div class="image-box">
-                    <img src="images\HowThisWorks\image1.png" alt="Service 1">
+                    <img src="images/HowThisWorks/image1.png" alt="AI-Powered Visual Composition">
                 </div>
             </div>
             <div class="flex-item">
                 <div class="text-box">
                     <h3>AI-Powered Visual Composition</h3>
-                    <p>Design smarter with AI-driven prompts and intuitive drag-and-drop tools.
-                         Quickly create pages, dashboards, and widgets—visually or by describing them.
-                         AI handles layout, mock data, and code, giving you speed, accuracy, and full control.</p>
+                    <p>Design smarter with AI-driven prompts and intuitive drag-and-drop tools. Quickly create pages, dashboards, and widgets—visually or by describing them. AI handles layout, mock data, and code, giving you speed, accuracy, and full control.</p>
                 </div>
             </div>
         </div>
@@ -266,16 +942,12 @@
             <div class="flex-item">
                 <div class="text-box">
                     <h3>Data Integration</h3>
-                    <p>Connect to multiple data sources,
-                         including databases, APIs, and third-party services,
-                          using visual connectors. The platform handles data mapping and
-                           transformation, allowing seamless data exchange between systems.
-                    </p>
+                    <p>Connect to multiple data sources, including databases, APIs, and third-party services, using visual connectors. The platform handles data mapping and transformation, allowing seamless data exchange between systems.</p>
                 </div>
             </div>
             <div class="flex-item">
                 <div class="image-box">
-                    <img src="images\HowThisWorks\image2.png" alt="Service 2">
+                    <img src="images/HowThisWorks/image2.png" alt="Data Integration">
                 </div>
             </div>
         </div>
@@ -283,16 +955,13 @@
         <div class="flex-row">
             <div class="flex-item">
                 <div class="image-box">
-                    <img src="images\HowThisWorks\image3.png" alt="Service 3">
+                    <img src="images/HowThisWorks/image3.png" alt="Logic Definition">
                 </div>
             </div>
             <div class="flex-item">
                 <div class="text-box">
                     <h3>Logic Definition</h3>
-                    <p>Use a visual workflow
-                         editor to define application logic and business rules.
-                          Model automated processes, decision trees, and event-driven actions without coding.
-                    </p>
+                    <p>Use a visual workflow editor to define application logic and business rules. Model automated processes, decision trees, and event-driven actions without coding.</p>
                 </div>
             </div>
         </div>
@@ -301,16 +970,12 @@
             <div class="flex-item">
                 <div class="text-box">
                     <h3>Deployment and Scaling</h3>
-                    <p>Deploy your applications to the cloud or on-premises
-                         environments with one-click deployment. It will
-                          automatically scale, secure, and maintain those
-                           environments with high availability and performance.
-                    </p>
+                    <p>Deploy your applications to the cloud or on-premises environments with one-click deployment. It will automatically scale, secure, and maintain those environments with high availability and performance.</p>
                 </div>
             </div>
             <div class="flex-item">
                 <div class="image-box">
-                    <img src="images\HowThisWorks\image4.png" alt="Service 4">
+                    <img src="images/HowThisWorks/image4.png" alt="Deployment and Scaling">
                 </div>
             </div>
         </div>
@@ -318,40 +983,103 @@
         <div class="flex-row">
             <div class="flex-item">
                 <div class="image-box">
-                    <img src="images\HowThisWorks\image5.png" alt="Service 5">
+                    <img src="images/HowThisWorks/image5.png" alt="Customization & Extension">
                 </div>
             </div>
             <div class="flex-item">
                 <div class="text-box">
                     <h3>Customization & Extension (Low-Code)</h3>
-                    <p>For more complex use cases,
-                         developers can extend the functionalities of the
-                          platform by adding custom code using standard programming
-                           languages, such as Java, Python, or JavaScript. This opens the
-                            way for you to develop complex features and integrations beyond
-                             those already built into the platform.
-                    </p>
+                    <p>For more complex use cases, developers can extend the functionalities of the platform by adding custom code using standard programming languages, such as Java, Python, or JavaScript. This opens the way for you to develop complex features and integrations beyond those already built into the platform.</p>
                 </div>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <img src="../images/white-label/colorful-logo.png" alt="Company Logo" class="footer-logo">
+              <div class="footer-cta">
+                <h3>Let's Work Together!</h3>
+                <p>Have a project in mind? Let's build something great together.</p>
+                <a href="../contact-us.html" class="footer-button">Contact Us</a>
+                <p class="footer-cta-subtext">Start a conversation with our experts and discover how our AI-powered solutions can transform your business.</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-grid">
+              <div class="footer-about">
+                <img src="../images/white-label/Eit Logo.png" alt="Company Logo" class="company-logo">
+                <p>Empowering businesses through Ethical and Intelligent IT, IOT, and AI-driven digital solutions.</p>
+                <div class="social-links">
+                  <a href="https://www.facebook.com/ethicalintelligent" aria-label="Facebook"><img src="../images/white-label/Frame 1.png" alt="Facebook"></a>
+                  <a href="https://www.instagram.com/ethicalintelligent_/" aria-label="Instagram"><img src="../images/white-label/Frame 2.png" alt="Instagram"></a>
+                  <a href="https://www.linkedin.com/company/ethicalintelligent/?viewAsMember=true" aria-label="LinkedIn"><img src="../images/white-label/Frame 3-new.png" alt="LinkedIn"></a>
+                  <a href="https://x.com/EITechnologies_" aria-label="Twitter"><img src="../images/white-label/Frame 4.png" alt="Twitter"></a>
+                  <a href="https://in.pinterest.com/ethicalintelligenttechnologies/_created/" aria-label="Pinterest"><img src="../images/white-label/Frame 5.png" alt="Pinterest"></a>
+                  <a href="https://www.youtube.com/@eitworks" aria-label="YouTube"><img src="../images/white-label/Frame 6.png" alt="YouTube"></a>
+                </div>
+              </div>
+    
+              <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="../about-us.html">About Us</a></li>
+                  <li><a href="../clients.html">Clients</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="../blogs.html">Blogs</a></li>
+                </ul>
+              </div>
+    
+              <div class="footer-links">
+                <h4>Solutions</h4>
+                <ul>
+                  <li><a href="../it-services.html">IT Services</a></li>
+                  <li><a href="../iot-services.html">IOT</a></li>
+                  <li><a href="../business-automation/business-automation.html">AI Office Automation</a></li>
+                  <li><a href="../business-analytics/ai-business-analytics.html">AI Business Analytics</a></li>
+                  <li><a href="#">AI no-code/low-code</a></li>
+                </ul>
+              </div>
+    
+              <div class="footer-contact">
+                <h4>Contact</h4>
+                <div class="contact-item">
+                  <img src="../images/white-label/clock.png" alt="Working Hours">
+                  <p>Monday to Friday<br>9 AM - 8 PM IST</p>
+                </div>
+                <div class="contact-item">
+                  <img src="../images/white-label/symbol.png" alt="Email">
+                  <a href="mailto:sales@ethicalintelligent.com">sales@ethicalintelligent.com</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="footer-legal">
+              <p>&copy; 2025 All Rights Reserved</p>
+              <a href="../privacy-policy.html">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </footer>
 
     <script>
-        // Combined JavaScript from all files
+        // Slideshow functionality
         let currentImageIndex = 0;
         let slideshowInterval;
         let isPaused = false;
         const imageFiles = [
             { src: 'images/ShowCase/image1.png', title: 'Rental Application' },
             { src: 'images/ShowCase/image2.png', title: 'Fleet Tracking Application' },
-            { src: 'images\\ShowCase\\image3.png', title: 'Diesel Generator Monitoring' },
-            { src: 'images\\ShowCase\\image4.png', title: 'Telecom Power Monitoring' },
-            { src: 'images\\ShowCase\\image5.png', title: 'Street Lights Monitoring' },
-            { src: 'images\\ShowCase\\image6.png', title: 'GE Fleet Mobile Tracking' },
-            { src: 'images\\ShowCase\\image7.png', title: 'Data Center Environment' },
-            { src: 'images\\ShowCase\\image8.png', title: 'Diesel Generator Monitoring' },
-            { src: 'images\\ShowCase\\image9.png', title: 'Property Management' },
-            { src: 'images\\ShowCase\\image10.png', title: 'Airport Compliance System' }
+            { src: 'images/ShowCase/image3.png', title: 'Diesel Generator Monitoring' },
+            { src: 'images/ShowCase/image4.png', title: 'Telecom Power Monitoring' },
+            { src: 'images/ShowCase/image5.png', title: 'Street Lights Monitoring' },
+            { src: 'images/ShowCase/image6.png', title: 'GE Fleet Mobile Tracking' },
+            { src: 'images/ShowCase/image7.png', title: 'Data Center Environment' },
+            { src: 'images/ShowCase/image8.png', title: 'Diesel Generator Monitoring' },
+            { src: 'images/ShowCase/image9.png', title: 'Property Management' },
+            { src: 'images/ShowCase/image10.png', title: 'Airport Compliance System' }
         ];
         
         function showImage(src, title) {
@@ -390,6 +1118,7 @@
             startSlideshow();
         }
         
+        // Initialize slideshow
         window.onload = function() {
             document.getElementById('display-img').src = imageFiles[0].src;
             document.getElementById('display-title').textContent = imageFiles[0].title;
@@ -397,4 +1126,5 @@
         };
     </script>
 </body>
+<script src="header/header.js"></script>
 </html>
