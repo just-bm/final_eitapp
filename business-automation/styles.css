@@ -146,6 +146,7 @@ body {
     color: white;
     background-color:#0c1892 ;
     padding: 8px;
+    height: 100vh;
 }
 
 /* Hero Section */
@@ -974,56 +975,231 @@ body {
      .original-chat-icon{
         z-index: 0;
     }
-}
 
-@media (min-width: 640px) {
-    .hero-buttons {
-        flex-direction: row;
-    }
-
-    .cta-buttons {
-        flex-direction: row;
-    }
-    .original-chat-icon{
-        z-index: 0;
-    }
-}
-
-@media (min-width: 1024px) {
+    /* Stack hero content vertically */
     .hero-content {
-        grid-template-columns: 1fr 1fr;
+        display: block;
+        padding: 0 1rem;
     }
 
+    /* Center hero text */
     .hero-text {
-        text-align: left;
+        text-align: center;
+        margin-bottom: 2rem;
     }
 
-    .hero h1 {
-        font-size: 4rem;
+    /* Make hero image full width */
+    .hero-image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 
-    .hero-stats {
-        margin-left: 0;
-        margin-right: 0;
+    /* Stack hero buttons vertically */
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
     }
 
-    .stat {
-        text-align: left;
+    /* Adjust workflow image */
+    .workflow-image img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
     }
 
+    /* Stack workflow steps vertically */
     .workflow-steps {
-        flex-direction: row;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
     }
 
-    .arrow {
+    /* Departments grid to single column */
+    .departments-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    /* Features grid to single column */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    /* CTA buttons stack vertically */
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Adjust CTA card padding */
+    .cta-card {
+        padding: 1.5rem;
+    }
+
+    /* Adjust font sizes for smaller screens */
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .feature-title {
+        font-size: 1.125rem;
+    }
+
+    .feature-description {
+        font-size: 0.9rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 0.875rem;
+    }
+
+    /* Make images and containers fluid */
+    img, video, iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ensure container padding and margin for small screens */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Improve mobile menu toggle visibility */
+    .mobile_menu_toggle {
         display: block;
     }
-    .original-chat-icon{
-        z-index: 0;
+
+    /* Adjust navigation for mobile */
+    #navy {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
-}
+    /* Adjust mega menu for mobile */
+    .mega_menu {
+        position: static;
+        box-shadow: none;
+        padding: 0;
+    }
 
+    /* Additional desktop responsive styles */
+    @media (min-width: 1024px) {
+        .hero-content {
+            grid-template-columns: 1fr 1fr;
+            padding: 0 2rem;
+        }
+
+        .hero-text {
+            text-align: left;
+            padding-right: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 36rem;
+        }
+
+        .hero-stats {
+            margin-left: 0;
+            margin-right: 0;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            max-width: 48rem;
+            margin-top: 2rem;
+        }
+
+        .stat {
+            text-align: left;
+        }
+
+        .workflow-steps {
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .workflow-image img {
+            width: 50%;
+            height: auto;
+            max-width: none;
+            object-fit: contain;
+        }
+
+        .arrow {
+            display: block;
+        }
+
+        .departments-grid {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .department-card {
+            max-width: none;
+        }
+
+        .features-grid {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .feature-card {
+            max-width: none;
+        }
+
+        .cta-buttons {
+            flex-direction: row;
+            gap: 2rem;
+            justify-content: center;
+            padding: 0 2rem;
+        }
+
+        .btn-white, .btn-outline-white {
+            width: auto;
+            max-width: none;
+            padding: 1rem 3rem;
+        }
+
+        .cta-card {
+            padding: 3rem 4rem;
+            max-width: 48rem;
+            margin: 0 auto;
+        }
+
+        .original-chat-icon {
+            z-index: 0;
+        }
+    }
+}
 /* NEW: Cancel Button Styles (Adjusted for image) */
 .cancel-button {
     position: absolute;
